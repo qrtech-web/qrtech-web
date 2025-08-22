@@ -71,8 +71,8 @@ export default function Footer() {
         {/* 4. Contacto & Redes */}
         <div>
           <h4 className="text-white text-xl font-semibold mb-4">Contacto</h4>
-          <a href=""><p className="text-gray-400 text-sm mb-2 hover:text-primary transition-colors">qrtechtucuman@gmail.com</p></a>
-          <a href =""><p className="text-gray-400 text-sm mb-4 hover:text-primary transition-colors">+54 381 5 677-391</p></a>
+          <p className="text-gray-400 text-sm mb-2 hover:text-primary transition-colors">qrtechtucuman@gmail.com</p>
+          <p className="text-gray-400 text-sm mb-4 hover:text-primary transition-colors">+54 381 5 677-391</p>
           <div className="flex space-x-4">
             <a
               href="https://facebook.com/qrtech"
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='flex w-20 h-20 justify-center items-center' >
-          <a href="" className='text-center w-100% text-3xl font-carter hover:text-neutral-500 active:text-slate-800'>Volver</a>
+          <a href="/inicio" className='text-center w-100% text-3xl font-carter hover:text-neutral-500 active:text-slate-800'>Volver</a>
         </div>
       </div>
 
