@@ -1,0 +1,31 @@
+{
+  "productos": {
+    "iphone13": {
+      "nombre": "iPhone 13 100 GB",
+      "precio": 999,
+      "stock": 7,
+      "descripcion": "Libre, usados grado A+",
+      "imagenURL": "",
+      "categoria": "iPhone",
+      "destacado": true
+    },
+    "airpods3": {
+      "nombre": "AirPods 3ª gen",
+      "precio": 299,
+      "stock": 12,
+      "descripcion": "Sellados, envío gratis",
+      "imagenURL": "https://…",
+      "categoria": "Accesorios",
+      "destacado": false
+    },
+    "airpods2": {
+      "nombre": "AirPods 3ª gen",
+      "precio": 299,
+      "stock": 12,
+      "descripcion": "Sellados, envío gratis",
+      "imagenURL": "https://…",
+      "categoria": "Accesorios",
+      "destacado": false
+    }
+  }
+}

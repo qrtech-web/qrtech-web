@@ -1,0 +1,87 @@
+/* ───────────────────────────────
+   styles.css – Solo custom layer
+   Tailwind compila @apply aquí.
+──────────────────────────────── */
+
+/* 1️⃣ Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2️⃣ Design-tokens */
+:root {
+  /* Colors */
+  --clr-bg-dark : #0f172a;               /* fondo general */
+  --clr-bg-card : rgb(255 255 255 / 0.04);
+  --clr-primary : #6366f1;               /* violeta principal */
+  --clr-primary-2: #4f46e5;              /* tono medio */
+  --clr-primary-3: #7c3aed;              /* gradiente */
+  --clr-text-soft: #94a3b8;
+  /* Radii & shadows */
+  --radius-lg : 14px;
+  --shadow-card: 0 2px 6px rgb(0 0 0 / .25);
+}
+
+/* 3️⃣ Utilidad extra (perspective para cards) */
+.gridpersp { perspective: 1200px; }
+
+/* 4️⃣ Body global */
+body {
+  @apply font-sans text-white bg-[var(--clr-bg-dark)] antialiased;
+  padding-bottom: 3rem;         /* footer-space */
+}
+
+/* 5️⃣ Producto-card (fallback cuando no uses Tailwind classes) */
+.producto-card {
+  @apply bg-[var(--clr-bg-card)] rounded-xl shadow-lg p-4 text-center transition
+         hover:shadow-2xl;
+}
+.producto-card img {            /* fallback: pure CSS containers */
+  @apply w-full object-contain mb-3 rounded-lg;
+  max-height: 200px;
+}
+
+/* 6️s Tabla genérica */
+table {
+  @apply w-full border-collapse text-center text-sm;
+}
+thead { @apply bg-white/10 text-[var(--clr-text-soft)]; }
+th, td { @apply border border-white/10 py-2 px-3; }
+tbody tr:nth-child(odd) { @apply bg-white/5; }
+tbody tr:hover         { @apply bg-white/10; }
+
+
+/* ---------- BOTONES ---------- */
+.btn {
+  @apply inline-flex items-center justify-center gap-2 font-medium rounded-xl
+         transition active:scale-95 select-none focus:outline-none
+         focus-visible:ring-2 min-h-[44px] px-6 py-3;
+}
+
+/* Primario — degradado QRTech */
+.btn-primary {
+  background-image: linear-gradient(135deg,#6366f1 0%,#4f46e5 25%,#7c3aed 100%);
+}
+.btn-primary:hover     { filter:brightness(1.10); }   /* sutil highlight */
+.btn-primary:disabled  { @apply opacity-60 pointer-events-none; }
+
+/* Secundario (contorno) */
+.btn-outline {
+  @apply border border-primary text-primary;
+}
+.btn-outline:hover {
+  @apply bg-primary/10;               /* 10 % de opacidad sobre tu color */
+}
+
+/* Ripple flash */
+.btn::after {
+  content:"";
+  @apply absolute inset-0 rounded-xl opacity-0 transition;
+}
+.btn:active::after {
+  @apply bg-white/20 opacity-100;
+}
+
+/* Modo dark – ring accesible para navegación con teclado */
+.dark .btn-primary:focus-visible { @apply ring-primary/60; }
+.dark .btn-outline:focus-visible { @apply ring-primary/40; }

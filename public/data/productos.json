@@ -1,0 +1,24 @@
+{
+  "productos": [
+    {
+      "id": "iphone13-128",
+      "nombre": "iPhone 13 · 128 GB",
+      "precio": 999,
+      "stock": 7,
+      "descripcion": "Libre · usados grado A+ · garantía 6 m",
+      "imagen": "/img/iphone13.jpg",
+      "categoria": "iPhone",
+      "destacado": true
+    },
+    {
+      "id": "airpods3",
+      "nombre": "AirPods 3ª gen",
+      "precio": 299,
+      "stock": 12,
+      "descripcion": "Sellados · envío gratis",
+      "imagen": "/img/airpods3.jpg",
+      "categoria": "Accesorios",
+      "destacado": false
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "id":"ip11",
+    "nombre":"iPhone 11",
+    "precioUsd":275,
+    "imagen":"/img/productos/11.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011"
+  },
+  {
+    "id":"ip11p",
+    "nombre":"iPhone 11 Pro",
+    "precioUsd": 310,
+    "imagen":"/img/productos/11p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro"
+  },
+  {
+    "id":"ip11pm",
+    "nombre":"iPhone 11 Pro Max",
+    "precioUsd":340,
+    "imagen":"/img/productos/11pm.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max"
+  },
+  {
+    "id":"ip12",
+    "nombre":"iPhone 12",
+    "precioUsd":330,
+    "imagen":"/img/productos/12.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012"
+  },
+  {
+    "id":"ip12p",
+    "nombre":"iPhone 12 Pro",
+    "precioUsd":400,
+    "imagen":"/img/productos/12p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro"
+  },
+  {
+    "id":"ip12pm",
+    "nombre":"iPhone 12 Pro Max",
+    "precioUsd":420,
+    "imagen":"/img/productos/12pm.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max"
+  },
+  {
+    "id":"ip13",
+    "nombre":"iPhone 13",
+    "precioUsd":400,
+    "imagen":"/img/productos/13.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013"
+  },
+  {
+    "id":"ip13p",
+    "nombre":"iPhone 13 Pro",
+    "precioUsd":510,
+    "imagen":"/img/productos/13p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro"
+  },
+  {
+    "id":"ip13pm",
+    "nombre":"iPhone 13 Pro Max",
+    "precioUsd":570,
+    "imagen":"/img/productos/13pm.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max"
+  },
+  {
+    "id":"ip14",
+    "nombre":"iPhone 14",
+    "precioUsd":480,
+    "imagen":"/img/productos/14.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014"
+  },
+  {
+    "id":"ip14p",
+    "nombre":"iPhone 14 Pro",
+    "precioUsd":610,
+    "imagen":"/img/productos/14p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro"
+  },
+  {
+    "id":"ip14pm",
+    "nombre":"iPhone 14 Pro Max",
+    "precioUsd":710,
+    "imagen":"/img/productos/14pm.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max"
+  },
+  {
+    "id":"ip15",
+    "nombre":"iPhone 15",
+    "precioUsd":610,
+    "imagen":"/img/productos/15.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015"
+  },
+  {
+    "id":"ip15p",
+    "nombre":"iPhone 15p",
+    "precioUsd":750,
+    "imagen":"/img/productos/15p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro"
+  },
+  {
+    "id":"ip15pm",
+    "nombre":"iPhone 15 Pro Max",
+    "precioUsd":900,
+    "imagen":"/img/productos/15pm.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max"
+  },
+  {
+    "id":"ip16",
+    "nombre":"iPhone 16",
+    "precioUsd":750,
+    "imagen":"/img/productos/16.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016"
+  },
+  {
+    "id":"ip16e",
+    "nombre":"iPhone 16e",
+    "precioUsd":650,
+    "imagen":"/img/productos/16e.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e"
+  },
+  {
+    "id":"ip16p",
+    "nombre":"iPhone 16 Pro",
+    "precioUsd":990,
+    "imagen":"/img/productos/16p.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro"
+  },
+  {
+    "id":"ip16pm",
+    "nombre":"iPhone 16 Pro Max",
+    "precioUsd":1180,
+    "imagen":"/img/productos/16pm.png",
+    "wa":"https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max"
+  }
+  
+  
+]
