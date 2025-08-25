@@ -1,0 +1,211 @@
+[
+  {
+    "id": "ip11",
+    "title": "iPhone 11",
+    "description": "iPhone 11 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "275.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip11",
+    "image_link": "https://qrtech.com.ar/img/productos/11.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip11p",
+    "title": "iPhone 11 Pro",
+    "description": "iPhone 11 Pro - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "310.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip11p",
+    "image_link": "https://qrtech.com.ar/img/productos/11p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip11pm",
+    "title": "iPhone 11 Pro Max",
+    "description": "iPhone 11 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "340.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip11pm",
+    "image_link": "https://qrtech.com.ar/img/productos/11pm.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip12",
+    "title": "iPhone 12",
+    "description": "iPhone 12 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "330.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip12",
+    "image_link": "https://qrtech.com.ar/img/productos/12.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip12p",
+    "title": "iPhone 12 Pro",
+    "description": "iPhone 12 Pro - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "400.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip12p",
+    "image_link": "https://qrtech.com.ar/img/productos/12p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip12pm",
+    "title": "iPhone 12 Pro Max",
+    "description": "iPhone 12 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "420.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip12pm",
+    "image_link": "https://qrtech.com.ar/img/productos/12pm.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip13",
+    "title": "iPhone 13",
+    "description": "iPhone 13 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "400.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip13",
+    "image_link": "https://qrtech.com.ar/img/productos/13.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip13p",
+    "title": "iPhone 13 Pro",
+    "description": "iPhone 13 Pro - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "510.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip13p",
+    "image_link": "https://qrtech.com.ar/img/productos/13p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip13pm",
+    "title": "iPhone 13 Pro Max",
+    "description": "iPhone 13 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "570.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip13pm",
+    "image_link": "https://qrtech.com.ar/img/productos/13pm.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip14",
+    "title": "iPhone 14",
+    "description": "iPhone 14 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "480.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip14",
+    "image_link": "https://qrtech.com.ar/img/productos/14.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip14p",
+    "title": "iPhone 14 Pro",
+    "description": "iPhone 14 Pro - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "610.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip14p",
+    "image_link": "https://qrtech.com.ar/img/productos/14p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip14pm",
+    "title": "iPhone 14 Pro Max",
+    "description": "iPhone 14 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "used",
+    "price": "710.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip14pm",
+    "image_link": "https://qrtech.com.ar/img/productos/14pm.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip15",
+    "title": "iPhone 15",
+    "description": "iPhone 15 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "610.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip15",
+    "image_link": "https://qrtech.com.ar/img/productos/15.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip15p",
+    "title": "iPhone 15p",
+    "description": "iPhone 15p - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "750.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip15p",
+    "image_link": "https://qrtech.com.ar/img/productos/15p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip15pm",
+    "title": "iPhone 15 Pro Max",
+    "description": "iPhone 15 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "900.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip15pm",
+    "image_link": "https://qrtech.com.ar/img/productos/15pm.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip16",
+    "title": "iPhone 16",
+    "description": "iPhone 16 - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "750.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip16",
+    "image_link": "https://qrtech.com.ar/img/productos/16.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip16e",
+    "title": "iPhone 16e",
+    "description": "iPhone 16e - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "650.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip16e",
+    "image_link": "https://qrtech.com.ar/img/productos/16e.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip16p",
+    "title": "iPhone 16 Pro",
+    "description": "iPhone 16 Pro - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "990.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip16p",
+    "image_link": "https://qrtech.com.ar/img/productos/16p.png",
+    "brand": "Apple"
+  },
+  {
+    "id": "ip16pm",
+    "title": "iPhone 16 Pro Max",
+    "description": "iPhone 16 Pro Max - Consultá disponibilidad. Garantía QRTech. Atención por WhatsApp.",
+    "availability": "in stock",
+    "condition": "new",
+    "price": "1180.00 USD",
+    "link": "https://qrtech.com.ar/productos?sku=ip16pm",
+    "image_link": "https://qrtech.com.ar/img/productos/16pm.png",
+    "brand": "Apple"
+  }
+]
