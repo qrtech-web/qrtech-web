@@ -1,48 +1,92 @@
 // src/pages/Productos.jsx
-import productos from "../data/productos.json"           // ← import local
-import ProductoCard from "../components/ProductoCard"
-import { motion } from "framer-motion";
+import React, { useMemo, useEffect, useState } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import data from '../data/productos.json';
+import TrustBadges from '../components/TrustBadges';
+import Filters from '../components/Filters';
 
-export default function Productos () {
+function useQuery(){ return new URLSearchParams(useLocation().search); }
+
+export default function Productos(){
+  const query = useQuery();
+  const sku   = query.get('sku');
+  const q     = query.get('q') || '';
+  const [search, setSearch] = useState(q);
+
+  const seleccionado = useMemo(() => data.find(p => p.id === sku), [sku]);
+
+  const filtrados = useMemo(() => {
+    const needle = search.trim().toLowerCase();
+    if(!needle) return data;
+    return data.filter(p => p.nombre.toLowerCase().includes(needle));
+  }, [search]);
+
+  useEffect(() => {
+    if (seleccionado && window.fbq) {
+      window.fbq('track', 'ViewContent', {
+        content_ids: [seleccionado.id],
+        content_type: 'product',
+        value: seleccionado.precioUsd,
+        currency: 'USD'
+      });
+    }
+  }, [seleccionado]);
+
   return (
-    
-      <motion.div className="min-h-screen pt-24 pb-16 bg-black text-text">
-        <section id="catalogo" className="py-24  text-white">
-          <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="container mx-auto px-4 py-8">
+      <h1 className="text-5xl font-bold font-carter text-center">Nuestros Productos</h1>
+      <TrustBadges />
+      <Filters query={search} onChange={setSearch} />
 
-          {/* Heading principal */}
-          <h2
-            className="relative text-center font-carter font-black
-                      text-4xl sm:text-5xl lg:text-7xl mb-6 leading-tight"
-            data-aos="fade-down"
-          >
-            Catálogo
-            {/* Decorador under-line */}
-            <span
-              className="absolute left-1/2 -bottom-4 -translate-x-1/2
-                        block h-1 w-40 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500
-                        rounded-full"
-            />
-          </h2>
-
-            {/* Sub-heading opcional */}
-            <p
-              className="mx-auto max-w-xl text-center text-soft-text text-sm sm:text-base mb-5"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            >
-              Explorá nuestro stock de iPhone con disponibilidad inmediata.
-              Elegí tu equipo y calculá tus cuotas al instante.
-            </p>
-    
-            {/* grilla responsiva */}
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
-                data-aos="zoom-in" data-aos-delay="100">
-              {productos.map(p => <ProductoCard key={p.id} producto={p}/>)}
+      {seleccionado && (
+        <article className="mt-8 grid gap-6 rounded-2xl border border-white/15 bg-white/5 p-6 md:grid-cols-2" aria-label={`Detalle de ${seleccionado.nombre}`}>
+          <div>
+            <img src={seleccionado.imagen} alt={`Foto ${seleccionado.nombre}`} loading="lazy" className="w-full rounded-xl" />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold">{seleccionado.nombre}</h2>
+            <p className="mt-2 text-lg">Desde <strong>{seleccionado.precioUsd} USD</strong></p>
+            <p className="mt-1 text-sm opacity-80">Garantía QRTech escrita · Retiro en San Lorenzo 987</p>
+            <div className="mt-4 flex gap-3">
+              <a
+                href={seleccionado.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + seleccionado.nombre + ' (' + seleccionado.id + ')')}`}
+                target="_blank" rel="noopener noreferrer"
+                className="rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white"
+                onClick={() => { if (window.fbq) { window.fbq('track', 'Contact', { content_ids: [seleccionado.id], content_type: 'product' }); } }}
+                aria-label={`Consultar ${seleccionado.nombre} por WhatsApp`}
+              >
+                Consultar por WhatsApp
+              </a>
+              <Link to={`/calculadora?sku=${seleccionado.id}`} className="rounded-xl bg-white/10 px-4 py-3 font-semibold">
+                Ver cuotas
+              </Link>
             </div>
           </div>
-        </section>
-        </motion.div>
-    
-  )
+        </article>
+      )}
+
+      <section className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {filtrados.map((p) => (
+          <article key={p.id} className="rounded-2xl border border-white/15 bg-white/5 p-4">
+            <Link to={`/productos?sku=${p.id}`} className="block">
+              <img src={p.imagen} alt={`Foto ${p.nombre}`} loading="lazy" className="w-full rounded-xl" />
+              <h3 className="mt-3 text-lg font-semibold">{p.nombre}</h3>
+              <p className="opacity-80">Desde {p.precioUsd} USD</p>
+            </Link>
+            <div className="mt-3">
+              <a
+                href={p.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + p.nombre + ' (' + p.id + ')')}`}
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white"
+                onClick={() => { if (window.fbq) { window.fbq('track', 'Contact', { content_ids: [p.id], content_type: 'product' }); } }}
+                aria-label={`Consultar ${p.nombre} por WhatsApp`}
+              >
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </article>
+        ))}
+      </section>
+    </main>
+  );
 }
