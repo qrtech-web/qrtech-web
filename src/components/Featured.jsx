@@ -12,11 +12,11 @@ export default function Featured() {
     className="text-4xl font-carter text-center mb-16"
     data-aos="fade-up"
   >
-    Top <span className="text-indigo-400 font-bold">productos destacados</span> 2025
+    Top 3 <span className="text-indigo-400 font-bold">productos destacados</span> 2025
   </h2>
 
-  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mx-auto">
-    {[1, 2, 3, 4].map((i) => (
+  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+    {[1, 2, 3].map((i) => (
       <div
         key={i}
         className="group border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center"

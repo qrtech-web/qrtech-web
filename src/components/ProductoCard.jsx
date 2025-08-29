@@ -18,7 +18,7 @@ export default function ProductoCard({ producto }) {
     >
       {/* FOTO — ahora flex-grow para ocupar la mayor parte */}
       <div className="flex-1 flex items-center justify-center ">
-        <div className="w-full aspect-[9/16] overflow-hidden rounded-xl transition-transform duration-500 group-hover:scale-105">
+        <div className="w-full aspect-[1/1] overflow-hidden rounded-xl transition-transform duration-500 group-hover:scale-105">
           <LazyLoadImage
             src={imagen}
             alt={nombre}
@@ -29,8 +29,8 @@ export default function ProductoCard({ producto }) {
       </div>
 
       {/* INFO */}
-      <h3 className="mt-4 text-4xl font-carter text-white text-center">{nombre}</h3>
-      <p className=" text-center text-3xl text-blue-300">${precioUsd} USD</p>
+      <h3 className="mt-4 text-3xl font-carter text-white text-center">{nombre}</h3>
+      <p className=" text-center text-2xl text-blue-300">${precioUsd} USD</p>
 
      
       {/* BOTONES */}
@@ -38,7 +38,7 @@ export default function ProductoCard({ producto }) {
   <button
     type="button"
     rel="noreferrer"
-    className="btn transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 relative z-[2]
+    className="text-xs btn transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 relative z-[2]
     "   // 👈 más alto
     onClick={() =>
    nav("/calculadora", {
@@ -52,7 +52,7 @@ export default function ProductoCard({ producto }) {
     href={wa}
     target="_blank"
     rel="noreferrer"
-    className="btn transition duration-500 ease-in-out bg-blue-600 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-110 relative z-[1]"   // 👈 debajo
+    className="btn text-xs transition duration-500 ease-in-out bg-blue-600 hover:bg-green-600 transform hover:-translate-y-1 hover:scale-110 relative z-[1]"   // 👈 debajo
   >
     Comprar
   </a>

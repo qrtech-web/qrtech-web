@@ -1,7 +1,7 @@
 // src/pages/Formulario.jsx
 import { useState } from "react"
 import { Mail, Phone, User2, MessageSquare } from "lucide-react"
-import "../styles/formulario.css"
+import "../styles/styles.css"
 
 export default function Formulario () {
   const [ok, setOk] = useState(false)

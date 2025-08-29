@@ -16,11 +16,11 @@ export default function Navbar() {
   " font-carter";
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50">
+    <header className="sticky top-0 inset-x-0 z-50">
       {/* barra superior glass */}
       <nav className="h-16 backdrop-blur-md bg-gray-900/60 flex items-center px-6 lg:px-10">
         <NavLink
-          to="/inicio"
+          to="/"
           className="font-carter text-2xl text-gray-100 hover:text-gray-300"
           onClick={() => setOpen(false)}
         >
@@ -63,7 +63,7 @@ export default function Navbar() {
         {links.map(label => (
           <NavLink
             key={label}
-            to={label === "Inicio" ? "/inicio" : `/${label.toLowerCase()}`}
+            to={label === "/" ? "/inicio" : `/${label.toLowerCase()}`}
             className={linkClass}
             onClick={() => setOpen(false)}
           >
