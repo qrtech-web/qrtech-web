@@ -7,6 +7,40 @@ import Filters from '../components/Filters';
 
 function useQuery(){ return new URLSearchParams(useLocation().search); }
 
+function trackViewContent(prod){
+  try{
+    if(!window.fbq || !prod) return;
+    const catalogId = prod.catalogId || prod.id; // <= CLAVE: debe MATCHEAR ID del catálogo
+    window.fbq('track', 'ViewContent', {
+      content_ids: [catalogId],
+      content_type: 'product',
+      content_name: prod.nombre,
+      contents: [{ id: catalogId, quantity: 1, item_price: prod.precioUsd }],
+      value: prod.precioUsd, // ok si usás USD; no afecta el match
+      currency: 'USD'
+    });
+    // console.debug('VC sent', { catalogId });
+  }catch(e){ /* console.error(e); */ }
+}
+
+// 1) Agregá esta función arriba del export (debajo de imports)
+function trackViewContent(prod){
+  try{
+    if(!window.fbq || !prod) return;
+    const catalogId = prod.catalogId || prod.id; // CLAVE: match con catálogo
+    window.fbq('track', 'ViewContent', {
+      content_ids: [catalogId],
+      content_type: 'product',
+      content_name: prod.nombre,
+      contents: [{ id: catalogId, quantity: 1, item_price: prod.precioUsd }],
+      value: prod.precioUsd,
+      currency: 'USD'
+    });
+  }catch(_e){}
+}
+
+
+
 export default function Productos(){
   const query = useQuery();
   const sku   = query.get('sku');
@@ -22,15 +56,8 @@ export default function Productos(){
   }, [search]);
 
   useEffect(() => {
-    if (seleccionado && window.fbq) {
-      window.fbq('track', 'ViewContent', {
-        content_ids: [seleccionado.id],
-        content_type: 'product',
-        value: seleccionado.precioUsd,
-        currency: 'USD'
-      });
-    }
-  }, [seleccionado]);
+  if (seleccionado) trackViewContent(seleccionado);
+}, [seleccionado]);
 
   return (
     <main className="container mx-auto px-4 py-8">
@@ -49,10 +76,17 @@ export default function Productos(){
             <p className="mt-1 text-sm opacity-80">Garantía QRTech escrita · Retiro en San Lorenzo 987</p>
             <div className="mt-4 flex gap-3">
               <a
-                href={seleccionado.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + seleccionado.nombre + ' (' + seleccionado.id + ')')}`}
+                href={seleccionado.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + seleccionado.nombre + ' (' + (seleccionado.catalogId || seleccionado.id) + ')')}`}
                 target="_blank" rel="noopener noreferrer"
                 className="rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white"
-                onClick={() => { if (window.fbq) { window.fbq('track', 'Contact', { content_ids: [seleccionado.id], content_type: 'product' }); } }}
+                onClick={() => {
+  if (window.fbq) {
+    window.fbq('track', 'Lead', {
+      content_ids: [ (seleccionado?.catalogId || seleccionado?.id) ],
+      content_type: 'product'
+    });
+  }
+}}
                 aria-label={`Consultar ${seleccionado.nombre} por WhatsApp`}
               >
                 Consultar por WhatsApp
@@ -75,10 +109,19 @@ export default function Productos(){
             </Link>
             <div className="mt-3">
               <a
-                href={p.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + p.nombre + ' (' + p.id + ')')}`}
+                href={p.wa || `https://wa.me/5493815677391?text=${encodeURIComponent('¡Hola QRTech! Quiero el ' + p.nombre + ' (' + (p.catalogId || p.id) + ')')}`}
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white"
-                onClick={() => { if (window.fbq) { window.fbq('track', 'Contact', { content_ids: [p.id], content_type: 'product' }); } }}
+                // 4) (Opcional) En las cards del listado, lo mismo:
+onClick={() => {
+  if (window.fbq) {
+    window.fbq('track', 'Lead', {
+      content_ids: [ (p.catalogId || p.id) ],
+      content_type: 'product'
+    });
+  }
+}}
+
                 aria-label={`Consultar ${p.nombre} por WhatsApp`}
               >
                 Consultar por WhatsApp
