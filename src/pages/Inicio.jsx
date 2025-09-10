@@ -5,7 +5,7 @@ import FormasDePago from "../components/FormasDePago";
 import TrustChips from '../components/TrustChips';
 import MVSection from '../components/MVSection';
 import Featured from '../components/Featured';
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 import '../styles/inicio.css';
 
