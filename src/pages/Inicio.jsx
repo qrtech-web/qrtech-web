@@ -5,6 +5,7 @@ import FormasDePago from "../components/FormasDePago";
 import TrustChips from '../components/TrustChips';
 import MVSection from '../components/MVSection';
 import Featured from '../components/Featured';
+import Footer from "./components/Footer";
 
 import '../styles/inicio.css';
 
@@ -19,7 +20,7 @@ export default function Inicio() {
         <MVSection />
         <Featured />
         <FormasDePago />
-        
+        <Footer />
       </main>
     </>
   );

@@ -7,6 +7,7 @@ import Inicio from "./pages/Inicio";
 import Productos from "./pages/Productos";
 import Formulario from "./pages/Formulario";
 import Calculadora from "./pages/Calculadora";
+
 // (si no tenés ListaClientes, no la importes)
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         {/* 4) Otras páginas */}
         <Route path="/formulario" element={<Formulario />} />
         <Route path="/calculadora" element={<Calculadora />} />
+
 
         {/* 5) 404 básico (opcional) */}
         <Route path="*" element={<div style={{padding:24}}>Página no encontrada</div>} />
