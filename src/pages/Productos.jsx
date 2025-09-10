@@ -7,21 +7,7 @@ import Filters from '../components/Filters';
 
 function useQuery(){ return new URLSearchParams(useLocation().search); }
 
-function trackViewContent(prod){
-  try{
-    if(!window.fbq || !prod) return;
-    const catalogId = prod.catalogId || prod.id; // <= CLAVE: debe MATCHEAR ID del catálogo
-    window.fbq('track', 'ViewContent', {
-      content_ids: [catalogId],
-      content_type: 'product',
-      content_name: prod.nombre,
-      contents: [{ id: catalogId, quantity: 1, item_price: prod.precioUsd }],
-      value: prod.precioUsd, // ok si usás USD; no afecta el match
-      currency: 'USD'
-    });
-    // console.debug('VC sent', { catalogId });
-  }catch(e){ /* console.error(e); */ }
-}
+
 
 // 1) Agregá esta función arriba del export (debajo de imports)
 function trackViewContent(prod){
@@ -113,14 +99,14 @@ export default function Productos(){
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white"
                 // 4) (Opcional) En las cards del listado, lo mismo:
-onClick={() => {
-  if (window.fbq) {
-    window.fbq('track', 'Lead', {
-      content_ids: [ (p.catalogId || p.id) ],
-      content_type: 'product'
-    });
-  }
-}}
+              onClick={() => {
+                if (window.fbq) {
+                  window.fbq('track', 'Lead', {
+                    content_ids: [ (p.catalogId || p.id) ],
+                    content_type: 'product'
+                  });
+                }
+              }}
 
                 aria-label={`Consultar ${p.nombre} por WhatsApp`}
               >
