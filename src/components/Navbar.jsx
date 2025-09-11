@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import NavWhatsAppCTA from './NavWhatsAppCTA';
+
 
 const links = ["Inicio", "Productos"];
 
@@ -36,6 +38,8 @@ export default function Navbar() {
               </NavLink>
             </li>
           ))}
+          <li><NavWhatsAppCTA /></li>
+
         </ul>
 
         {/* hamburger */}

@@ -7,6 +7,10 @@ import Inicio from "./pages/Inicio";
 import Productos from "./pages/Productos";
 import Formulario from "./pages/Formulario";
 import Calculadora from "./pages/Calculadora";
+import Footer from "./components/Footer";
+import WhatsAppFloat from './components/WhatsAppFloat';
+
+
 // (si no tenés ListaClientes, no la importes)
 
 export default function App() {
@@ -28,9 +32,13 @@ export default function App() {
         <Route path="/formulario" element={<Formulario />} />
         <Route path="/calculadora" element={<Calculadora />} />
 
+
         {/* 5) 404 básico (opcional) */}
         <Route path="*" element={<div style={{padding:24}}>Página no encontrada</div>} />
       </Routes>
+            {/* Botón flotante de WhatsApp en todas las páginas */}
+      <WhatsAppFloat phone="5493815677391" />
+
     </BrowserRouter>
   );
 }
