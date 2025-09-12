@@ -6,8 +6,8 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      {/* Compensa la altura del navbar */}
-      <main className="pt-16">
+      {/* Compensación exacta del header: 56px (h-14) en mobile, 64px (h-16) en desktop */}
+      <main className="pt-14 md:pt-16">
         {children}
       </main>
     </>

@@ -1,51 +1,68 @@
 // src/components/Hero.jsx
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-import { motion } from 'framer-motion';
+const MotionLink = motion(Link);
 
 export default function Hero() {
   return (
-    <header className="relative h-screen overflow-hidden bg-dark-bg">
+    // Ocupa pantalla menos header (56px mobile / 64px desktop) y evita el hueco
+    <header className="relative overflow-hidden bg-[#0b0f19] min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-64px)]">
+      {/* Video de fondo (opcional) */}
       <video
         className="absolute inset-0 w-full h-full object-cover brightness-50"
         src="/media/hero-loop.mp4"
         poster="/media/hero-fallback.jpg"
-        autoPlay muted loop playsInline aria-hidden="true"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
       />
-      
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        
+
+      {/* Overlay para mejorar contraste del texto */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/60" />
+
+      {/* Contenido */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+        {/* Espaciado superior justo */}
+        <div className="pt-10 md:pt-14" />
+
         <motion.h1
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold text-white mb-4"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center font-carter tracking-tight text-4xl sm:text-5xl md:text-6xl text-white"
         >
-          Experiencia <span className="text-primary">Apple</span> sin límites
+          Experiencia <span className="text-indigo-400">QR</span> sin límites
         </motion.h1>
 
         <motion.p
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-soft-text mb-8"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.05 }}
+          className="mt-3 text-center text-gray-300 text-base sm:text-lg"
         >
           Stock inmediato · Soporte certificado en Tucumán
         </motion.p>
 
-        <div className="flex items-center gap-6">
-          <motion.a
-            href="productos"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white py-3 px-6 rounded-lg text-lg font-medium shadow-card"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+        <div className="flex justify-center">
+          <MotionLink
+            to="/productos"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            whileHover={{ scale: 1.04 }}
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 text-lg font-medium shadow-lg"
           >
             Ver catálogo <ArrowRight size={20} />
-          </motion.a>
-
-          
+          </MotionLink>
         </div>
+
+        {/* Espaciado inferior responsable (evita que el CTA quede pegado al borde) */}
+        <div className="pb-10 md:pb-14" />
       </div>
     </header>
   );

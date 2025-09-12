@@ -85,3 +85,7 @@ tbody tr:hover         { @apply bg-white/10; }
 /* Modo dark – ring accesible para navegación con teclado */
 .dark .btn-primary:focus-visible { @apply ring-primary/60; }
 .dark .btn-outline:focus-visible { @apply ring-primary/40; }
+
+/* Scroll suave para anchors */
+html { scroll-behavior: smooth; }
+

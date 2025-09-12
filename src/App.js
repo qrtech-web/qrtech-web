@@ -7,8 +7,9 @@ import Inicio from "./pages/Inicio";
 import Productos from "./pages/Productos";
 import Formulario from "./pages/Formulario";
 import Calculadora from "./pages/Calculadora";
-import Footer from "./components/Footer";
+
 import WhatsAppFloat from './components/WhatsAppFloat';
+import ScrollManager from './components/ScrollManager';
 
 
 // (si no tenés ListaClientes, no la importes)
@@ -16,6 +17,7 @@ import WhatsAppFloat from './components/WhatsAppFloat';
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollManager />
       <Navbar />
       <Routes>
         {/* 1) Redirigimos "/" hacia "/inicio" para que siempre haya contenido */}

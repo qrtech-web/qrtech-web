@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import { WHATSAPP_PHONE } from "../config/whatsapp";
 import { trackWhatsAppClick } from "../lib/track";
 import { ShieldCheck, RefreshCw, Store, CreditCard } from "lucide-react";
-
+import SeoHead from "../components/SeoHead";
 
 /** 1) Lee parámetros de la URL (ej: ?sku=ip12pm) */
 function useQuery() {
@@ -12,9 +12,9 @@ function useQuery() {
 }
 
 /** 2) Coeficientes por cantidad de cuotas (ajustá si cambia tu financ.) */
-const COEF = { 1: 1.1000, 2: 1.2341, 3: 1.2919, 6: 1.4819, 9: 1.7337, 12: 1.9984 };
+const COEF = { 1: 1.1, 2: 1.2341, 3: 1.2919, 6: 1.4819, 9: 1.7337, 12: 1.9984 };
 
-/** 3) Números de cuotas mostradas en tabla */
+/** 3) Números de cuotas mostradas en tarjetas */
 const CUOTAS = [1, 2, 3, 6, 9, 12];
 
 /** 4) Parsea "450.00 USD" -> 450 */
@@ -28,8 +28,8 @@ function parseUSD(s) {
 export default function Calculadora() {
   const q = useQuery();
   const loc = useLocation();
-  const sku = q.get("sku");              // 5) SKU que llega por URL
-  const st = loc.state || {};            // <- fallback por state
+  const sku = q.get("sku"); // 5) SKU que llega por URL
+  const st = useMemo(() => loc.state ?? {}, [loc.state]);
 
   // 6) Estados principales
   const [nombre, setNombre] = useState(st.nombre || "");
@@ -39,6 +39,17 @@ export default function Calculadora() {
   const [imagen, setImagen] = useState(st.imagen || "");
   const [cuotasSel, setCuotasSel] = useState(null);
   const [warn, setWarn] = useState("");
+
+  // SEO dinámico para esta vista
+  const meta = useMemo(() => {
+    const base = "https://qrtech.com.ar";
+    const label = nombre || sku || "tu próximo iPhone";
+    return {
+      title: `Calculadora de cuotas — ${label} | QRTech Tucumán`,
+      description: `Simulá 1, 2, 3, 6, 9 y 12 cuotas para ${label}. Coordiná retiro con garantía escrita en San Lorenzo 987.`,
+      url: `${base}/calculadora${sku ? `?sku=${encodeURIComponent(sku)}` : ""}`,
+    };
+  }, [nombre, sku]);
 
   // 7) Persistimos la cotización manual si el usuario la edita (comodidad)
   useEffect(() => {
@@ -110,7 +121,9 @@ export default function Calculadora() {
       if (!cancel) setNombre(sku || "Producto");
     })();
 
-    return () => { cancel = true; };
+    return () => {
+      cancel = true;
+    };
   }, [sku, st]);
 
   // 9) Cotización automática
@@ -122,7 +135,7 @@ export default function Calculadora() {
         const r1 = await fetch("https://api.bluelytics.com.ar/v2/latest", { cache: "no-store" });
         if (r1.ok) {
           const j = await r1.json();
-          const blue = (j.blue?.value_avg || j.blue?.value_sell || j.blue?.value_buy);
+          const blue = j.blue?.value_avg || j.blue?.value_sell || j.blue?.value_buy;
           if (blue && !cancel) {
             setCotizacion(blue);
             setCotizFuente("Dólar blue (bluelytics)");
@@ -147,15 +160,18 @@ export default function Calculadora() {
       }
     }
     fetchCotizacion();
-    return () => { cancel = true; };
+    return () => {
+      cancel = true;
+    };
   }, []);
 
   // control visual de la carga de la imagen
-const [imgLoaded, setImgLoaded] = useState(false);
-useEffect(() => { setImgLoaded(false); }, [imagen]);
+  const [imgLoaded, setImgLoaded] = useState(false);
+  useEffect(() => {
+    setImgLoaded(false);
+  }, [imagen]);
 
-
-  // 10) Resumen de selección (total/ cuota) para el mensaje
+  // 10) Resumen de selección (total/cuota) para el mensaje
   const resumenSeleccion = useMemo(() => {
     if (!precioUsd || !cotizacion || !cuotasSel) return null;
     const totalArs = precioUsd * cotizacion * COEF[cuotasSel];
@@ -163,91 +179,84 @@ useEffect(() => { setImgLoaded(false); }, [imagen]);
     return { totalArs, cuotaArs };
   }, [precioUsd, cotizacion, cuotasSel]);
 
-  // 11) Link WA armado (mensaje legible con saltos de línea + UTM)
-const waLink = useMemo(() => {
-  const utm = "utm_source=qrtech-web&utm_medium=calculadora&utm_campaign=wa_product";
-  const fmtArs = (n) => Math.round(Number(n || 0)).toLocaleString("es-AR");
+  // 11) Link WA armado (mensaje legible + UTM)
+  const waLink = useMemo(() => {
+    const utm = "utm_source=qrtech-web&utm_medium=calculadora&utm_campaign=wa_product";
+    const fmtArs = (n) => Math.round(Number(n || 0)).toLocaleString("es-AR");
+    const totalContado = (precioUsd || 0) * (cotizacion || 0);
 
-  const totalContado = (precioUsd || 0) * (cotizacion || 0);
+    const lineas = [
+      "¡Hola QRTech! 👋",
+      `Quiero consultar por: ${nombre || sku || "producto"}`,
+      precioUsd ? `• ${precioUsd} USD` : null,
+      cuotasSel && resumenSeleccion
+        ? `• ${cuotasSel} cuotas: $${fmtArs(resumenSeleccion.cuotaArs)} ARS c/u\n  Total financiado: $${fmtArs(
+            resumenSeleccion.totalArs
+          )} ARS`
+        : `• Total referencia contado: $${fmtArs(totalContado)} ARS`,
+      utm,
+    ].filter(Boolean);
 
-  const lineas = [
-    "¡Hola QRTech! 👋",
-    `Quiero consultar por: ${nombre || sku || "producto"}`,
-    precioUsd ? `• ${precioUsd} USD` : null,
-    
-    cuotasSel && resumenSeleccion
-      ? `• ${cuotasSel} cuotas: $${fmtArs(resumenSeleccion.cuotaArs)} ARS c/u\n  Total financiado: $${fmtArs(resumenSeleccion.totalArs)} ARS`
-      : `• Total referencia contado: $${fmtArs(totalContado)} ARS`,
-    
-    
-  ].filter(Boolean);
-
-  const text = encodeURIComponent(lineas.join("\n"));
-  return `https://wa.me/${WHATSAPP_PHONE}?text=${text}`;
-}, [nombre, sku, precioUsd, cotizacion, cotizFuente, cuotasSel, resumenSeleccion]);
-
+    const text = encodeURIComponent(lineas.join("\n"));
+    return `https://wa.me/${WHATSAPP_PHONE}?text=${text}`;
+  }, [nombre, sku, precioUsd, cotizacion, cuotasSel, resumenSeleccion]);
 
   const totalRef = precioUsd && cotizacion ? Math.round(precioUsd * cotizacion) : 0;
-const cuotaSel = cuotasSel && cotizacion
-  ? Math.round((precioUsd * cotizacion * COEF[cuotasSel]) / cuotasSel)
-  : 0;
-
+  const cuotaSel =
+    cuotasSel && cotizacion ? Math.round((precioUsd * cotizacion * COEF[cuotasSel]) / cuotasSel) : 0;
 
   return (
-    <main className="container mx-auto px-4 py-10 pt-24">
+    <main className="container mx-auto px-4 py-10">
+      {/* SEO */}
+      <SeoHead title={meta.title} description={meta.description} url={meta.url} />
+
       {/* 12) Cabecera: Imagen + Precio + Cotización */}
       <section className="grid gap-6 md:grid-cols-[320px_1fr] items-start">
         {/* 12.1) Imagen con shimmer + cinta sin recorte */}
-<div className="relative">
-  {/* Contenedor visual */}
-  <div className="rounded-2xl border border-white/15 bg-white/5 p-3">
-    <div className="relative rounded-xl overflow-hidden bg-white/5">
-      {/* Shimmer mientras carga */}
-      <div
-        className={[
-          "absolute inset-0 pointer-events-none transition-opacity duration-500",
-          "bg-gradient-to-br from-white/10 via-white/5 to-transparent animate-pulse",
-          imgLoaded ? "opacity-0" : "opacity-100",
-        ].join(" ")}
-      />
-      <img
-        src={imagen || "/img/placeholder.png"}
-        alt={`Foto ${nombre || sku || "Producto"}`}
-        loading="lazy"
-        onLoad={() => setImgLoaded(true)}
-        className="w-full h-auto rounded-xl object-contain relative z-[1]"
-      />
-    </div>
-  </div>
-
-  
-    
-  </div>
-
-
-
-
+        <div className="relative">
+          {/* Contenedor visual */}
+          <div className="rounded-2xl border border-white/15 bg-white/5 p-3">
+            <div className="relative rounded-xl overflow-hidden bg-white/5">
+              {/* Shimmer mientras carga */}
+              <div
+                aria-hidden
+                className={[
+                  "absolute inset-0 pointer-events-none transition-opacity duration-500",
+                  "bg-gradient-to-br from-white/10 via-white/5 to-transparent animate-pulse",
+                  imgLoaded ? "opacity-0" : "opacity-100",
+                ].join(" ")}
+              />
+              <img
+                src={imagen || "/img/placeholder.png"}
+                alt={`Foto ${nombre || sku || "Producto"}`}
+                loading="lazy"
+                onLoad={() => setImgLoaded(true)}
+                className="w-full h-auto rounded-xl object-contain relative z-[1]"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="rounded-2xl border border-white/15 bg-white/5 p-6">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
-  {nombre || "Producto"}
-</h2>
-          {/* Badges de confianza */}
-<div className="flex flex-wrap items-center gap-2 mb-4">
-  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 text-emerald-300 px-2.5 py-1 text-[11px]">
-    <ShieldCheck className="w-3.5 h-3.5" /> Garantía escrita
-  </span>
-  <span className="inline-flex items-center gap-1 rounded-full bg-sky-500/15 text-sky-300 px-2.5 py-1 text-[11px]">
-    <Store className="w-3.5 h-3.5" /> Retiro en oficina
-  </span>
-  <span className="inline-flex items-center gap-1 rounded-full bg-fuchsia-500/15 text-fuchsia-300 px-2.5 py-1 text-[11px]">
-    <RefreshCw className="w-3.5 h-3.5" /> Plan canje
-  </span>
-  <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/15 text-amber-300 px-2.5 py-1 text-[11px]">
-    <CreditCard className="w-3.5 h-3.5" /> Hasta 12 cuotas
-  </span>
-</div>
+            {nombre || "Producto"}
+          </h2>
 
+          {/* Badges de confianza */}
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 text-emerald-300 px-2.5 py-1 text-[11px]">
+              <ShieldCheck className="w-3.5 h-3.5" /> Garantía escrita
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-sky-500/15 text-sky-300 px-2.5 py-1 text-[11px]">
+              <Store className="w-3.5 h-3.5" /> Retiro en oficina
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-fuchsia-500/15 text-fuchsia-300 px-2.5 py-1 text-[11px]">
+              <RefreshCw className="w-3.5 h-3.5" /> Plan canje
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/15 text-amber-300 px-2.5 py-1 text-[11px]">
+              <CreditCard className="w-3.5 h-3.5" /> Hasta 12 cuotas
+            </span>
+          </div>
 
           <label className="block text-sm opacity-80 mb-1">Precio (USD)</label>
           <input
@@ -262,20 +271,17 @@ const cuotaSel = cuotasSel && cotizacion
           <hr className="my-4 border-white/10" />
 
           <label className="block text-sm opacity-80 mb-1">Cotización USD → ARS</label>
-<input
-  type="number"
-  value={cotizacion || ""}
-  onChange={(e) => setCotizacion(parseFloat(e.target.value) || 0)}
-  className="w-full rounded-xl border border-white/10 bg-white/[0.06] p-3 
+          <input
+            type="number"
+            value={cotizacion || ""}
+            onChange={(e) => setCotizacion(parseFloat(e.target.value) || 0)}
+            className="w-full rounded-xl border border-white/10 bg-white/[0.06] p-3 
              focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400/30
              transition"
-  placeholder="Ej: 1400"
-/>
-<p className="text-xs opacity-70 mt-1">{cotizFuente || "Manual"}</p>
-<hr className="my-4 border-white/10" />
-
-
-
+            placeholder="Ej: 1400"
+          />
+          <p className="text-xs opacity-70 mt-1">{cotizFuente || "Manual"}</p>
+          <hr className="my-4 border-white/10" />
 
           <p className="mt-3 text-sm opacity-80">
             {precioUsd && cotizacion ? (
@@ -290,78 +296,78 @@ const cuotaSel = cuotasSel && cotizacion
       </section>
 
       {/* 12.9) Resumen de precio (contado + si hay plan seleccionado) */}
-<div className="mt-4 rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between">
-  <div>
-    <p className="text-sm opacity-80">Total referencia (contado)</p>
-    <p className="text-2xl font-bold">
-      ${Math.round((precioUsd || 0) * (cotizacion || 0)).toLocaleString("es-AR")} ARS
-    </p>
-  </div>
+      <div className="mt-4 rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between">
+        <div>
+          <p className="text-sm opacity-80">Total referencia (contado)</p>
+          <p className="text-2xl font-bold">
+            ${Math.round((precioUsd || 0) * (cotizacion || 0)).toLocaleString("es-AR")} ARS
+          </p>
+        </div>
 
-  {cuotasSel ? (
-    <div className="text-right">
-      <p className="text-sm opacity-80">Plan seleccionado</p>
-      <p className="text-xl font-semibold">
-        {cuotasSel} cuotas de $
-        {Math.round(((precioUsd || 0) * (cotizacion || 0) * COEF[cuotasSel]) / cuotasSel)
-          .toLocaleString("es-AR")} ARS
-      </p>
-      <p className="text-xs opacity-70">
-        Total $
-        {Math.round((precioUsd || 0) * (cotizacion || 0) * COEF[cuotasSel]).toLocaleString("es-AR")} ARS
-      </p>
-    </div>
-  ) : (
-    <div className="text-sm opacity-70">Seleccioná una financiación para ver la cuota.</div>
-  )}
-</div>
-
+        {cuotasSel ? (
+          <div className="text-right">
+            <p className="text-sm opacity-80">Plan seleccionado</p>
+            <p className="text-xl font-semibold">
+              {cuotasSel} cuotas de $
+              {Math.round(((precioUsd || 0) * (cotizacion || 0) * COEF[cuotasSel]) / cuotasSel).toLocaleString(
+                "es-AR"
+              )}{" "}
+              ARS
+            </p>
+            <p className="text-xs opacity-70">
+              Total $
+              {Math.round((precioUsd || 0) * (cotizacion || 0) * COEF[cuotasSel]).toLocaleString("es-AR")} ARS
+            </p>
+          </div>
+        ) : (
+          <div className="text-sm opacity-70">Seleccioná una financiación para ver la cuota.</div>
+        )}
+      </div>
 
       {/* 13) Cuotas en tarjetas (reemplaza la tabla anterior) */}
-<section className="mt-8">
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-    {CUOTAS.map((n) => {
-      const total = precioUsd && cotizacion ? precioUsd * cotizacion * COEF[n] : 0;
-      const cuota = total && n ? total / n : 0;
-      const activa = cuotasSel === n;
+      <section className="mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          {CUOTAS.map((n) => {
+            const total = precioUsd && cotizacion ? precioUsd * cotizacion * COEF[n] : 0;
+            const cuota = total && n ? total / n : 0;
+            const activa = cuotasSel === n;
 
-      return (
-        <button
-          key={n}
-          type="button"
-          onClick={() => setCuotasSel((prev) => (prev === n ? null : n))}
-          className={[
-            "rounded-xl p-4 text-left transition-all duration-200 border shadow",
-            "bg-white/5 border-white/10 hover:bg-white/10 hover:shadow-lg",
-            activa && "ring-2 ring-emerald-400 bg-emerald-500/10 border-emerald-300/30"
-          ].filter(Boolean).join(" ")}
-          aria-pressed={activa}
-        >
-          <span className="block text-xs opacity-80">Plan</span>
-          <span className="block text-lg font-semibold mb-1">{n} cuotas</span>
-          <span className="block text-2xl font-extrabold text-emerald-300">
-            ${Math.round(cuota).toLocaleString("es-AR")}
-          </span>
-          <span className="block text-[11px] opacity-70 mt-1">
-            Total: ${Math.round(total).toLocaleString("es-AR")}
-          </span>
-          {activa && (
-            <span className="mt-2 inline-block text-[11px] text-emerald-300">
-              ✓ Usaremos este plan en el mensaje
-            </span>
-          )}
-        </button>
-      );
-    })}
-  </div>
+            return (
+              <button
+                key={n}
+                type="button"
+                onClick={() => setCuotasSel((prev) => (prev === n ? null : n))}
+                className={[
+                  "rounded-xl p-4 text-left transition-all duration-200 border shadow",
+                  "bg-white/5 border-white/10 hover:bg-white/10 hover:shadow-lg",
+                  activa && "ring-2 ring-emerald-400 bg-emerald-500/10 border-emerald-300/30",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
+                aria-pressed={activa}
+              >
+                <span className="block text-xs opacity-80">Plan</span>
+                <span className="block text-lg font-semibold mb-1">{n} cuotas</span>
+                <span className="block text-2xl font-extrabold text-emerald-300">
+                  ${Math.round(cuota).toLocaleString("es-AR")}
+                </span>
+                <span className="block text-[11px] opacity-70 mt-1">
+                  Total: ${Math.round(total).toLocaleString("es-AR")}
+                </span>
+                {activa && (
+                  <span className="mt-2 inline-block text-[11px] text-emerald-300">✓ Usaremos este plan en el mensaje</span>
+                )}
+              </button>
+            );
+          })}
+        </div>
 
-  <p className="text-sm text-center opacity-80 mt-3">
-    Tocá una tarjeta para seleccionar/deseleccionar la financiación.
-  </p>
-</section>
+        <p className="text-sm text-center opacity-80 mt-3">
+          Tocá una tarjeta para seleccionar/deseleccionar la financiación.
+        </p>
+      </section>
 
-
-      {/* 14) CTA WhatsApp con mensaje armado + tracking */}
+      {/* 14) CTA WhatsApp con mensaje armado + tracking (desktop) */}
       <div className="mt-6 hidden md:flex justify-center">
         <a
           href={waLink}
@@ -370,50 +376,52 @@ const cuotaSel = cuotasSel && cotizacion
           className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white"
           onClick={() => {
             trackWhatsAppClick({ name: nombre || sku, priceUsd: precioUsd, location: "calculadora" });
-            if (window.fbq) window.fbq("track", "Contact", { content_ids: [sku || nombre], content_type: "product" });
+            try {
+              window.fbq?.("track", "Contact", { content_ids: [sku || nombre], content_type: "product" });
+            } catch {}
           }}
         >
           <span>🟢</span> Consultar por WhatsApp
         </a>
       </div>
-          {/* separador para que la barra no tape el contenido */}
-<div className="h-24 md:hidden" />
 
-{/* Barra fija móvil */}
-<div className="fixed inset-x-0 bottom-0 md:hidden z-50">
-  <div className="mx-auto max-w-3xl px-4 pb-[env(safe-area-inset-bottom)]">
-    <div className="rounded-t-2xl bg-slate-900/90 backdrop-blur border border-white/10 p-3 shadow-2xl">
-      <div className="flex items-center justify-between gap-3">
-        <div className="text-sm">
-          <div className="opacity-70">Total referencia</div>
-          <div className="text-lg font-bold">
-            ${totalRef.toLocaleString("es-AR")} ARS
-          </div>
-          {cuotasSel ? (
-            <div className="text-xs opacity-80">
-              {cuotasSel} cuotas de ${cuotaSel.toLocaleString("es-AR")} ARS
+      {/* separador para que la barra no tape el contenido en mobile */}
+      <div className="h-24 md:hidden" />
+
+      {/* Barra fija móvil */}
+      <div className="fixed inset-x-0 bottom-0 md:hidden z-50">
+        <div className="mx-auto max-w-3xl px-4 pb-[env(safe-area-inset-bottom)]">
+          <div className="rounded-t-2xl bg-slate-900/90 backdrop-blur border border-white/10 p-3 shadow-2xl">
+            <div className="flex items-center justify-between gap-3">
+              <div className="text-sm">
+                <div className="opacity-70">Total referencia</div>
+                <div className="text-lg font-bold">${totalRef.toLocaleString("es-AR")} ARS</div>
+                {cuotasSel ? (
+                  <div className="text-xs opacity-80">
+                    {cuotasSel} cuotas de ${cuotaSel.toLocaleString("es-AR")} ARS
+                  </div>
+                ) : null}
+              </div>
+
+              <a
+                href={waLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackWhatsAppClick({
+                    name: nombre || sku,
+                    priceUsd: precioUsd,
+                    location: "calculadora_floating",
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-3 text-white font-semibold"
+              >
+                Consultar por WhatsApp
+              </a>
             </div>
-          ) : null}
+          </div>
         </div>
-
-        <a
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() =>
-            trackWhatsAppClick({ name: nombre || sku, priceUsd: precioUsd, location: "calculadora_floating" })
-          }
-          className="inline-flex items-center justify-center rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-3 text-white font-semibold"
-        >
-          Consultar por WhatsApp
-        </a>
       </div>
-    </div>
-  </div>
-</div>
-
-
-
     </main>
   );
 }
