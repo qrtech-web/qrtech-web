@@ -21,7 +21,7 @@ export default function Navbar() {
       : "block w-full pb-1 text-gray-400 hover:text-gray-200") + " font-carter";
 
   return (
-    <header className="sticky top-0 inset-x-0 z-50 relative">
+    <header className="sticky top-0 inset-x-0 z-50">
       {/* TOP-BAR: solo desktop */}
       <div className="bg-gray-950/80 backdrop-blur-sm border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
