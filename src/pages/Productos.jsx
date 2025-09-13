@@ -78,7 +78,7 @@ export default function Productos(){
   useEffect(() => {
     if (!seleccionado || !refDetalle.current) return;
     const id = requestAnimationFrame(() => {
-      const headerOffset = 90; // altura aprox. de tu navbar
+      const headerOffset = 90; // altura aprox. navbar
       const rect = refDetalle.current.getBoundingClientRect();
       const top = window.scrollY + rect.top - headerOffset;
       window.scrollTo({ top, behavior: 'smooth' });
@@ -174,8 +174,10 @@ export default function Productos(){
 
       {/* HERO con buscador grande + chips */}
       <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-bold font-carter">Encontrá tu próximo iPhone</h1>
-        <p className="mt-2 opacity-80">Usados premium con garantía · Tucumán</p>
+        <h1 className="text-[28px] sm:text-4xl md:text-5xl font-bold font-carter leading-tight">
+          Encontrá tu próximo iPhone
+        </h1>
+        <p className="mt-2 opacity-85 text-[15px] sm:text-base">Usados premium con garantía · Tucumán</p>
 
         <div className="mt-6 max-w-xl mx-auto">
           <input
@@ -183,18 +185,18 @@ export default function Productos(){
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Buscar: iPhone 13 128, Pro Max, iPad, etc."
-            className="w-full rounded-2xl border border-white/10 bg-white/[0.06] p-3 md:p-4 text-base md:text-lg
+            className="w-full h-12 rounded-2xl border border-white/10 bg-white/[0.06] px-4 text-[15px] md:text-lg
                        focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400/30 transition"
           />
         </div>
 
-        <div className="mt-4 flex flex-wrap justify-center gap-2">
+        <div className="mt-4 flex flex-wrap justify-center gap-2.5">
           {CHIPS.map((ch) => (
             <button
               key={ch.key}
               onClick={() => setCategory(ch.key)}
               className={[
-                "rounded-full px-4 py-2 text-sm border transition",
+                "rounded-full px-4 py-2.5 text-[13px] border transition",
                 category === ch.key
                   ? "bg-emerald-600/20 border-emerald-400/30 text-emerald-200"
                   : "bg-white/5 border-white/10 hover:bg-white/10"
@@ -206,14 +208,16 @@ export default function Productos(){
         </div>
       </section>
 
-      <TrustBadges />
+      <div className="mt-4">
+        <TrustBadges />
+      </div>
 
-      {/* Subheader sticky con resultados */}
-      <div className="sticky top-[56px] md:top-[64px] z-30 -mx-4 px-4 py-2 bg-gray-900/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between mt-6">
-        <span className="text-sm opacity-80">
+      {/* Subheader sticky con resultados (más alto y legible en móvil) */}
+      <div className="sticky top-[56px] md:top-[64px] z-30 -mx-4 px-4 py-2.5 bg-gray-900/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between mt-6">
+        <span className="text-[13px] opacity-85">
           {category!=='all' ? `Categoría: ${categoryLabel} · ` : ''}{search ? `Resultados para “${search}”` : 'Todos los productos'}
         </span>
-        <span className="text-sm opacity-70">{visibles.length}/{total}</span>
+        <span className="text-[13px] opacity-70">{visibles.length}/{total}</span>
       </div>
 
       {seleccionado && (
@@ -275,13 +279,13 @@ export default function Productos(){
         </article>
       )}
 
-      {/* GRID: 2 columnas en móviles, luego 3/4 – con “stagger” */}
-      <section id="grid" className="mt-10 scroll-mt-24 md:scroll-mt-32">
+      {/* GRID: 2 columnas hasta md/lg, luego 3/4 – con “stagger” */}
+      <section id="grid" className="mt-8 scroll-mt-24 md:scroll-mt-32">
         <motion.div
           variants={gridVariants}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+          className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5"
         >
           {visibles.map((p) => (
             <motion.div key={p.id} variants={itemVariants}>
@@ -290,12 +294,12 @@ export default function Productos(){
           ))}
         </motion.div>
 
-        {/* Paginación: Ver más */}
+        {/* Paginación: Ver más (botón más alto/legible en mobile) */}
         {visibles.length < total && (
           <div className="mt-6 flex justify-center">
             <button
               onClick={() => setPage((n) => n + 1)}
-              className="rounded-xl bg-white/10 hover:bg-white/15 px-5 py-3 text-sm font-semibold border border-white/10"
+              className="rounded-xl bg-white/10 hover:bg-white/15 px-6 py-3.5 text-[14px] font-semibold border border-white/10"
             >
               Ver más ({visibles.length}/{total})
             </button>
