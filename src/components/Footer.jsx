@@ -4,7 +4,7 @@ import { WHATSAPP_PHONE } from "../config/whatsapp";
 import { trackWhatsAppClick } from "../lib/track";
 
 function waHref(text, utm = "utm_source=qrtech-web&utm_medium=footer&utm_campaign=wa_footer") {
-  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`${text}\n\n${utm}`)}`;
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`${text}\n`)}`;
 }
 
 export default function Footer() {

@@ -1,27 +1,29 @@
-// src/components/TrustChips.jsx
-import React from 'react';
-import { Clock, Truck, ShieldCheck, LifeBuoy } from 'lucide-react';
+// src/components/MVSection.jsx
+import React from "react";
+import { Sparkles, Truck, ShieldCheck, Headphones } from "lucide-react";
 
-const chips = [
-  { icon: Clock, text: 'Expertos en Smartphones' },
-  { icon: Truck, text: 'Envíos a todo el PAIS' },
-  { icon: ShieldCheck, text: 'Garantía real' },
-  { icon: LifeBuoy, text: 'Soporte 24h' },
-];
+export default function MVSection() {
+  const items = [
+    { icon: <Sparkles className="w-4 h-4" />, text: "Expertos en\nSmartphones" },
+    { icon: <Truck className="w-4 h-4" />, text: "Envíos a\ntodo el PAÍS" },
+    { icon: <ShieldCheck className="w-4 h-4" />, text: "Garantía\nreal" },
+    { icon: <Headphones className="w-4 h-4" />, text: "Soporte\n24h" },
+  ];
 
-export default function TrustChips() {
   return (
-    <section className="w-full py-12 bg- from-primary/90 to-secondary/90">
-      <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
-        {chips.map(({ icon: Icon, text }, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-center gap-2 bg-white rounded-full shadow-md py-3 px-4 hover:shadow-lg transition"
-          >
-            <Icon size={20} className="text-primary" />
-            <span className="text-sm font-medium text-primary">{text}</span>
-          </div>
-        ))}
+    <section className="bg-slate-900/70 supports-[backdrop-filter]:backdrop-blur">
+      <div className="container mx-auto px-4 py-4">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {items.map((it, i) => (
+            <li
+              key={i}
+              className="rounded-full border border-white/10 bg-white/[0.06] px-4 py-3 text-[13px] leading-tight text-white/90 flex items-center gap-2"
+            >
+              <span className="shrink-0 text-indigo-300">{it.icon}</span>
+              <span className="whitespace-pre-line">{it.text}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

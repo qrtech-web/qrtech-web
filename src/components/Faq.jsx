@@ -80,7 +80,7 @@ const faqs = [
 function WhatsAppCTA() {
   const text =
     "¡Hola QRTech! Tengo una consulta sobre la compra, garantía o plan canje.";
-  const href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text + "\n\nutm_source=qrtech-web&utm_medium=faq&utm_campaign=wa_faq")}`;
+  const href = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`;
 
   return (
     <a

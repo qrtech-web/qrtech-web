@@ -16,7 +16,7 @@ export default function ProductoCard({ producto }) {
   const { id, nombre, precioUsd, imagen } = producto;
 
   const waText = encodeURIComponent(
-    `¡Hola QRTech! Quiero consultar por: ${nombre}\n• ${precioUsd} USD\n\nutm_source=qrtech-web&utm_medium=catalogo_card&utm_campaign=wa_product`
+    `¡Hola QRTech! Quiero consultar por: ${nombre}\n• ${precioUsd} USD\n`
   );
   const waHref = `https://wa.me/${WHATSAPP_PHONE}?text=${waText}`;
 

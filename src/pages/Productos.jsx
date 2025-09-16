@@ -389,7 +389,7 @@ export default function Productos(){
                     const precioSel = variante?.precioUsd ?? seleccionado.precioUsd ?? 0;
                     const utm = "utm_source=qrtech-web&utm_medium=pdp&utm_campaign=wa_product";
                     const waText = encodeURIComponent(
-                      `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n${utm}`
+                      `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n`
                     );
                     const waHref = `https://wa.me/${number}?text=${waText}`;
                     const calcHref = `/calculadora?sku=${encodeURIComponent(seleccionado.id)}&price=${encodeURIComponent(precioSel)}&v=${encodeURIComponent(vDesc)}`;
@@ -568,7 +568,7 @@ export default function Productos(){
                     const precioSel = variante?.precioUsd ?? seleccionado.precioUsd ?? 0;
                     const utm = "utm_source=qrtech-web&utm_medium=pdp_bar&utm_campaign=wa_product";
                     const waText = encodeURIComponent(
-                      `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n${utm}`
+                      `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n`
                     );
                     const waHref = `https://wa.me/${number}?text=${waText}`;
                     const calcHref = `/calculadora?sku=${encodeURIComponent(seleccionado.id)}&price=${encodeURIComponent(precioSel)}&v=${encodeURIComponent(vDesc)}`;

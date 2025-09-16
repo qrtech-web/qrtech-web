@@ -3,100 +3,128 @@
     "id": "ip11",
     "catalogId": "ip11",
     "nombre": "iPhone 11",
-    "precioUsd": 275,
+    "precioUsd": 260,
     "imagen": "/img/productos/11.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
-    "specs": { "pantalla": "6.1\" LCD", "camaras": "12 MP (dual)", "chip": "A13", "dimensiones": "146.7×71.5×7.7 mm"  },
+    "specs": { "pantalla": "6.1\" LCD", "camaras": "12 MP (dual)", "chip": "A13"  },
     "variantes": [
-      { "id": "ip11-64-a85",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 275, "stock": true  },
-      { "id": "ip11-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 285, "stock": true  },
-      { "id": "ip11-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 295, "stock": true  },
-      { "id": "ip11-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 305, "stock": true  },
-      { "id": "ip11-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 325, "stock": true  },
-      { "id": "ip11-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 335, "stock": false },
-      { "id": "ip11-128-new", "storage": "128GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 355, "stock": false }
+      { "id": "ip11-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 260, "stock": true  },
+      { "id": "ip11-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 270, "stock": true  },
+      { "id": "ip11-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 280, "stock": true  },
+      { "id": "ip11-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 280, "stock": true  },
+      { "id": "ip11-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 290, "stock": true  },
+      { "id": "ip11-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 300, "stock": true  }
+      
     ]
   },
   {
     "id": "ip11p",
     "catalogId": "ip11p",
     "nombre": "iPhone 11 Pro",
-    "precioUsd": 310,
+    "precioUsd": 290,
     "imagen": "/img/productos/11p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
-    "specs": { "pantalla": "5.8\" OLED", "camaras": "12 MP (triple)", "chip": "A13" }
+    "specs": { "pantalla": "5.8\" OLED", "camaras": "12 MP (triple)", "chip": "A13" },
+    "variantes": [
+      { "id": "ip11p-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 290, "stock": true  },
+      { "id": "ip11p-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 300, "stock": true  },
+      { "id": "ip11p-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip11p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 300, "stock": true  },
+      { "id": "ip11p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip11p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  }
+      ]
   },
   {
     "id": "ip11pm",
     "catalogId": "ip11pm",
     "nombre": "iPhone 11 Pro Max",
-    "precioUsd": 340,
+    "precioUsd": 300,
     "imagen": "/img/productos/11pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
-    "specs": { "pantalla": "6.5\" OLED", "camaras": "12 MP (triple)", "chip": "A13" }
+    "specs": { "pantalla": "6.5\" OLED", "camaras": "12 MP (triple)", "chip": "A13" },
+    "variantes": [
+      { "id": "ip11pm-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true  },
+      { "id": "ip11pm-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip11pm-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  },
+      { "id": "ip11pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip11pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true  },
+      { "id": "ip11pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true  }
+      ]
   },
   {
     "id": "ip12",
     "catalogId": "ip12",
     "nombre": "iPhone 12",
-    "precioUsd": 330,
+    "precioUsd": 300,
     "imagen": "/img/productos/12.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A14" },
     "variantes": [
-      { "id": "ip12-64-a85",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 330, "stock": true  },
-      { "id": "ip12-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 340, "stock": true  },
-      { "id": "ip12-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 350, "stock": true  },
-      { "id": "ip12-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 360, "stock": true  },
-      { "id": "ip12-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 380, "stock": true  },
-      { "id": "ip12-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 390, "stock": false },
-      { "id": "ip12-128-new", "storage": "128GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 410, "stock": false }
+      { "id": "ip12-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true  },
+      { "id": "ip12-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip12-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  },
+      { "id": "ip12-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true  },
+      { "id": "ip12-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true  },
+      { "id": "ip12-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true  }
     ]
   },
   {
     "id": "ip12p",
     "catalogId": "ip12p",
     "nombre": "iPhone 12 Pro",
-    "precioUsd": 400,
+    "precioUsd": 370,
     "imagen": "/img/productos/12p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
-    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (triple)", "chip": "A14" }
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (triple)", "chip": "A14" },
+    "variantes": [
+      
+      { "id": "ip12p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 370, "stock": true  },
+      { "id": "ip12p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 380, "stock": true  },
+      { "id": "ip12p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 400, "stock": true  }
+    ]
   },
   {
     "id": "ip12pm",
     "catalogId": "ip12pm",
     "nombre": "iPhone 12 Pro Max",
-    "precioUsd": 420,
+    "precioUsd": 400,
     "imagen": "/img/productos/12pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
-    "specs": { "pantalla": "6.7\" OLED", "camaras": "12 MP (triple)", "chip": "A14" }
+    "specs": { "pantalla": "6.7\" OLED", "camaras": "12 MP (triple)", "chip": "A14" },
+    "variantes": [
+      
+      { "id": "ip12pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 400, "stock": true  },
+      { "id": "ip12pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 410, "stock": true  },
+      { "id": "ip12pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 430, "stock": true  }
+    ]
   },
   {
     "id": "ip13",
     "catalogId": "ip13",
     "nombre": "iPhone 13",
-    "precioUsd": 400,
+    "precioUsd": 390,
     "imagen": "/img/productos/13.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
     "variantes": [
-      { "id": "ip13-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 400, "stock": true  },
-      { "id": "ip13-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 410, "stock": true  },
-      { "id": "ip13-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 440, "stock": true  },
-      { "id": "ip13-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 450, "stock": true  },
-      { "id": "ip13-512-a85", "storage": "512GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 490, "stock": true  },
-      { "id": "ip13-512-a90", "storage": "512GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 500, "stock": false },
-      { "id": "ip13-256-new","storage": "256GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 520, "stock": false }
+      { "id": "ip13-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 390, "stock": true  },
+      { "id": "ip13-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 400, "stock": true  },
+      { "id": "ip13-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 430, "stock": true  }
     ]
   },
   {
     "id": "ip13p",
     "catalogId": "ip13p",
     "nombre": "iPhone 13 Pro",
-    "precioUsd": 510,
+    "precioUsd": 500,
     "imagen": "/img/productos/13p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
-    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" }
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" },
+    "variantes": [
+      { "id": "ip13p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 500, "stock": true  },
+      { "id": "ip13p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 510, "stock": true  },
+      { "id": "ip13p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 540, "stock": true  }
+    ]
   },
   {
     "id": "ip13pm",
@@ -105,7 +133,12 @@
     "precioUsd": 570,
     "imagen": "/img/productos/13pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
-    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" }
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" },
+    "variantes": [
+      { "id": "ip13pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 560, "stock": true  },
+      { "id": "ip13pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 570, "stock": true  },
+      { "id": "ip13pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 590, "stock": true  }
+    ]
   },
   {
     "id": "ip14",
@@ -114,7 +147,12 @@
     "precioUsd": 480,
     "imagen": "/img/productos/14.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
-    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" }
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
+    "variantes": [
+      { "id": "ip14-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 460, "stock": true  },
+      { "id": "ip14-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 470, "stock": true  },
+      { "id": "ip14-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 490 , "stock": true  }
+    ]
   },
   {
     "id": "ip14p",
@@ -123,7 +161,12 @@
     "precioUsd": 610,
     "imagen": "/img/productos/14p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
-    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" }
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" },
+    "variantes": [
+      { "id": "ip14p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 590, "stock": true  },
+      { "id": "ip14p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 600, "stock": true  },
+      { "id": "ip14p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 630 , "stock": true  }
+    ]
   },
   {
     "id": "ip14pm",
@@ -132,7 +175,12 @@
     "precioUsd": 710,
     "imagen": "/img/productos/14pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
-    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" }
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" },
+    "variantes": [
+      { "id": "ip14pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 670, "stock": true  },
+      { "id": "ip14pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 680, "stock": true  },
+      { "id": "ip14pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 700 , "stock": true  }
+    ]
   },
   {
     "id": "ip15",
@@ -141,7 +189,12 @@
     "precioUsd": 610,
     "imagen": "/img/productos/15.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
-    "specs": { "pantalla": "6.1\" OLED", "camaras": "48 MP + 12 MP", "chip": "A16" }
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "48 MP + 12 MP", "chip": "A16" },
+    "variantes": [
+      { "id": "ip15-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 590, "stock": true  },
+      { "id": "ip15-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 600, "stock": true  },
+      { "id": "ip15-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 630 , "stock": true  }
+    ]
   },
   {
     "id": "ip15p",
@@ -150,7 +203,12 @@
     "precioUsd": 750,
     "imagen": "/img/productos/15p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
-    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" }
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" },
+    "variantes": [
+      { "id": "ip15p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 740, "stock": true  },
+      { "id": "ip15p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 750, "stock": true  },
+      { "id": "ip15p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 780 , "stock": true  }
+    ]
   },
   {
     "id": "ip15pm",
@@ -159,7 +217,12 @@
     "precioUsd": 900,
     "imagen": "/img/productos/15pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
-    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" }
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" },
+    "variantes": [
+      { "id": "ip15pm-256-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 800, "stock": true  },
+      { "id": "ip15pm-256-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 810, "stock": true  },
+      { "id": "ip15pm-256-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 830 , "stock": true  }
+    ]
   },
   {
     "id": "ip16",
@@ -168,7 +231,12 @@
     "precioUsd": 750,
     "imagen": "/img/productos/16.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
-    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" }
+    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "ip16-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 750, "stock": true  },
+      { "id": "ip16-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 750, "stock": true  },
+      { "id": "ip16-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 750 , "stock": true  }
+    ]
   },
   {
     "id": "ip16e",
@@ -177,7 +245,12 @@
     "precioUsd": 650,
     "imagen": "/img/productos/16e.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
-    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" }
+    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "ip16e-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 645, "stock": true  },
+      { "id": "ip16e-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 645, "stock": true  },
+      { "id": "ip16e-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 645 , "stock": true  }
+    ]
   },
   {
     "id": "ip16p",
@@ -186,7 +259,12 @@
     "precioUsd": 990,
     "imagen": "/img/productos/16p.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
-    "specs": { "pantalla": "6.3\" OLED (120 Hz)", "camaras": "—", "chip": "—" }
+    "specs": { "pantalla": "6.3\" OLED (120 Hz)", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "ip16p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 920, "stock": true  },
+      { "id": "ip16p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 920, "stock": true  },
+      { "id": "ip16p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 920 , "stock": true  }
+    ]
   },
   {
     "id": "ip16pm",
@@ -195,6 +273,11 @@
     "precioUsd": 1180,
     "imagen": "/img/productos/16pm.png",
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
-    "specs": { "pantalla": "6.9\" OLED (120 Hz)", "camaras": "—", "chip": "—" }
+    "specs": { "pantalla": "6.9\" OLED (120 Hz)", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "ip16pm-256-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 1110, "stock": true  },
+      { "id": "ip16pm-256-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 1110, "stock": true  },
+      { "id": "ip16pm-256-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 1110 , "stock": true  }
+    ]
   }
 ]

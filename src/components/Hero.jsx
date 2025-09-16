@@ -8,11 +8,11 @@ const MotionLink = motion(Link);
 
 export default function Hero() {
   return (
-    // Ocupa pantalla menos header (56px mobile / 64px desktop) y evita el hueco
-    <header className="relative overflow-hidden bg-[#0b0f19] min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-64px)]">
-      {/* Video de fondo (opcional) */}
+    // isolate = nuevo stacking context (evita que otra sección lo tape)
+    <header className="relative isolate overflow-hidden bg-[#0b0f19] w-screen max-w-none min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-64px)]">
+      {/* Fondo: nunca captura clics */}
       <video
-        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        className="pointer-events-none absolute inset-0 w-full h-full object-cover brightness-50"
         src="/media/hero-loop.mp4"
         poster="/media/hero-fallback.jpg"
         autoPlay
@@ -21,20 +21,17 @@ export default function Hero() {
         playsInline
         aria-hidden="true"
       />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/60" />
 
-      {/* Overlay para mejorar contraste del texto */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/60" />
-
-      {/* Contenido */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
-        {/* Espaciado superior justo */}
+      {/* Contenido por encima de TODO */}
+      <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-10">
         <div className="pt-10 md:pt-14" />
 
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center font-display tracking-tight text-h1 text-white"
+          className="text-center font-carter tracking-tight text-4xl sm:text-5xl md:text-6xl text-white"
         >
           Experiencia <span className="text-indigo-400">QR</span> sin límites
         </motion.h1>
@@ -51,17 +48,18 @@ export default function Hero() {
         <div className="flex justify-center">
           <MotionLink
             to="/productos"
+            // Colocamos el CTA en el nivel más alto posible
+            className="relative z-[100] mt-6 inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 text-lg font-medium shadow-lg"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             whileHover={{ scale: 1.04 }}
-            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 text-lg font-medium shadow-lg"
+            aria-label="Ir al catálogo"
           >
             Ver catálogo <ArrowRight size={20} />
           </MotionLink>
         </div>
 
-        {/* Espaciado inferior responsable (evita que el CTA quede pegado al borde) */}
         <div className="pb-10 md:pb-14" />
       </div>
     </header>

@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       {/* Compensación exacta del header: 56px (h-14) en mobile, 64px (h-16) en desktop */}
-      <main className="pt-14 md:pt-16">
+      <main className="pt-14 md:pt-16 overflow-x-hidden">
         {children}
       </main>
     </>

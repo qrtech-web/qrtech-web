@@ -25,7 +25,7 @@ export default function WhatsAppFloat() {
   const href = useMemo(() => {
     const base = "¡Hola QRTech! Quiero hacer una consulta.";
     const utm = `utm_source=qrtech-web&utm_medium=floating&utm_campaign=wa_float&utm_content=${encodeURIComponent(pathname)}`;
-    return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`${base}\n\n${utm}`)}`;
+    return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(`${base}\n\n`)}`;
   }, [pathname]);
 
   // Pulse suave automático a los 8s (por ruta)

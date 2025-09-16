@@ -14,7 +14,7 @@ import { trackWhatsAppClick } from "../lib/track";
 const fade = { initial: { opacity: 0, y: 12 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, amount: 0.25 }, transition: { duration: 0.45 } };
 
 function buildWaHref(text, utm = "utm_source=qrtech-web&utm_medium=section&utm_campaign=como-comprar") {
-  const enc = encodeURIComponent(`${text}\n\n${utm}`);
+  const enc = encodeURIComponent(`${text}\n`);
   return `https://wa.me/${WHATSAPP_PHONE}?text=${enc}`;
 }
 

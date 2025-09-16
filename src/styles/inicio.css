@@ -210,3 +210,12 @@ section{padding:80px 5% 60px;}
   transform: scale(1.1);
 }
 
+/* === Fix overflow horizontal en mobile === */
+html, body, #root {
+  width: 100%;
+  max-width: 100vw;      /* Nunca más ancho que la pantalla */
+  overflow-x: hidden;    /* Bloquea scroll lateral */
+}
+* { box-sizing: border-box; }
+
+
