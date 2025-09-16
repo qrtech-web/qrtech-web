@@ -34,7 +34,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center font-carter tracking-tight text-4xl sm:text-5xl md:text-6xl text-white"
+          className="text-center font-display tracking-tight text-h1 text-white"
         >
           Experiencia <span className="text-indigo-400">QR</span> sin límites
         </motion.h1>

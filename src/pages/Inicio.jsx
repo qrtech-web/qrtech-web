@@ -75,10 +75,11 @@ export default function Inicio() {
       <main className="alt-bg text-white">
         <ScrollToHashOnMount />
         <TrustChips />
-        <MVSection />
+        
         <Featured />
         <ComoComprar />
         <ResenasGarantia />
+        <MVSection />
         <Faq />
         <FormasDePago />
         <Footer />

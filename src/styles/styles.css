@@ -89,3 +89,26 @@ tbody tr:hover         { @apply bg-white/10; }
 /* Scroll suave para anchors */
 html { scroll-behavior: smooth; }
 
+/* Base global: tipografías y suavizado */
+@layer base {
+  html { font-size: 16px; }              /* base legible en mobile */
+  body {
+    @apply font-sans antialiased;        /* Inter como default + suavizado */
+    /* color/tema se mantiene en tus clases utilitarias actuales */
+  }
+
+  /* Encabezados con Manrope y tracking fino */
+  h1 { @apply font-heading text-h1 tracking-tighter-1; }
+  h2 { @apply font-heading text-h2 tracking-tighter-1; }
+  h3 { @apply font-heading text-h3 tracking-tighter-2; }
+}
+
+/* Opcional: si querés un helper semántico que NO choque con utilities existentes */
+@layer components {
+  .overline { @apply text-overline uppercase tracking-wide-1; }
+}
+
+/* Utilidad para marca (logo/brand) — Carter One */
+.font-brand { font-family: 'Carter One', system-ui, sans-serif; }
+
+

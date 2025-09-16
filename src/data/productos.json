@@ -5,7 +5,17 @@
     "nombre": "iPhone 11",
     "precioUsd": 275,
     "imagen": "/img/productos/11.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
+    "specs": { "pantalla": "6.1\" LCD", "camaras": "12 MP (dual)", "chip": "A13", "dimensiones": "146.7×71.5×7.7 mm"  },
+    "variantes": [
+      { "id": "ip11-64-a85",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 275, "stock": true  },
+      { "id": "ip11-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 285, "stock": true  },
+      { "id": "ip11-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 295, "stock": true  },
+      { "id": "ip11-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 305, "stock": true  },
+      { "id": "ip11-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 325, "stock": true  },
+      { "id": "ip11-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 335, "stock": false },
+      { "id": "ip11-128-new", "storage": "128GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 355, "stock": false }
+    ]
   },
   {
     "id": "ip11p",
@@ -13,7 +23,8 @@
     "nombre": "iPhone 11 Pro",
     "precioUsd": 310,
     "imagen": "/img/productos/11p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
+    "specs": { "pantalla": "5.8\" OLED", "camaras": "12 MP (triple)", "chip": "A13" }
   },
   {
     "id": "ip11pm",
@@ -21,7 +32,8 @@
     "nombre": "iPhone 11 Pro Max",
     "precioUsd": 340,
     "imagen": "/img/productos/11pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
+    "specs": { "pantalla": "6.5\" OLED", "camaras": "12 MP (triple)", "chip": "A13" }
   },
   {
     "id": "ip12",
@@ -29,7 +41,17 @@
     "nombre": "iPhone 12",
     "precioUsd": 330,
     "imagen": "/img/productos/12.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A14" },
+    "variantes": [
+      { "id": "ip12-64-a85",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 330, "stock": true  },
+      { "id": "ip12-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 340, "stock": true  },
+      { "id": "ip12-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 350, "stock": true  },
+      { "id": "ip12-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 360, "stock": true  },
+      { "id": "ip12-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 380, "stock": true  },
+      { "id": "ip12-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 390, "stock": false },
+      { "id": "ip12-128-new", "storage": "128GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 410, "stock": false }
+    ]
   },
   {
     "id": "ip12p",
@@ -37,7 +59,8 @@
     "nombre": "iPhone 12 Pro",
     "precioUsd": 400,
     "imagen": "/img/productos/12p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (triple)", "chip": "A14" }
   },
   {
     "id": "ip12pm",
@@ -45,7 +68,8 @@
     "nombre": "iPhone 12 Pro Max",
     "precioUsd": 420,
     "imagen": "/img/productos/12pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
+    "specs": { "pantalla": "6.7\" OLED", "camaras": "12 MP (triple)", "chip": "A14" }
   },
   {
     "id": "ip13",
@@ -53,7 +77,17 @@
     "nombre": "iPhone 13",
     "precioUsd": 400,
     "imagen": "/img/productos/13.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
+    "variantes": [
+      { "id": "ip13-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 400, "stock": true  },
+      { "id": "ip13-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 410, "stock": true  },
+      { "id": "ip13-256-a85", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 440, "stock": true  },
+      { "id": "ip13-256-a90", "storage": "256GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 450, "stock": true  },
+      { "id": "ip13-512-a85", "storage": "512GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 490, "stock": true  },
+      { "id": "ip13-512-a90", "storage": "512GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 500, "stock": false },
+      { "id": "ip13-256-new","storage": "256GB", "condicion": "Sellado",  "bateria": "100% (sellado)", "precioUsd": 520, "stock": false }
+    ]
   },
   {
     "id": "ip13p",
@@ -61,7 +95,8 @@
     "nombre": "iPhone 13 Pro",
     "precioUsd": 510,
     "imagen": "/img/productos/13p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" }
   },
   {
     "id": "ip13pm",
@@ -69,7 +104,8 @@
     "nombre": "iPhone 13 Pro Max",
     "precioUsd": 570,
     "imagen": "/img/productos/13pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" }
   },
   {
     "id": "ip14",
@@ -77,7 +113,8 @@
     "nombre": "iPhone 14",
     "precioUsd": 480,
     "imagen": "/img/productos/14.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" }
   },
   {
     "id": "ip14p",
@@ -85,7 +122,8 @@
     "nombre": "iPhone 14 Pro",
     "precioUsd": 610,
     "imagen": "/img/productos/14p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" }
   },
   {
     "id": "ip14pm",
@@ -93,7 +131,8 @@
     "nombre": "iPhone 14 Pro Max",
     "precioUsd": 710,
     "imagen": "/img/productos/14pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" }
   },
   {
     "id": "ip15",
@@ -101,7 +140,8 @@
     "nombre": "iPhone 15",
     "precioUsd": 610,
     "imagen": "/img/productos/15.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
+    "specs": { "pantalla": "6.1\" OLED", "camaras": "48 MP + 12 MP", "chip": "A16" }
   },
   {
     "id": "ip15p",
@@ -109,7 +149,8 @@
     "nombre": "iPhone 15 Pro",
     "precioUsd": 750,
     "imagen": "/img/productos/15p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
+    "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" }
   },
   {
     "id": "ip15pm",
@@ -117,7 +158,8 @@
     "nombre": "iPhone 15 Pro Max",
     "precioUsd": 900,
     "imagen": "/img/productos/15pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
+    "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" }
   },
   {
     "id": "ip16",
@@ -125,7 +167,8 @@
     "nombre": "iPhone 16",
     "precioUsd": 750,
     "imagen": "/img/productos/16.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
+    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" }
   },
   {
     "id": "ip16e",
@@ -133,7 +176,8 @@
     "nombre": "iPhone 16e",
     "precioUsd": 650,
     "imagen": "/img/productos/16e.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
+    "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" }
   },
   {
     "id": "ip16p",
@@ -141,7 +185,8 @@
     "nombre": "iPhone 16 Pro",
     "precioUsd": 990,
     "imagen": "/img/productos/16p.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
+    "specs": { "pantalla": "6.3\" OLED (120 Hz)", "camaras": "—", "chip": "—" }
   },
   {
     "id": "ip16pm",
@@ -149,6 +194,7 @@
     "nombre": "iPhone 16 Pro Max",
     "precioUsd": 1180,
     "imagen": "/img/productos/16pm.png",
-    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)"
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
+    "specs": { "pantalla": "6.9\" OLED (120 Hz)", "camaras": "—", "chip": "—" }
   }
 ]

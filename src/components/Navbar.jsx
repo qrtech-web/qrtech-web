@@ -16,10 +16,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
-    (isActive
+    (isActive      
       ? "block w-full pb-1 text-gray-100 after:block after:w-full after:h-0.5 after:bg-gray-100"
-      : "block w-full pb-1 text-gray-400 hover:text-gray-200") + " font-carter";
-
+      : "block w-full pb-1 text-gray-400 hover:text-gray-200"
+    );
   return (
     <header className="sticky top-0 inset-x-0 z-50">
       {/* TOP-BAR: solo desktop */}
@@ -50,7 +50,7 @@ export default function Navbar() {
       <nav className="h-14 md:h-16 backdrop-blur-md bg-gray-900/60 flex items-center px-6 lg:px-10">
         <NavLink
           to="/"
-          className="font-carter text-2xl text-gray-100 hover:text-gray-300"
+          className="font-brand text-2xl text-gray-100 hover:text-gray-300"
           onClick={() => setOpen(false)}
         >
           QRTech
@@ -71,12 +71,12 @@ export default function Navbar() {
 
           {/* anchors del Home */}
           <li>
-            <a href="/inicio#como-comprar" className="block w-full pb-1 text-gray-400 hover:text-gray-200 font-carter">
+            <a href="/inicio#como-comprar" className="block w-full pb-1 text-gray-400 hover:text-gray-200 ">
               Cómo comprar
             </a>
           </li>
           <li>
-            <a href="/inicio#plan-canje" className="block w-full pb-1 text-gray-400 hover:text-gray-200 font-carter">
+            <a href="/inicio#plan-canje" className="block w-full pb-1 text-gray-400 hover:text-gray-200 ">
               Plan canje
             </a>
           </li>
@@ -117,7 +117,7 @@ export default function Navbar() {
                 key={label}
                 to={label === "Inicio" ? "/inicio" : `/${label.toLowerCase()}`}
                 className={({ isActive }) =>
-                  (isActive ? "text-gray-100" : "text-gray-300 hover:text-gray-100") + " block py-2 font-carter"
+                  (isActive ? "text-gray-100" : "text-gray-300 hover:text-gray-100") + " block py-2 "
                 }
                 onClick={() => setOpen(false)}
               >
@@ -127,14 +127,14 @@ export default function Navbar() {
 
             <a
               href="/inicio#como-comprar"
-              className="block py-2 text-gray-300 hover:text-gray-100 font-carter"
+              className="block py-2 text-gray-300 hover:text-gray-100 "
               onClick={() => setOpen(false)}
             >
               Cómo comprar
             </a>
             <a
               href="/inicio#plan-canje"
-              className="block py-2 text-gray-300 hover:text-gray-100 font-carter"
+              className="block py-2 text-gray-300 hover:text-gray-100"
               onClick={() => setOpen(false)}
             >
               Plan canje
