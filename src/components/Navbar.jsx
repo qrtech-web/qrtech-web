@@ -16,10 +16,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
-    (isActive      
+    (isActive
       ? "block w-full pb-1 text-gray-100 after:block after:w-full after:h-0.5 after:bg-gray-100"
-      : "block w-full pb-1 text-gray-400 hover:text-gray-200"
-    );
+      : "block w-full pb-1 text-gray-400 hover:text-gray-200") + " font-carter";
+
   return (
     <header className="sticky top-0 inset-x-0 z-50">
       {/* TOP-BAR: solo desktop */}
@@ -50,7 +50,7 @@ export default function Navbar() {
       <nav className="h-14 md:h-16 backdrop-blur-md bg-gray-900/60 flex items-center px-6 lg:px-10">
         <NavLink
           to="/"
-          className="font-brand text-2xl text-gray-100 hover:text-gray-300"
+          className="font-carter text-2xl text-gray-100 hover:text-gray-300"
           onClick={() => setOpen(false)}
         >
           QRTech
@@ -71,16 +71,17 @@ export default function Navbar() {
 
           {/* anchors del Home */}
           <li>
-            <a href="/inicio#como-comprar" className="block w-full pb-1 text-gray-400 hover:text-gray-200 ">
+            <a href="/inicio#como-comprar" className="block w-full pb-1 text-gray-400 hover:text-gray-200 font-carter">
               Cómo comprar
             </a>
           </li>
           <li>
-            <a href="/inicio#plan-canje" className="block w-full pb-1 text-gray-400 hover:text-gray-200 ">
+            <a href="/inicio#plan-canje" className="block w-full pb-1 text-gray-400 hover:text-gray-200 font-carter">
               Plan canje
             </a>
           </li>
 
+        {/* CTA */}
           <li>
             <a
               href="/productos"
@@ -101,55 +102,57 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* MENÚ MÓVIL: overlay absoluto (no empuja el layout) */}
-      <div className="md:hidden absolute inset-x-0 top-full z-40">
-        <div
-          className={[
-            "bg-gray-900/90 backdrop-blur-md border-b border-white/10 shadow-lg",
-            "transition-all duration-300 ease-out",
-            "max-h-[calc(100vh-56px)] overflow-auto", // 56px = h-14
-            open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none",
-          ].join(" ")}
-        >
-          <div className="px-6 pt-4 pb-8 space-y-2">
-            {links.map((label) => (
-              <NavLink
-                key={label}
-                to={label === "Inicio" ? "/inicio" : `/${label.toLowerCase()}`}
-                className={({ isActive }) =>
-                  (isActive ? "text-gray-100" : "text-gray-300 hover:text-gray-100") + " block py-2 "
-                }
+      {/* MENÚ MÓVIL: se MONTA solo cuando está abierto (no tapa nada cuando está cerrado) */}
+      {open && (
+        <div className="md:hidden fixed inset-0 z-[60]" aria-modal="true" role="dialog">
+          {/* backdrop clickeable para cerrar */}
+          <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
+          {/* panel */}
+          <div
+            className="absolute inset-x-0 top-[56px] bg-gray-900/95 backdrop-blur-md border-b border-white/10 shadow-lg
+                       max-h-[calc(100vh-56px)] overflow-auto animate-[fadeIn_0.15s_ease-out]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="px-6 pt-4 pb-8 space-y-2">
+              {links.map((label) => (
+                <NavLink
+                  key={label}
+                  to={label === "Inicio" ? "/inicio" : `/${label.toLowerCase()}`}
+                  className={({ isActive }) =>
+                    (isActive ? "text-gray-100" : "text-gray-300 hover:text-gray-100") + " block py-2 font-carter"
+                  }
+                  onClick={() => setOpen(false)}
+                >
+                  {label}
+                </NavLink>
+              ))}
+
+              <a
+                href="/inicio#como-comprar"
+                className="block py-2 text-gray-300 hover:text-gray-100 font-carter"
                 onClick={() => setOpen(false)}
               >
-                {label}
-              </NavLink>
-            ))}
+                Cómo comprar
+              </a>
+              <a
+                href="/inicio#plan-canje"
+                className="block py-2 text-gray-300 hover:text-gray-100 font-carter"
+                onClick={() => setOpen(false)}
+              >
+                Plan canje
+              </a>
 
-            <a
-              href="/inicio#como-comprar"
-              className="block py-2 text-gray-300 hover:text-gray-100 "
-              onClick={() => setOpen(false)}
-            >
-              Cómo comprar
-            </a>
-            <a
-              href="/inicio#plan-canje"
-              className="block py-2 text-gray-300 hover:text-gray-100"
-              onClick={() => setOpen(false)}
-            >
-              Plan canje
-            </a>
-
-            <a
-              href="/productos"
-              className="block mt-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/10 text-gray-100"
-              onClick={() => setOpen(false)}
-            >
-              Ver catálogo
-            </a>
+              <a
+                href="/productos"
+                className="block mt-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/10 text-gray-100"
+                onClick={() => setOpen(false)}
+              >
+                Ver catálogo
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

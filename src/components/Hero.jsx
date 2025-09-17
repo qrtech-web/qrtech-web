@@ -8,25 +8,25 @@ const MotionLink = motion(Link);
 
 export default function Hero() {
   return (
-    // isolate = nuevo stacking context (evita que otra sección lo tape)
-    <header className="relative isolate overflow-hidden bg-[#0b0f19] w-screen max-w-none min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-64px)]">
-      {/* Fondo: nunca captura clics */}
-      <video
-        className="pointer-events-none absolute inset-0 w-full h-full object-cover brightness-50"
-        src="/media/hero-loop.mp4"
-        poster="/media/hero-fallback.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-hidden="true"
-      />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/60" />
+    // isolate crea un stacking context propio; w-screen evita franjas a los lados
+    <header className="relative isolate w-screen max-w-none overflow-hidden bg-[#0b0f19] min-h-[calc(100svh-56px)] md:min-h-[calc(100svh-64px)]">
+      {/* Capa de fondo (no intercepta clics) */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <video
+          className="absolute inset-0 w-full h-full object-cover brightness-50"
+          src="/media/hero-loop.mp4"
+          poster="/media/hero-fallback.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/60" />
+      </div>
 
-      {/* Contenido por encima de TODO */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="pt-10 md:pt-14" />
-
+      {/* Contenido (habilitado para clics y por encima de todo) */}
+      <div className="relative z-[30] max-w-7xl mx-auto px-6 lg:px-10 pt-10 md:pt-14 pb-16">
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,20 +48,21 @@ export default function Hero() {
         <div className="flex justify-center">
           <MotionLink
             to="/productos"
-            // Colocamos el CTA en el nivel más alto posible
-            className="relative z-[100] mt-6 inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 text-lg font-medium shadow-lg"
+            aria-label="Ir al catálogo"
+            // z-altísimo y pointer-events explícitos para ganar a cualquier overlay vecino
+            className="relative z-[99] mt-6 inline-flex items-center gap-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 text-lg font-medium shadow-lg pointer-events-auto"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             whileHover={{ scale: 1.04 }}
-            aria-label="Ir al catálogo"
           >
             Ver catálogo <ArrowRight size={20} />
           </MotionLink>
         </div>
-
-        <div className="pb-10 md:pb-14" />
       </div>
+
+      {/* Colchón inferior sin capturar clics: evita que la sección siguiente pise el CTA */}
+      <div className="absolute inset-x-0 bottom-0 h-4 pointer-events-none" />
     </header>
   );
 }
