@@ -10,6 +10,7 @@ import VariantSelector from '../components/VariantSelector';
 import CompareModal from '../components/CompareModal';
 import QuickFilters from '../components/QuickFilters';
 
+
 function useQuery(){ return new URLSearchParams(useLocation().search); }
 
 // Meta Pixel: ViewContent del producto seleccionado

@@ -5,16 +5,25 @@
     "nombre": "iPhone 11",
     "precioUsd": 260,
     "imagen": "/img/productos/11.png",
+    "imagenes": ["/img/productos/11.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
-    "specs": { "pantalla": "6.1\" LCD", "camaras": "12 MP (dual)", "chip": "A13"  },
+    "waMsg": "Hola QRTech! Quiero el iPhone 11 (ip11). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP11",
+    "specs": { "pantalla": "6.1\" LCD", "camaras": "12 MP (dual)", "chip": "A13" },
     "variantes": [
-      { "id": "ip11-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 260, "stock": true  },
-      { "id": "ip11-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 270, "stock": true  },
-      { "id": "ip11-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 280, "stock": true  },
-      { "id": "ip11-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 280, "stock": true  },
-      { "id": "ip11-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 290, "stock": true  },
-      { "id": "ip11-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 300, "stock": true  }
-      
+      { "id": "ip11-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 260, "stock": true },
+      { "id": "ip11-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 270, "stock": true },
+      { "id": "ip11-64-a100", "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 280, "stock": true },
+      { "id": "ip11-128-a85", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 280, "stock": true },
+      { "id": "ip11-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 290, "stock": true },
+      { "id": "ip11-128-a100","storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 300, "stock": true }
     ]
   },
   {
@@ -23,16 +32,26 @@
     "nombre": "iPhone 11 Pro",
     "precioUsd": 290,
     "imagen": "/img/productos/11p.png",
+    "imagenes": ["/img/productos/11p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 11 Pro (ip11p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP11P",
     "specs": { "pantalla": "5.8\" OLED", "camaras": "12 MP (triple)", "chip": "A13" },
     "variantes": [
-      { "id": "ip11p-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 290, "stock": true  },
-      { "id": "ip11p-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 300, "stock": true  },
-      { "id": "ip11p-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip11p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 300, "stock": true  },
-      { "id": "ip11p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip11p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  }
-      ]
+      { "id": "ip11p-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 290, "stock": true },
+      { "id": "ip11p-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 300, "stock": true },
+      { "id": "ip11p-64-a100", "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 310, "stock": true },
+      { "id": "ip11p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 300, "stock": true },
+      { "id": "ip11p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true },
+      { "id": "ip11p-128-a100","storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true }
+    ]
   },
   {
     "id": "ip11pm",
@@ -40,16 +59,26 @@
     "nombre": "iPhone 11 Pro Max",
     "precioUsd": 300,
     "imagen": "/img/productos/11pm.png",
+    "imagenes": ["/img/productos/11pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 11 Pro Max (ip11pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP11PM",
     "specs": { "pantalla": "6.5\" OLED", "camaras": "12 MP (triple)", "chip": "A13" },
     "variantes": [
-      { "id": "ip11pm-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true  },
-      { "id": "ip11pm-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip11pm-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  },
-      { "id": "ip11pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip11pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true  },
-      { "id": "ip11pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true  }
-      ]
+      { "id": "ip11pm-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true },
+      { "id": "ip11pm-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true },
+      { "id": "ip11pm-64-a100", "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true },
+      { "id": "ip11pm-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true },
+      { "id": "ip11pm-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true },
+      { "id": "ip11pm-128-a100","storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true }
+    ]
   },
   {
     "id": "ip12",
@@ -57,15 +86,25 @@
     "nombre": "iPhone 12",
     "precioUsd": 300,
     "imagen": "/img/productos/12.png",
+    "imagenes": ["/img/productos/12.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 12 (ip12). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP12",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A14" },
     "variantes": [
-      { "id": "ip12-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true  },
-      { "id": "ip12-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip12-64-a100",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true  },
-      { "id": "ip12-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true  },
-      { "id": "ip12-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true  },
-      { "id": "ip12-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true  }
+      { "id": "ip12-64-a80",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥80%",  "precioUsd": 300, "stock": true },
+      { "id": "ip12-64-a90",  "storage": "64GB",  "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 310, "stock": true },
+      { "id": "ip12-64-a100", "storage": "64GB",  "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 320, "stock": true },
+      { "id": "ip12-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 310, "stock": true },
+      { "id": "ip12-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 320, "stock": true },
+      { "id": "ip12-128-a100","storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 330, "stock": true }
     ]
   },
   {
@@ -74,13 +113,22 @@
     "nombre": "iPhone 12 Pro",
     "precioUsd": 370,
     "imagen": "/img/productos/12p.png",
+    "imagenes": ["/img/productos/12p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 12 Pro (ip12p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP12P",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (triple)", "chip": "A14" },
     "variantes": [
-      
-      { "id": "ip12p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 370, "stock": true  },
-      { "id": "ip12p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 380, "stock": true  },
-      { "id": "ip12p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 400, "stock": true  }
+      { "id": "ip12p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 370, "stock": true },
+      { "id": "ip12p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 380, "stock": true },
+      { "id": "ip12p-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 400, "stock": true }
     ]
   },
   {
@@ -89,27 +137,47 @@
     "nombre": "iPhone 12 Pro Max",
     "precioUsd": 400,
     "imagen": "/img/productos/12pm.png",
+    "imagenes": ["/img/productos/12pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 12 Pro Max (ip12pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP12PM",
     "specs": { "pantalla": "6.7\" OLED", "camaras": "12 MP (triple)", "chip": "A14" },
     "variantes": [
-      
-      { "id": "ip12pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 400, "stock": true  },
-      { "id": "ip12pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 410, "stock": true  },
-      { "id": "ip12pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 430, "stock": true  }
+      { "id": "ip12pm-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 400, "stock": true },
+      { "id": "ip12pm-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 410, "stock": true },
+      { "id": "ip12pm-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 430, "stock": true }
     ]
   },
   {
     "id": "ip13",
     "catalogId": "ip13",
     "nombre": "iPhone 13",
-    "precioUsd": 390,
+    "precioUsd": 400,
     "imagen": "/img/productos/13.png",
+    "imagenes": ["/img/productos/13.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 13 (ip13). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP13",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
     "variantes": [
-      { "id": "ip13-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 390, "stock": true  },
-      { "id": "ip13-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 400, "stock": true  },
-      { "id": "ip13-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 430, "stock": true  }
+      { "id": "ip13-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 400, "stock": true },
+      { "id": "ip13-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 410, "stock": true },
+      { "id": "ip13-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 430, "stock": true },
+      { "id": "ip13-128-sellado","storage": "128GB","condicion": "Sellado", "bateria": "sellado", "precioUsd": 570, "stock": true }
     ]
   },
   {
@@ -118,12 +186,22 @@
     "nombre": "iPhone 13 Pro",
     "precioUsd": 500,
     "imagen": "/img/productos/13p.png",
+    "imagenes": ["/img/productos/13p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 13 Pro (ip13p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP13P",
     "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" },
     "variantes": [
-      { "id": "ip13p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 500, "stock": true  },
-      { "id": "ip13p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 510, "stock": true  },
-      { "id": "ip13p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 540, "stock": true  }
+      { "id": "ip13p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 500, "stock": true },
+      { "id": "ip13p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 510, "stock": true },
+      { "id": "ip13p-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 540, "stock": true }
     ]
   },
   {
@@ -132,12 +210,22 @@
     "nombre": "iPhone 13 Pro Max",
     "precioUsd": 570,
     "imagen": "/img/productos/13pm.png",
+    "imagenes": ["/img/productos/13pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 13 Pro Max (ip13pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP13PM",
     "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "12 MP (triple)", "chip": "A15" },
     "variantes": [
-      { "id": "ip13pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 560, "stock": true  },
-      { "id": "ip13pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 570, "stock": true  },
-      { "id": "ip13pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 590, "stock": true  }
+      { "id": "ip13pm-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 560, "stock": true },
+      { "id": "ip13pm-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 570, "stock": true },
+      { "id": "ip13pm-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 590, "stock": true }
     ]
   },
   {
@@ -146,12 +234,22 @@
     "nombre": "iPhone 14",
     "precioUsd": 480,
     "imagen": "/img/productos/14.png",
+    "imagenes": ["/img/productos/14.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 14 (ip14). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP14",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
     "variantes": [
-      { "id": "ip14-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 460, "stock": true  },
-      { "id": "ip14-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 470, "stock": true  },
-      { "id": "ip14-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 490 , "stock": true  }
+      { "id": "ip14-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 460, "stock": true },
+      { "id": "ip14-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 470, "stock": true },
+      { "id": "ip14-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 490, "stock": true }
     ]
   },
   {
@@ -160,12 +258,22 @@
     "nombre": "iPhone 14 Pro",
     "precioUsd": 610,
     "imagen": "/img/productos/14p.png",
+    "imagenes": ["/img/productos/14p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 14 Pro (ip14p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP14P",
     "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" },
     "variantes": [
-      { "id": "ip14p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 590, "stock": true  },
-      { "id": "ip14p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 600, "stock": true  },
-      { "id": "ip14p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 630 , "stock": true  }
+      { "id": "ip14p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 590, "stock": true },
+      { "id": "ip14p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 600, "stock": true },
+      { "id": "ip14p-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 630, "stock": true }
     ]
   },
   {
@@ -174,12 +282,22 @@
     "nombre": "iPhone 14 Pro Max",
     "precioUsd": 710,
     "imagen": "/img/productos/14pm.png",
+    "imagenes": ["/img/productos/14pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 14 Pro Max (ip14pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP14PM",
     "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A16" },
     "variantes": [
-      { "id": "ip14pm-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 670, "stock": true  },
-      { "id": "ip14pm-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 680, "stock": true  },
-      { "id": "ip14pm-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 700 , "stock": true  }
+      { "id": "ip14pm-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 670, "stock": true },
+      { "id": "ip14pm-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 680, "stock": true },
+      { "id": "ip14pm-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 700, "stock": true }
     ]
   },
   {
@@ -188,12 +306,22 @@
     "nombre": "iPhone 15",
     "precioUsd": 610,
     "imagen": "/img/productos/15.png",
+    "imagenes": ["/img/productos/15.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 15 (ip15). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP15",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "48 MP + 12 MP", "chip": "A16" },
     "variantes": [
-      { "id": "ip15-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 590, "stock": true  },
-      { "id": "ip15-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 600, "stock": true  },
-      { "id": "ip15-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 630 , "stock": true  }
+      { "id": "ip15-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 590, "stock": true },
+      { "id": "ip15-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 600, "stock": true },
+      { "id": "ip15-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 630, "stock": true }
     ]
   },
   {
@@ -202,12 +330,22 @@
     "nombre": "iPhone 15 Pro",
     "precioUsd": 750,
     "imagen": "/img/productos/15p.png",
+    "imagenes": ["/img/productos/15p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 15 Pro (ip15p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP15P",
     "specs": { "pantalla": "6.1\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" },
     "variantes": [
-      { "id": "ip15p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 740, "stock": true  },
-      { "id": "ip15p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 750, "stock": true  },
-      { "id": "ip15p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 780 , "stock": true  }
+      { "id": "ip15p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 740, "stock": true },
+      { "id": "ip15p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 750, "stock": true },
+      { "id": "ip15p-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 780, "stock": true }
     ]
   },
   {
@@ -216,12 +354,22 @@
     "nombre": "iPhone 15 Pro Max",
     "precioUsd": 900,
     "imagen": "/img/productos/15pm.png",
+    "imagenes": ["/img/productos/15pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 15 Pro Max (ip15pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP15PM",
     "specs": { "pantalla": "6.7\" OLED (120 Hz)", "camaras": "48 MP + 12 MP + 12 MP", "chip": "A17 Pro" },
     "variantes": [
-      { "id": "ip15pm-256-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 800, "stock": true  },
-      { "id": "ip15pm-256-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 810, "stock": true  },
-      { "id": "ip15pm-256-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 830 , "stock": true  }
+      { "id": "ip15pm-256-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 800, "stock": true },
+      { "id": "ip15pm-256-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 810, "stock": true },
+      { "id": "ip15pm-256-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 830, "stock": true }
     ]
   },
   {
@@ -230,12 +378,22 @@
     "nombre": "iPhone 16",
     "precioUsd": 750,
     "imagen": "/img/productos/16.png",
+    "imagenes": ["/img/productos/16.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 16 (ip16). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP16",
     "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" },
     "variantes": [
-      { "id": "ip16-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 750, "stock": true  },
-      { "id": "ip16-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 750, "stock": true  },
-      { "id": "ip16-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 750 , "stock": true  }
+      { "id": "ip16-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 750, "stock": true },
+      { "id": "ip16-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 750, "stock": true },
+      { "id": "ip16-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 750, "stock": true }
     ]
   },
   {
@@ -244,12 +402,22 @@
     "nombre": "iPhone 16e",
     "precioUsd": 650,
     "imagen": "/img/productos/16e.png",
+    "imagenes": ["/img/productos/16e.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 16e (ip16e). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP16E",
     "specs": { "pantalla": "6.1\"", "camaras": "—", "chip": "—" },
     "variantes": [
-      { "id": "ip16e-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 645, "stock": true  },
-      { "id": "ip16e-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 645, "stock": true  },
-      { "id": "ip16e-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 645 , "stock": true  }
+      { "id": "ip16e-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 645, "stock": true },
+      { "id": "ip16e-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 645, "stock": true },
+      { "id": "ip16e-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 645, "stock": true }
     ]
   },
   {
@@ -258,12 +426,22 @@
     "nombre": "iPhone 16 Pro",
     "precioUsd": 990,
     "imagen": "/img/productos/16p.png",
+    "imagenes": ["/img/productos/16p.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 16 Pro (ip16p). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP16P",
     "specs": { "pantalla": "6.3\" OLED (120 Hz)", "camaras": "—", "chip": "—" },
     "variantes": [
-      { "id": "ip16p-128-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 920, "stock": true  },
-      { "id": "ip16p-128-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 920, "stock": true  },
-      { "id": "ip16p-128-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 920 , "stock": true  }
+      { "id": "ip16p-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 920, "stock": true },
+      { "id": "ip16p-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 920, "stock": true },
+      { "id": "ip16p-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 920, "stock": true }
     ]
   },
   {
@@ -272,12 +450,359 @@
     "nombre": "iPhone 16 Pro Max",
     "precioUsd": 1180,
     "imagen": "/img/productos/16pm.png",
+    "imagenes": ["/img/productos/16pm.png"],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 16 Pro Max (ip16pm). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "IP16PM",
     "specs": { "pantalla": "6.9\" OLED (120 Hz)", "camaras": "—", "chip": "—" },
     "variantes": [
-      { "id": "ip16pm-256-a80", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%",  "precioUsd": 1110, "stock": true  },
-      { "id": "ip16pm-256-a90", "storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%",  "precioUsd": 1110, "stock": true  },
-      { "id": "ip16pm-256-a100", "storage": "128GB", "condicion": "Usado A+", "bateria": "100%",  "precioUsd": 1110 , "stock": true  }
+      { "id": "ip16pm-256-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 1110, "stock": true },
+      { "id": "ip16pm-256-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 1110, "stock": true },
+      { "id": "ip16pm-256-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 1110, "stock": true }
     ]
+  },
+
+ 
+ 
+
+  
+
+  {
+    "id": "redmi-14c-4-128",
+    "catalogId": "redmi-14c",
+    "nombre": "Redmi 14C 4GB / 128GB",
+    "precioUsd": 175,
+    "imagen": "/img/productos/redmi-14c.png",
+    "imagenes": ["/img/productos/redmi-14c.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%204GB%2F128GB%20(redmi-14c)",
+    "waMsg": "Hola QRTech! Quiero el Redmi 14C 4/128 (redmi-14c).",
+    "marca": "Xiaomi",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "REDMI-14C-4-128",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "redmi-14c-128-nuevo", "storage": "128GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 175, "stock": true }
+    ]
+  },
+  {
+    "id": "redmi-14c-8-256",
+    "catalogId": "redmi-14c",
+    "nombre": "Redmi 14C 8GB / 256GB",
+    "precioUsd": 198,
+    "imagen": "/img/productos/redmi-14c2.png",
+    "imagenes": ["/img/productos/redmi-14c2.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%208GB%2F256GB%20(redmi-14c)",
+    "waMsg": "Hola QRTech! Quiero el Redmi 14C 8/256 (redmi-14c).",
+    "marca": "Xiaomi",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "REDMI-14C-8-256",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "redmi-14c-256-nuevo", "storage": "256GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 198, "stock": true }
+    ]
+  },
+  {
+    "id": "redmi-note-14-8-256",
+    "catalogId": "redmi-note-14",
+    "nombre": "Redmi Note 14 8GB / 256GB",
+    "precioUsd": 240,
+    "imagen": "/img/productos/redmi-note-14.png",
+    "imagenes": ["/img/productos/redmi-note-14.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%208GB%2F256GB%20(redmi-note-14)",
+    "waMsg": "Hola QRTech! Quiero el Redmi Note 14 8/256 (redmi-note-14).",
+    "marca": "Xiaomi",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "REDMI-NOTE14-8-256",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "redmi-note-14-256-nuevo", "storage": "256GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 240, "stock": true }
+    ]
+  },
+  {
+    "id": "redmi-note-14-pro-8-256",
+    "catalogId": "redmi-note-14-pro",
+    "nombre": "Redmi Note 14 Pro 8GB / 256GB",
+    "precioUsd": 283,
+    "imagen": "/img/productos/redmi-note-14p.png",
+    "imagenes": ["/img/productos/redmi-note-14o.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%20Pro%208GB%2F256GB%20(redmi-note-14-pro)",
+    "waMsg": "Hola QRTech! Quiero el Redmi Note 14 Pro 8/256 (redmi-note-14-pro).",
+    "marca": "Xiaomi",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "REDMI-NOTE14PRO-8-256",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "redmi-note-14-pro-256-nuevo", "storage": "256GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 283, "stock": true }
+    ]
+  },
+  {
+    "id": "sm-a06-4-64",
+    "catalogId": "sm-a06",
+    "nombre": "Samsung Galaxy A06 4GB / 64GB",
+    "precioUsd": 167,
+    "imagen": "/img/productos/smg-a06.png",
+    "imagenes": ["/img/productos/smg-a06.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A06%204GB%2F64GB%20(sm-a06)",
+    "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A06 4/64 (sm-a06).",
+    "marca": "Samsung",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "SM-A06-4-64",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "sm-a06-64-nuevo", "storage": "64GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 167, "stock": true }
+    ]
+  },
+
+{
+  "id": "sm-a16-6-256",
+  "catalogId": "sm-{{modeloLower}}",
+  "nombre": "Samsung Galaxy A16 6GB / 256GB",
+  "precioUsd": 270,
+  "imagen": "/img/productos/smg-a16.png",
+  "imagenes": ["/img/productos/smg-a16.png"],
+  "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20{{MODELO}}%20{{RAM}}GB%2F{{STORAGE}}GB%20(sm-{{modeloLower}})",
+  "waMsg": "Hola QRTech! Quiero el Samsung Galaxy {{MODELO}} {{RAM}}/{{STORAGE}} (sm-{{modeloLower}}).",
+  "marca": "Samsung",
+  "categoria": "android",
+  "tipo": "smartphone",
+  "monedaBase": "USD",
+  "garantiaDias": 60,
+  "badges": ["Garantía 60 días", "Plan canje"],
+  "destacado": false,
+  "sku": "SM-A19-8-256",
+  "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+  "variantes": []
+},
+
+  {
+    "id": "sm-a36-8-256",
+    "catalogId": "sm-a36",
+    "nombre": "Samsung Galaxy A36 8GB / 256GB",
+    "precioUsd": 365,
+    "imagen": "/img/productos/smg-a36.png",
+    "imagenes": ["/img/productos/smg-a36.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A36%208GB%2F256GB%20(sm-a36)",
+    "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A36 8/256 (sm-a36).",
+    "marca": "Samsung",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "SM-A36-8-256",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "sm-a36-256-nuevo", "storage": "256GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 365, "stock": true }
+    ]
+  },
+  {
+    "id": "sm-a56-8-256",
+    "catalogId": "sm-a56",
+    "nombre": "Samsung Galaxy A56 8GB / 256GB",
+    "precioUsd": 455,
+    "imagen": "/img/productos/smg-a56.png",
+    "imagenes": ["/img/productos/smg-a56.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A56%208GB%2F256GB%20(sm-a56)",
+    "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A56 8/256 (sm-a56).",
+    "marca": "Samsung",
+    "categoria": "android",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 365,
+    "badges": ["Garantía 12 meses", "Accesorios de regalo", "Plan canje"],
+    "destacado": false,
+    "sku": "SM-A56-8-256",
+    "specs": { "pantalla": "—", "camaras": "—", "chip": "—" },
+    "variantes": [
+      { "id": "sm-a56-256-nuevo", "storage": "256GB", "condicion": "Nuevo", "bateria": "—", "precioUsd": 455, "stock": true }
+    ]
+  },
+  
+  {
+    "id": "cbl-usbc-lightning-1m",
+    "catalogId": "cbl-usbc-lightning",
+    "nombre": "Cable USB-C a Lightning 1m (Alta calidad)",
+    "precioUsd": 5,
+    "imagen": "/img/productos/cbl-usbc-lightning.png",
+    "imagenes": ["/img/productos/cbl-usbc-lightning.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20Lightning%20de%201%20m%20(cbl-usbc-lightning)",
+    "waMsg": "Hola QRTech! Quiero el cable USB-C a Lightning de 1 metro.",
+    "marca": "Genérica",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Compatibles iPhone", "Calidad A+"],
+    "destacado": false,
+    "sku": "CBL-USBC-LTG-1M",
+    "specs": { "largo": "1 m", "conectorA": "USB-C", "conectorB": "Lightning", "compatibilidad": "iPhone/iPad" },
+    "variantes": []
+  },
+  {
+    "id": "cbl-usbc-usbc-1m",
+    "catalogId": "cbl-usbc-usbc",
+    "nombre": "Cable USB-C a USB-C 1m (Carga rápida)",
+    "precioUsd": 5,
+    "imagen": "/img/productos/cbl-usbc-usbc.png",
+    "imagenes": ["/img/productos/cbl-usbc-usbc.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20USB-C%20de%201%20m%20(cbl-usbc-usbc)",
+    "waMsg": "Hola QRTech! Quiero el cable USB-C a USB-C de 1 metro.",
+    "marca": "Genérica",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["PD 20W/60W*", "Calidad A+"],
+    "destacado": false,
+    "sku": "CBL-USBC-USBC-1M",
+    "specs": { "largo": "1 m", "conectorA": "USB-C", "conectorB": "USB-C", "potenciaMaxima": "hasta 60W*", "compatibilidad": "iPhone 15/15 Pro, Android/USB-C" },
+    "variantes": []
+  },
+  {
+    "id": "cbl-usba-lightning-1m",
+    "catalogId": "cbl-usba-lightning",
+    "nombre": "Cable USB-A a Lightning 1m",
+    "precioUsd": 5,
+    "imagen": "/img/productos/cbl-usba-lightning.png",
+    "imagenes": ["/img/productos/cbl-usba-lightning.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-A%20a%20Lightning%20de%201%20m%20(cbl-usba-lightning)",
+    "waMsg": "Hola QRTech! Quiero el cable USB-A a Lightning de 1 metro.",
+    "marca": "Genérica",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Compatibles iPhone", "Calidad A+"],
+    "destacado": false,
+    "sku": "CBL-USBA-LTG-1M",
+    "specs": { "largo": "1 m", "conectorA": "USB-A", "conectorB": "Lightning", "compatibilidad": "iPhone/iPad (Lightning)" },
+    "variantes": []
+  },
+  {
+    "id": "chg-iphone-20w-usbc",
+    "catalogId": "chg-iphone-20w",
+    "nombre": "Cargador iPhone 20W USB-C (fuente)",
+    "precioUsd": 12,
+    "imagen": "/img/productos/chg-iphone-20w.png",
+    "imagenes": ["/img/productos/chg-iphone-20w.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20fuente%20para%20iPhone%20de%2020W%20(chg-iphone-20w)",
+    "waMsg": "Hola QRTech! Quiero la fuente/cargador iPhone 20W USB-C.",
+    "marca": "Genérica",
+    "categoria": "accesorios",
+    "tipo": "cargador",
+    "monedaBase": "USD",
+    "garantiaDias": 90,
+    "badges": ["PD 20W", "Calidad A+"],
+    "destacado": false,
+    "sku": "CHG-IP-20W-USBC",
+    "specs": { "puerto": "USB-C", "potencia": "20W", "tecnologia": "Power Delivery (PD)" },
+    "variantes": []
+  },
+  {
+    "id": "pbank-magsafe-10000",
+    "catalogId": "pbank-magsafe",
+    "nombre": "Power Bank MagSafe 10000 mAh",
+    "precioUsd": 25,
+    "imagen": "/img/productos/pbank-magsafe.png",
+    "imagenes": ["/img/productos/pbank-magsafe.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Power%20Bank%20MagSafe%2010000%20mAh%20(pbank-magsafe)",
+    "waMsg": "Hola QRTech! Quiero la Power Bank MagSafe de 10000 mAh.",
+    "marca": "Genérica",
+    "categoria": "accesorios",
+    "tipo": "powerbank",
+    "monedaBase": "USD",
+    "garantiaDias": 90,
+    "badges": ["MagSafe", "Carga inalámbrica"],
+    "destacado": false,
+    "sku": "PBANK-MAGSAFE-10000",
+    "specs": { "capacidad": "10000 mAh", "tipo": "Magnética MagSafe", "salidas": "Inalámbrica + USB-C" },
+    "variantes": [
+      { "id": "pbank-magsafe-5000", "capacidad": "5000 mAh", "precioUsd": null, "stock": true }
+    ]
+  },
+
+
+
+
+  {
+    "id": "m90pro-bluetooth",
+    "catalogId": "m90pro",
+    "nombre": "Auriculares M90 Pro Bluetooth",
+    "precioUsd": 10,
+    "imagen": "/img/productos/m90pro.png",
+    "imagenes": ["/img/productos/m90pro.png"],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20Auriculares%20M90%20Pro%20Bluetooth",
+    "waMsg": "Hola QRTech! Quiero los auriculares M90 Pro Bluetooth.",
+    "marca": "M90",
+    "categoria": "accesorios",
+    "tipo": "audio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Batería XL", "Micrófono"],
+    "destacado": false,
+    "sku": "M90PRO-BT-BK",
+    "specs": { "color": "Negro" },
+    "variantes": []
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
+
