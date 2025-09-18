@@ -27,21 +27,36 @@ function trackViewContent(prod){
   }catch(_){}
 }
 
-// Heurística mínima para chips de categorías
+// Heurística de categoría (usa primero p.categoria si existe)
 function guessCategory(p){
+  // 1) Si el objeto ya trae `categoria`, usala (evita errores de texto)
+  const c = (p.categoria || '').toLowerCase().trim();
+  if (c) return c;
+
+  // 2) Fallback por nombre (mejor cobertura de keywords)
   const t = (p.nombre || '').toLowerCase();
-  if(t.includes('iphone')) return 'iphone';
-  if(t.includes('ipad')) return 'ipad';
-  if(t.includes('mac')) return 'mac';
-  if(t.includes('watch')) return 'watch';
-  if(t.includes('airpods')) return 'airpods';
-  if (t.includes('samsung') || t.includes('motorola') || t.includes('xiaomi') || t.includes('poco') || t.includes('redmi') || t.includes('galaxy')) return 'android';
+
+  if (t.includes('iphone')) return 'iphone';
+  if (t.includes('ipad')) return 'ipad';
+  if (t.includes('mac')) return 'mac';
+  if (t.includes('watch')) return 'watch';
+  if (t.includes('airpods')) return 'airpods';
+
+  // Android (marcas/modelos)
+  if (
+    t.includes('samsung') || t.includes('motorola') || t.includes('xiaomi') ||
+    t.includes('poco') || t.includes('redmi') || t.includes('galaxy')
+  ) return 'android';
+
+  // Accesorios (más términos: 'power bank', 'magsafe', 'fuente', etc.)
   if (
     t.includes('cable') || t.includes('cargador') || t.includes('cargadores') ||
     t.includes('auricular') || t.includes('auriculares') || t.includes('parlante') ||
     t.includes('funda') || t.includes('protector') || t.includes('vidrio') ||
-    t.includes('case') || t.includes('powerbank') || t.includes('accesorio')
+    t.includes('case') || t.includes('accesorio') ||
+    t.includes('powerbank') || t.includes('power bank') || t.includes('magsafe') || t.includes('fuente')
   ) return 'accesorios';
+
   return 'otros';
 }
 
@@ -295,22 +310,56 @@ export default function Productos(){
             />
           </div>
 
-          <div className="mt-4 flex flex-wrap justify-center gap-2.5">
-            {CHIPS.map((ch) => (
-              <button
-                key={ch.key}
-                onClick={() => setCategory(ch.key)}
-                className={[
-                  "rounded-full px-4 py-2.5 text-[13px] border transition",
-                  category === ch.key
-                    ? "bg-emerald-600/20 border-emerald-400/30 text-emerald-200"
-                    : "bg-white/5 border-white/10 hover:bg-white/10"
-                ].join(' ')}
-              >
-                {ch.label}
-              </button>
-            ))}
-          </div>
+          {/* Chips accesibles: radiogroup + radios nativos con label grande (fix de taps) */}
+<div
+  role="radiogroup"
+  aria-label="Filtrar por categoría"
+  className="mt-4 w-full flex flex-wrap justify-center gap-2.5"
+>
+  {CHIPS.map((ch) => {
+    const inputId = `chip-${ch.key}`;
+    const checked = category === ch.key;
+    return (
+      <div key={ch.key} className="relative">
+        {/* Radio nativo oculto visualmente: accesible + 'peer' para estilado del label */}
+        <input
+          id={inputId}
+          type="radio"
+          name="catalog-category"
+          value={ch.key}
+          checked={checked}
+          onChange={() => setCategory(ch.key)}
+          className="peer sr-only"
+        />
+        {/* Label = área de toque grande (≥44px), foco visible y estados sin JS extra */}
+        <label
+          htmlFor={inputId}
+          role="radio"
+          aria-checked={checked}
+          className={[
+            "select-none cursor-pointer inline-flex items-center justify-center",
+            "px-4 py-2.5 rounded-full border min-h-[44px] text-[13px] transition",
+            // base
+            "border-white/10 bg-white/5 text-white/80 hover:bg-white/10",
+            // activo (usa estado del radio con 'peer-checked')
+            "peer-checked:bg-emerald-600/20 peer-checked:border-emerald-400/30 peer-checked:text-emerald-200",
+            // foco accesible
+            "peer-focus-visible:ring-2 peer-focus-visible:ring-emerald-400/60",
+            "peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-black",
+          ].join(" ")}
+        >
+          {ch.label}
+        </label>
+      </div>
+    );
+  })}
+</div>
+
+{/* Mensaje para lectores de pantalla (opcional) */}
+<p className="sr-only" aria-live="polite">
+  Categoría seleccionada: {CHIPS.find(c => c.key === category)?.label || category}
+</p>
+
 
           {/* Quick Filters (opcionales, combinables) */}
           <QuickFilters value={filters} onChange={setFilters} />
@@ -460,16 +509,19 @@ export default function Productos(){
           </motion.div>
 
           {/* Paginación: Ver más */}
-          {visibles.length < total && (
-            <div className="mt-6 flex justify-center">
-              <button
-                onClick={() => setPage((n) => n + 1)}
-                className="rounded-xl bg-white/10 hover:bg-white/15 px-6 py-3.5 text-[14px] font-semibold border border-white/10"
-              >
-                Ver más ({visibles.length}/{total})
-              </button>
-            </div>
-          )}
+          {/* Paginación: Ver más (segura y visible sobre barras flotantes) */}
+{total > 0 && visibles.length < total ? (
+  <div className="mt-6 mb-24 flex justify-center">
+    <button
+      type="button"
+      onClick={() => setPage((n) => n + 1)}
+      className="rounded-xl bg-white/10 hover:bg-white/15 px-6 py-3.5 text-[14px] font-semibold border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+      aria-label={`Ver más productos: ${visibles.length} de ${total}`}
+    >
+      Ver más ({Math.min(visibles.length, total)}/{total})
+    </button>
+  </div>
+) : null}
 
           {/* Sin resultados */}
           {total === 0 && (
