@@ -19,6 +19,8 @@ export default function App() {
     <BrowserRouter>
       <ScrollManager />
       <Navbar />
+      {/* PageView por cambio de ruta */}
+      <TrackPixelRoute />
       <Routes>
         {/* 1) Redirigimos "/" hacia "/inicio" para que siempre haya contenido */}
         <Route path="/" element={<Navigate to="/inicio" replace />} />
