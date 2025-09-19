@@ -9,6 +9,8 @@ import SeoHead from '../components/SeoHead';
 import VariantSelector from '../components/VariantSelector';
 import CompareModal from '../components/CompareModal';
 import QuickFilters from '../components/QuickFilters';
+import SortSelect from '../components/SortSelect';
+import SortSelectCustom from '../components/SortSelect';
 
 
 function useQuery(){ return new URLSearchParams(useLocation().search); }
@@ -137,6 +139,9 @@ export default function Productos(){
   const [search, setSearch] = useState(initialSearch);
   const [category, setCategory] = useState(initialCat);
   const [filters, setFilters] = useState(initialFilters); // ['sellado','b90','128','aplus','disp']
+  const initialSort = query.get('sort') || 'relevance';
+  const [sort, setSort] = useState(initialSort);
+
 
   // Sync URL sin resetear scroll (q, cat, f, cmp)
   useEffect(() => {
@@ -145,6 +150,8 @@ export default function Productos(){
     if (category !== 'all') params.set('cat', category);
     if (filters.length) params.set('f', filters.join(','));
     if (compare.length) params.set('cmp', compare.join(','));
+    if (sort !== 'relevance') params.set('sort', sort);
+
     const searchStr = params.toString();
     const url = `/productos${searchStr ? `?${searchStr}` : ''}${location.hash || ''}`;
     window.history.replaceState(window.history.state, '', url);
@@ -183,6 +190,37 @@ export default function Productos(){
     });
   }, [search, category, filters]);
 
+  // Ordenar la lista filtrada según 'sort'
+const ordenados = useMemo(() => {
+  const arr = [...filtrados];
+
+  const getPrice = (p) => {
+    if (typeof p?.precioUsd === "number") return p.precioUsd;
+    const v = Array.isArray(p?.variantes)
+      ? p.variantes.find(x => typeof x?.precioUsd === "number")
+      : null;
+    return v?.precioUsd ?? Infinity; // sin precio => al final en orden por precio
+  };
+
+  switch (sort) {
+    case "price_asc":
+      return arr.sort((a, b) => getPrice(a) - getPrice(b));
+    case "price_desc":
+      return arr.sort((a, b) => getPrice(b) - getPrice(a));
+    case "featured":
+      // 'destacado: true' primero; si empatan, por precio asc
+      return arr.sort((a, b) => {
+        if ((b.destacado ? 1 : 0) !== (a.destacado ? 1 : 0)) {
+          return (b.destacado ? 1 : 0) - (a.destacado ? 1 : 0);
+        }
+        return getPrice(a) - getPrice(b);
+      });
+    default: // relevance (orden original)
+      return arr;
+  }
+}, [filtrados, sort]);
+
+
   // Track del detalle
   useEffect(() => { if (seleccionado) trackViewContent(seleccionado); }, [seleccionado]);
 
@@ -204,9 +242,10 @@ export default function Productos(){
 
   // Paginación “Ver más”
   const [page, setPage] = useState(1);
-  useEffect(() => { setPage(1); }, [search, category, filters]); // reset al cambiar filtro/búsqueda
-  const total = filtrados.length;
-  const visibles = filtrados.slice(0, page * PAGE_SIZE);
+  useEffect(() => { setPage(1); }, [search, category, filters, sort]); // reset al cambiar filtro/búsqueda
+  const total = ordenados.length;
+  const visibles = ordenados.slice(0, page * PAGE_SIZE);
+
   const categoryLabel = CHIPS.find(c => c.key === category)?.label;
 
   // Mostrar botón "Arriba" al hacer scroll
@@ -369,15 +408,20 @@ export default function Productos(){
           <TrustBadges />
         </div>
 
-        {/* Subheader sticky con resultados */}
+        {/* Subheader sticky con resultados + orden */}
         <div className="sticky top-[56px] md:top-[64px] z-30 -mx-4 px-4 py-2.5 bg-gray-900/80 backdrop-blur-md border-b border-white/10 flex items-center justify-between mt-6">
           <span className="text-[13px] opacity-80">
             {category!=='all' ? `Categoría: ${categoryLabel} · ` : ''}
             {search ? `Resultados para “${search}”` : 'Todos los productos'}
             {filters.length ? ` · Filtros: ${filters.length}` : ''}
           </span>
-          <span className="text-[13px] opacity-70">{visibles.length}/{total}</span>
+
+          <div className="flex items-center gap-3">
+            <SortSelectCustom value={sort} onChange={setSort} />
+            <span className="text-[13px] opacity-70">{visibles.length}/{total}</span>
+          </div>
         </div>
+
 
         {/* PDP embebida si hay ?sku=... */}
         {seleccionado && (
