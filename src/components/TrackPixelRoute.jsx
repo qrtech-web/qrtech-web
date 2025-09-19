@@ -1,12 +1,17 @@
 // src/components/TrackPixelRoute.jsx
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function TrackPixelRoute() {
   const { pathname, search } = useLocation();
+  const isFirstLoad = useRef(true);
 
   useEffect(() => {
-    // Dispara un PageView cada vez que cambia la URL interna
+    // Evita duplicar el PageView del snippet base en el primer render
+    if (isFirstLoad.current) {
+      isFirstLoad.current = false;
+      return;
+    }
     if (window.fbq) {
       window.fbq("track", "PageView");
     }

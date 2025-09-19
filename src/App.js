@@ -11,6 +11,8 @@ import Calculadora from "./pages/Calculadora";
 import WhatsAppFloat from './components/WhatsAppFloat';
 import ScrollManager from './components/ScrollManager';
 
+import TrackPixelRoute from "./components/TrackPixelRoute";
+
 
 // (si no tenés ListaClientes, no la importes)
 
