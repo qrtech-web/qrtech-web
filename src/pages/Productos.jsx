@@ -9,56 +9,29 @@ import SeoHead from '../components/SeoHead';
 import VariantSelector from '../components/VariantSelector';
 import CompareModal from '../components/CompareModal';
 import QuickFilters from '../components/QuickFilters';
-import SortSelect from '../components/SortSelect';
 import SortSelectCustom from '../components/SortSelect';
-
+import { trackViewContent, trackWhatsAppClick } from "../lib/track";
 
 function useQuery(){ return new URLSearchParams(useLocation().search); }
 
-// Meta Pixel: ViewContent del producto seleccionado
-function trackViewContent(prod){
-  try{
-    if(!window.fbq || !prod) return;
-    const catalogId = prod.catalogId || prod.id;
-    window.fbq('track', 'ViewContent', {
-      content_ids: [catalogId],
-      content_type: 'product',
-      value: prod.precioUsd,
-      currency: 'USD'
-    });
-  }catch(_){}
-}
-
 // Heurística de categoría (usa primero p.categoria si existe)
 function guessCategory(p){
-  // 1) Si el objeto ya trae `categoria`, usala (evita errores de texto)
   const c = (p.categoria || '').toLowerCase().trim();
   if (c) return c;
-
-  // 2) Fallback por nombre (mejor cobertura de keywords)
   const t = (p.nombre || '').toLowerCase();
-
   if (t.includes('iphone')) return 'iphone';
   if (t.includes('ipad')) return 'ipad';
   if (t.includes('mac')) return 'mac';
   if (t.includes('watch')) return 'watch';
   if (t.includes('airpods')) return 'airpods';
-
-  // Android (marcas/modelos)
-  if (
-    t.includes('samsung') || t.includes('motorola') || t.includes('xiaomi') ||
-    t.includes('poco') || t.includes('redmi') || t.includes('galaxy')
-  ) return 'android';
-
-  // Accesorios (más términos: 'power bank', 'magsafe', 'fuente', etc.)
-  if (
-    t.includes('cable') || t.includes('cargador') || t.includes('cargadores') ||
-    t.includes('auricular') || t.includes('auriculares') || t.includes('parlante') ||
-    t.includes('funda') || t.includes('protector') || t.includes('vidrio') ||
-    t.includes('case') || t.includes('accesorio') ||
-    t.includes('powerbank') || t.includes('power bank') || t.includes('magsafe') || t.includes('fuente')
-  ) return 'accesorios';
-
+  if (t.includes('samsung') || t.includes('motorola') || t.includes('xiaomi') ||
+      t.includes('poco') || t.includes('redmi') || t.includes('galaxy')) return 'android';
+  if (t.includes('cable') || t.includes('cargador') || t.includes('cargadores') ||
+      t.includes('auricular') || t.includes('auriculares') || t.includes('parlante') ||
+      t.includes('funda') || t.includes('protector') || t.includes('vidrio') ||
+      t.includes('case') || t.includes('accesorio') ||
+      t.includes('powerbank') || t.includes('power bank') || t.includes('magsafe') || t.includes('fuente'))
+    return 'accesorios';
   return 'otros';
 }
 
@@ -73,7 +46,6 @@ const CHIPS = [
   { key: 'accesorios', label: 'Accesorios' },
 ];
 
-// Tamaño de página (cuántos ítems por “Ver más”)
 const PAGE_SIZE = 8;
 
 /** Helpers para Quick Filters (basados en variantes) */
@@ -103,7 +75,6 @@ function productHasCondAPlus(p) {
   return p.variantes.some(v => String(v?.condicion || '').toLowerCase().includes('usado a+'));
 }
 function productDisponible(p) {
-  // si no hay variantes ⇒ asumimos disponible; si hay, alguna con stock !== false
   if (!Array.isArray(p?.variantes) || p.variantes.length === 0) return true;
   return p.variantes.some(v => v?.stock !== false);
 }
@@ -118,7 +89,7 @@ export default function Productos(){
   const initialSearch = query.get('q') || '';
   const initialFilters = (query.get('f') || '').split(',').filter(Boolean);
 
-  // Comparador (IDs seleccionados) + modal
+  // Comparador
   const initialCompare = (query.get('cmp') || '')
     .split(',')
     .filter(Boolean)
@@ -129,8 +100,8 @@ export default function Productos(){
 
   const toggleCompare = (id) => {
     setCompare((prev) => {
-      if (prev.includes(id)) return prev.filter(x => x !== id); // quita si ya estaba
-      if (prev.length >= 2) return prev;                        // límite 2
+      if (prev.includes(id)) return prev.filter(x => x !== id);
+      if (prev.length >= 2) return prev;
       return [...prev, id];
     });
   };
@@ -141,7 +112,6 @@ export default function Productos(){
   const [filters, setFilters] = useState(initialFilters); // ['sellado','b90','128','aplus','disp']
   const initialSort = query.get('sort') || 'relevance';
   const [sort, setSort] = useState(initialSort);
-
 
   // Sync URL sin resetear scroll (q, cat, f, cmp)
   useEffect(() => {
@@ -156,7 +126,7 @@ export default function Productos(){
     const url = `/productos${searchStr ? `?${searchStr}` : ''}${location.hash || ''}`;
     window.history.replaceState(window.history.state, '', url);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [search, category, filters, compare]);
+  }, [search, category, filters, compare, sort]);
 
   // Auto-abrir comparador si viene en URL
   const initOpenChecked = useRef(false);
@@ -171,6 +141,7 @@ export default function Productos(){
 
   const seleccionado = useMemo(() => data.find(p => p.id === sku), [sku]);
   const [variante, setVariante] = useState(null); // variante elegida en el selector
+  const varSel = variante || null;                // alias consistente
 
   const filtrados = useMemo(() => {
     const needle = search.trim().toLowerCase();
@@ -178,7 +149,6 @@ export default function Productos(){
       const okSearch = !needle || (p.nombre || '').toLowerCase().includes(needle);
       const okCat = category === 'all' || guessCategory(p) === category;
       if (!(okSearch && okCat)) return false;
-      // aplica filtros rápidos
       for (const f of filters) {
         if (f === 'sellado' && !productHasSellado(p)) return false;
         if (f === 'b90'     && !productHasBateriaAtLeast(p, 90)) return false;
@@ -191,38 +161,49 @@ export default function Productos(){
   }, [search, category, filters]);
 
   // Ordenar la lista filtrada según 'sort'
-const ordenados = useMemo(() => {
-  const arr = [...filtrados];
+  const ordenados = useMemo(() => {
+    const arr = [...filtrados];
+    const getPrice = (p) => {
+      if (typeof p?.precioUsd === "number") return p.precioUsd;
+      const v = Array.isArray(p?.variantes)
+        ? p.variantes.find(x => typeof x?.precioUsd === "number")
+        : null;
+      return v?.precioUsd ?? Infinity;
+    };
+    switch (sort) {
+      case "price_asc":
+        return arr.sort((a, b) => getPrice(a) - getPrice(b));
+      case "price_desc":
+        return arr.sort((a, b) => getPrice(b) - getPrice(a));
+      case "featured":
+        return arr.sort((a, b) => {
+          if ((b.destacado ? 1 : 0) !== (a.destacado ? 1 : 0)) {
+            return (b.destacado ? 1 : 0) - (a.destacado ? 1 : 0);
+          }
+          return getPrice(a) - getPrice(b);
+        });
+      default:
+        return arr;
+    }
+  }, [filtrados, sort]);
 
-  const getPrice = (p) => {
-    if (typeof p?.precioUsd === "number") return p.precioUsd;
-    const v = Array.isArray(p?.variantes)
-      ? p.variantes.find(x => typeof x?.precioUsd === "number")
-      : null;
-    return v?.precioUsd ?? Infinity; // sin precio => al final en orden por precio
-  };
-
-  switch (sort) {
-    case "price_asc":
-      return arr.sort((a, b) => getPrice(a) - getPrice(b));
-    case "price_desc":
-      return arr.sort((a, b) => getPrice(b) - getPrice(a));
-    case "featured":
-      // 'destacado: true' primero; si empatan, por precio asc
-      return arr.sort((a, b) => {
-        if ((b.destacado ? 1 : 0) !== (a.destacado ? 1 : 0)) {
-          return (b.destacado ? 1 : 0) - (a.destacado ? 1 : 0);
-        }
-        return getPrice(a) - getPrice(b);
+  // Track del detalle (usa variante si existe para coincidir con el feed)
+  useEffect(() => {
+    if (!seleccionado) return;
+    if (varSel && varSel.id) {
+      trackViewContent({
+        id: varSel.id,
+        name: seleccionado.nombre,
+        priceUsd: varSel.precioUsd,
       });
-    default: // relevance (orden original)
-      return arr;
-  }
-}, [filtrados, sort]);
-
-
-  // Track del detalle
-  useEffect(() => { if (seleccionado) trackViewContent(seleccionado); }, [seleccionado]);
+    } else {
+      trackViewContent({
+        id: seleccionado.id,
+        name: seleccionado.nombre,
+        priceUsd: seleccionado.precioUsd,
+      });
+    }
+  }, [seleccionado, varSel]);
 
   // Auto-scroll al detalle cuando cambia ?sku=...
   const refDetalle = useRef(null);
@@ -230,7 +211,7 @@ const ordenados = useMemo(() => {
   useEffect(() => {
     if (!seleccionado || !refDetalle.current) return;
     const id = requestAnimationFrame(() => {
-      const headerOffset = 90; // altura aprox. navbar
+      const headerOffset = 90;
       const rect = refDetalle.current.getBoundingClientRect();
       const top = window.scrollY + rect.top - headerOffset;
       window.scrollTo({ top, behavior: 'smooth' });
@@ -240,15 +221,15 @@ const ordenados = useMemo(() => {
     return () => cancelAnimationFrame(id);
   }, [seleccionado, location.key]);
 
-  // Paginación “Ver más”
+  // Paginación
   const [page, setPage] = useState(1);
-  useEffect(() => { setPage(1); }, [search, category, filters, sort]); // reset al cambiar filtro/búsqueda
+  useEffect(() => { setPage(1); }, [search, category, filters, sort]);
   const total = ordenados.length;
   const visibles = ordenados.slice(0, page * PAGE_SIZE);
 
   const categoryLabel = CHIPS.find(c => c.key === category)?.label;
 
-  // Mostrar botón "Arriba" al hacer scroll
+  // Mostrar botón "Arriba"
   const [showUp, setShowUp] = useState(false);
   useEffect(() => {
     const onScroll = () => setShowUp(window.scrollY > 400);
@@ -256,7 +237,7 @@ const ordenados = useMemo(() => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Animaciones de entrada en “stagger”
+  // Animaciones
   const gridVariants = { hidden: {}, show: { transition: { staggerChildren: 0.06, delayChildren: 0.05 } } };
   const itemVariants = { hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.35 } } };
 
@@ -319,6 +300,26 @@ const ordenados = useMemo(() => {
     return Number.isFinite(n) ? n : 0;
   });
 
+  /** ================= GALERÍA POR COLOR (único bloque) ================= */
+  const [thumbIdx, setThumbIdx] = useState(0);                       // índice de thumbnail activa
+  const colorKey = useMemo(() => (varSel?.color || "").trim(), [varSel]);
+
+  const imagesForColor = useMemo(() => {
+    const imgs = seleccionado?.imagenesPorColor || {};
+    const normalized = Object.fromEntries(
+      Object.entries(imgs).map(([k, v]) => [String(k).trim(), v])
+    );
+    const arr = normalized[colorKey];
+    return Array.isArray(arr) ? arr.filter(Boolean) : [];
+  }, [seleccionado, colorKey]);
+
+  useEffect(() => { setThumbIdx(0); }, [seleccionado?.id, colorKey]);
+
+  const mainImg = useMemo(() => {
+    return imagesForColor[thumbIdx] || seleccionado?.imagen || '/img/placeholder.png';
+  }, [imagesForColor, thumbIdx, seleccionado]);
+
+  /** ================= RENDER ================= */
   return (
     <>
       <main className="container mx-auto px-4 py-6">
@@ -349,58 +350,51 @@ const ordenados = useMemo(() => {
             />
           </div>
 
-          {/* Chips accesibles: radiogroup + radios nativos con label grande (fix de taps) */}
-<div
-  role="radiogroup"
-  aria-label="Filtrar por categoría"
-  className="mt-4 w-full flex flex-wrap justify-center gap-2.5"
->
-  {CHIPS.map((ch) => {
-    const inputId = `chip-${ch.key}`;
-    const checked = category === ch.key;
-    return (
-      <div key={ch.key} className="relative">
-        {/* Radio nativo oculto visualmente: accesible + 'peer' para estilado del label */}
-        <input
-          id={inputId}
-          type="radio"
-          name="catalog-category"
-          value={ch.key}
-          checked={checked}
-          onChange={() => setCategory(ch.key)}
-          className="peer sr-only"
-        />
-        {/* Label = área de toque grande (≥44px), foco visible y estados sin JS extra */}
-        <label
-          htmlFor={inputId}
-          role="radio"
-          aria-checked={checked}
-          className={[
-            "select-none cursor-pointer inline-flex items-center justify-center",
-            "px-4 py-2.5 rounded-full border min-h-[44px] text-[13px] transition",
-            // base
-            "border-white/10 bg-white/5 text-white/80 hover:bg-white/10",
-            // activo (usa estado del radio con 'peer-checked')
-            "peer-checked:bg-emerald-600/20 peer-checked:border-emerald-400/30 peer-checked:text-emerald-200",
-            // foco accesible
-            "peer-focus-visible:ring-2 peer-focus-visible:ring-emerald-400/60",
-            "peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-black",
-          ].join(" ")}
-        >
-          {ch.label}
-        </label>
-      </div>
-    );
-  })}
-</div>
+          {/* Chips accesibles */}
+          <div
+            role="radiogroup"
+            aria-label="Filtrar por categoría"
+            className="mt-4 w-full flex flex-wrap justify-center gap-2.5"
+          >
+            {CHIPS.map((ch) => {
+              const inputId = `chip-${ch.key}`;
+              const checked = category === ch.key;
+              return (
+                <div key={ch.key} className="relative">
+                  <input
+                    id={inputId}
+                    type="radio"
+                    name="catalog-category"
+                    value={ch.key}
+                    checked={checked}
+                    onChange={() => setCategory(ch.key)}
+                    className="peer sr-only"
+                  />
+                  <label
+                    htmlFor={inputId}
+                    role="radio"
+                    aria-checked={checked}
+                    className={[
+                      "select-none cursor-pointer inline-flex items-center justify-center",
+                      "px-4 py-2.5 rounded-full border min-h-[44px] text-[13px] transition",
+                      "border-white/10 bg-white/5 text-white/80 hover:bg-white/10",
+                      "peer-checked:bg-emerald-600/20 peer-checked:border-emerald-400/30 peer-checked:text-emerald-200",
+                      "peer-focus-visible:ring-2 peer-focus-visible:ring-emerald-400/60",
+                      "peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-black",
+                    ].join(" ")}
+                  >
+                    {ch.label}
+                  </label>
+                </div>
+              );
+            })}
+          </div>
 
-{/* Mensaje para lectores de pantalla (opcional) */}
-<p className="sr-only" aria-live="polite">
-  Categoría seleccionada: {CHIPS.find(c => c.key === category)?.label || category}
-</p>
+          <p className="sr-only" aria-live="polite">
+            Categoría seleccionada: {CHIPS.find(c => c.key === category)?.label || category}
+          </p>
 
-
-          {/* Quick Filters (opcionales, combinables) */}
+          {/* Quick Filters */}
           <QuickFilters value={filters} onChange={setFilters} />
         </section>
 
@@ -421,7 +415,6 @@ const ordenados = useMemo(() => {
             <span className="text-[13px] opacity-70">{visibles.length}/{total}</span>
           </div>
         </div>
-
 
         {/* PDP embebida si hay ?sku=... */}
         {seleccionado && (
@@ -445,15 +438,49 @@ const ordenados = useMemo(() => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Columna izquierda: imagen + thumbnails */}
               <div className="rounded-xl bg-white/5 p-4">
                 <img
-                  src={seleccionado.imagen || '/img/placeholder.png'}
-                  alt={seleccionado.nombre}
+                  key={mainImg}
+                  src={mainImg}
+                  alt={`${seleccionado.nombre}${varSel?.color ? ` - ${varSel.color}` : ''}`}
                   className="w-full object-contain rounded-lg"
                   loading="lazy"
+                  onError={(e) => { e.currentTarget.src = seleccionado.imagen || '/img/placeholder.png'; }}
                 />
+
+                {imagesForColor.length > 1 && (
+                  <div className="mt-3 flex gap-2 flex-wrap">
+                    {imagesForColor.map((src, i) => {
+                      const active = i === thumbIdx;
+                      return (
+                        <button
+                          key={src + i}
+                          type="button"
+                          onClick={() => setThumbIdx(i)}
+                          className={[
+                            "h-16 w-16 rounded-lg overflow-hidden border transition",
+                            active
+                              ? "border-emerald-400/60 ring-2 ring-emerald-400/30"
+                              : "border-white/10 hover:border-white/20"
+                          ].join(" ")}
+                          aria-label={`Ver imagen ${i + 1} de ${imagesForColor.length}`}
+                        >
+                          <img
+                            src={src}
+                            alt={`Vista ${i + 1} ${varSel?.color || ""}`}
+                            className="h-full w-full object-cover"
+                            loading="lazy"
+                            onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+                          />
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
 
+              {/* Columna derecha: info y acciones */}
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight">{seleccionado.nombre}</h2>
 
@@ -462,26 +489,25 @@ const ordenados = useMemo(() => {
                   <VariantSelector product={seleccionado} onChange={setVariante} />
                 )}
 
-                {/* Precio: usa el de la variante, si no el base */}
+                {/* Precio */}
                 <div className="mt-3">
                   <div className="text-lg md:text-xl">
                     <span className="opacity-75 mr-2">Precio</span>
-                    <strong>{`USD ${ (variante?.precioUsd ?? seleccionado.precioUsd ?? 0) }`}</strong>
+                    <strong>{`USD ${ (varSel?.precioUsd ?? seleccionado.precioUsd ?? 0) }`}</strong>
                   </div>
                   <p className="text-sm opacity-70">
                     Precios en USD de referencia. ARS al tipo de cambio del día del pago.
                   </p>
 
-                  {/* Construcción de enlaces (WA + Calculadora) con variante */}
+                  {/* Enlaces (WA + Calculadora) con variante efectiva */}
                   {(() => {
-                    const number = "5493815677391"; // TODO: mover a config
+                    const number = "5493815677391";
                     const vDesc = [
-                      variante?.storage ? `• ${variante.storage}` : null,
-                      variante?.condicion ? `• ${variante.condicion}` : null,
-                      variante?.bateria ? `• Batería ${variante.bateria}` : null
+                      varSel?.storage ? `• ${varSel.storage}` : null,
+                      varSel?.condicion ? `• ${varSel.condicion}` : null,
+                      varSel?.bateria ? `• Batería ${varSel.bateria}` : null
                     ].filter(Boolean).join(" ");
-                    const precioSel = variante?.precioUsd ?? seleccionado.precioUsd ?? 0;
-                    const utm = "utm_source=qrtech-web&utm_medium=pdp&utm_campaign=wa_product";
+                    const precioSel = varSel?.precioUsd ?? seleccionado.precioUsd ?? 0;
                     const waText = encodeURIComponent(
                       `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n`
                     );
@@ -495,10 +521,14 @@ const ordenados = useMemo(() => {
                           rel="noopener noreferrer"
                           className="rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white"
                           aria-label={`Consultar ${seleccionado.nombre} por WhatsApp`}
-                          onClick={() => {
-                            try { window.fbq?.("track", "Lead", { content_ids: [seleccionado.id], content_type: "product" }); } catch {}
-                            try { window.gtag?.("event", "cta_whatsapp_pdp", { item_id: seleccionado.id, variant_id: variante?.id || null }); } catch {}
-                          }}
+                          onClick={() =>
+                            trackWhatsAppClick({
+                              id: (varSel && varSel.id) || seleccionado.id,
+                              name: seleccionado.nombre,
+                              priceUsd: precioSel,
+                              location: "pdp",
+                            })
+                          }
                         >
                           Consultar por WhatsApp
                         </a>
@@ -522,7 +552,7 @@ const ordenados = useMemo(() => {
           </article>
         )}
 
-        {/* GRID: 2 columnas hasta md/lg, luego 3/4 – con “stagger” */}
+        {/* GRID */}
         <section id="grid" className="mt-8 scroll-mt-24 md:scroll-mt-32">
           <motion.div
             variants={gridVariants}
@@ -553,19 +583,18 @@ const ordenados = useMemo(() => {
           </motion.div>
 
           {/* Paginación: Ver más */}
-          {/* Paginación: Ver más (segura y visible sobre barras flotantes) */}
-{total > 0 && visibles.length < total ? (
-  <div className="mt-6 mb-24 flex justify-center">
-    <button
-      type="button"
-      onClick={() => setPage((n) => n + 1)}
-      className="rounded-xl bg-white/10 hover:bg-white/15 px-6 py-3.5 text-[14px] font-semibold border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-      aria-label={`Ver más productos: ${visibles.length} de ${total}`}
-    >
-      Ver más ({Math.min(visibles.length, total)}/{total})
-    </button>
-  </div>
-) : null}
+          {total > 0 && visibles.length < total ? (
+            <div className="mt-6 mb-24 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setPage((n) => n + 1)}
+                className="rounded-xl bg-white/10 hover:bg-white/15 px-6 py-3.5 text-[14px] font-semibold border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                aria-label={`Ver más productos: ${visibles.length} de ${total}`}
+              >
+                Ver más ({Math.min(visibles.length, total)}/{total})
+              </button>
+            </div>
+          ) : null}
 
           {/* Sin resultados */}
           {total === 0 && (
@@ -584,61 +613,7 @@ const ordenados = useMemo(() => {
           </button>
         )}
 
-        {/* Barra flotante de comparación (no mostrar si hay PDP abierta para evitar solaparse) */}
-        {compare.length > 0 && !seleccionado && (
-          <div className="fixed inset-x-0 bottom-0 z-40">
-            <div className="mx-auto max-w-5xl px-4 pb-[env(safe-area-inset-bottom)]">
-              <div className="mb-3 rounded-2xl border border-white/10 bg-slate-900/90 backdrop-blur p-3 shadow-2xl flex items-center justify-between gap-3">
-                <div className="text-sm">
-                  {compare.length}/2 seleccionados para comparar
-                </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => setCompare([])}
-                    className="rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 px-3 py-2 text-sm"
-                  >
-                    Limpiar
-                  </button>
-                  <button
-                    onClick={() => {
-                      const params = new URLSearchParams();
-                      if (search) params.set('q', search);
-                      if (category !== 'all') params.set('cat', category);
-                      if (compare.length) params.set('cmp', compare.join(','));
-                      params.set('open', 'cmp');
-                      const url = `${window.location.origin}/productos?${params.toString()}`;
-                      navigator.clipboard?.writeText(url);
-                      try { window.gtag?.('event', 'compare_copy_link', { items: compare }); } catch {}
-                    }}
-                    className="rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 px-3 py-2 text-sm"
-                  >
-                    Copiar enlace
-                  </button>
-                  <button
-                    disabled={compare.length < 2}
-                    onClick={() => {
-                      setCompareOpen(true);
-                      try {
-                        window.gtag?.("event", "compare_open", { items: compare });
-                        window.fbq?.("trackCustom", "CompareOpen", { content_ids: compare, content_type: "product_group" });
-                      } catch {}
-                    }}
-                    className={[
-                      "rounded-lg px-4 py-2 text-sm font-semibold",
-                      compare.length < 2
-                        ? "bg-white/10 border border-white/15 text-white/60 cursor-not-allowed"
-                        : "bg-emerald-600 hover:bg-emerald-700 text-white"
-                    ].join(" ")}
-                  >
-                    Comparar ahora
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* PDP — barra inferior móvil (Total ref. + WhatsApp + Ver cuotas) */}
+        {/* Barra flotante móvil PDP */}
         {seleccionado && (
           <div className="fixed inset-x-0 bottom-0 md:hidden z-[60]">
             <div className="mx-auto max-w-3xl px-4 pb-[env(safe-area-inset-bottom)]">
@@ -648,9 +623,9 @@ const ordenados = useMemo(() => {
                     <div className="opacity-70">Total referencia</div>
                     <div className="text-lg font-bold">
                       {(() => {
-                        const priceSel = (variante?.precioUsd ?? seleccionado.precioUsd ?? 0);
-                        const total = cotRef ? Math.round(priceSel * cotRef).toLocaleString("es-AR") : null;
-                        return total ? `$${total} ARS` : `USD ${priceSel}`;
+                        const priceSel = (varSel?.precioUsd ?? seleccionado.precioUsd ?? 0);
+                        const totalRef = cotRef ? Math.round(priceSel * cotRef).toLocaleString("es-AR") : null;
+                        return totalRef ? `$${totalRef} ARS` : `USD ${priceSel}`;
                       })()}
                     </div>
                   </div>
@@ -658,12 +633,11 @@ const ordenados = useMemo(() => {
                   {(() => {
                     const number = "5493815677391";
                     const vDesc = [
-                      variante?.storage ? `• ${variante.storage}` : null,
-                      variante?.condicion ? `• ${variante.condicion}` : null,
-                      variante?.bateria ? `• Batería ${variante.bateria}` : null
+                      varSel?.storage ? `• ${varSel.storage}` : null,
+                      varSel?.condicion ? `• ${varSel.condicion}` : null,
+                      varSel?.bateria ? `• Batería ${varSel.bateria}` : null
                     ].filter(Boolean).join(" ");
-                    const precioSel = variante?.precioUsd ?? seleccionado.precioUsd ?? 0;
-                    const utm = "utm_source=qrtech-web&utm_medium=pdp_bar&utm_campaign=wa_product";
+                    const precioSel = varSel?.precioUsd ?? seleccionado.precioUsd ?? 0;
                     const waText = encodeURIComponent(
                       `¡Hola QRTech! 👋\nQuiero consultar por: ${seleccionado.nombre}\n${vDesc}\n• Precio USD ${precioSel}\n`
                     );
@@ -677,10 +651,14 @@ const ordenados = useMemo(() => {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center rounded-xl bg-emerald-600 hover:bg-emerald-700 px-4 py-3 text-white font-semibold text-[15px]"
-                          onClick={() => {
-                            try { window.fbq?.("track", "Lead", { content_ids: [seleccionado.id], content_type: "product" }); } catch {}
-                            try { window.gtag?.("event", "cta_whatsapp_pdp_bar", { item_id: seleccionado.id, variant_id: variante?.id || null }); } catch {}
-                          }}
+                          onClick={() =>
+                            trackWhatsAppClick({
+                              id: (varSel && varSel.id) || seleccionado.id,
+                              name: seleccionado.nombre,
+                              priceUsd: precioSel,
+                              location: "pdp_bar",
+                            })
+                          }
                           aria-label={`Consultar ${seleccionado.nombre} por WhatsApp`}
                         >
                           WhatsApp

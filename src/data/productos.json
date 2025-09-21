@@ -161,7 +161,11 @@
     "nombre": "iPhone 13",
     "precioUsd": 400,
     "imagen": "/img/productos/13.png",
-    "imagenes": ["/img/productos/13.png"],
+    "imagenesPorColor": {
+      "Midnight": ["/img/productos/13.png"],
+    "Starlight": ["/img/productos/11.png"],
+    "Pink": ["/img/productos/12.png"]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
     "waMsg": "Hola QRTech! Quiero el iPhone 13 (ip13). ¿Está disponible?",
     "marca": "Apple",
@@ -174,10 +178,10 @@
     "sku": "IP13",
     "specs": { "pantalla": "6.1\" OLED", "camaras": "12 MP (dual)", "chip": "A15" },
     "variantes": [
-      { "id": "ip13-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 400, "stock": true },
-      { "id": "ip13-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 410, "stock": true },
-      { "id": "ip13-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 430, "stock": true },
-      { "id": "ip13-128-sellado","storage": "128GB","condicion": "Sellado", "bateria": "sellado", "precioUsd": 570, "stock": true }
+      { "id": "ip13-128-a80","storage": "128GB", "condicion": "Usado A+", "bateria": "≥85%", "precioUsd": 400, "stock": true, "color": "Midnight"},
+      { "id": "ip13-128-a90","storage": "128GB", "condicion": "Usado A+", "bateria": "≥90%", "precioUsd": 410, "stock": true, "color": "Starlight" },
+      { "id": "ip13-128-a100","storage": "128GB","condicion": "Usado A+", "bateria": "100%", "precioUsd": 430, "stock": true, "color": "Starlight" },
+      { "id": "ip13-128-sellado","storage": "128GB","condicion": "Sellado", "bateria": "100%", "precioUsd": 570, "stock": true, "color": "Pink" }
     ]
   },
   {

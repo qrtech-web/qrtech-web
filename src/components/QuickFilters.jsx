@@ -1,5 +1,3 @@
-// src/components/QuickFilters.jsx
-import React from "react";
 
 /**
  * Filtros rápidos basados en variantes.

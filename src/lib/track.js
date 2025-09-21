@@ -6,7 +6,7 @@ const PIXEL_ALIASES = (typeof window !== "undefined" && window.QRTECH_PIXEL_ALIA
   "clickenboton",
 ];
 
-export function trackWhatsAppClick({ name, priceUsd, category = "iphone", location = "card" }) {
+export function trackWhatsAppClick({ id, name, priceUsd, category = "iphone", location = "card" }) {
   const payload = {
     event: "whatsapp_click",
     name,
@@ -35,10 +35,10 @@ export function trackWhatsAppClick({ name, priceUsd, category = "iphone", locati
     }
   } catch (_) {}
 
-  // Meta Pixel (tu pixel existente + alias de eventos legacy)
+    // Meta Pixel (tu pixel existente + alias de eventos legacy)
   try {
     if (typeof window.fbq === "function") {
-      // Nuestro evento estándar
+      // Nuestro evento custom (lo mantenemos por compatibilidad)
       window.fbq("trackCustom", "WhatsAppClick", {
         content_name: name,
         value: priceUsd,
@@ -46,6 +46,18 @@ export function trackWhatsAppClick({ name, priceUsd, category = "iphone", locati
         location,
         content_category: category,
       });
+
+      // ← NUEVO: evento estándar con IDs alineados al feed
+      const metaPayload = {
+        content_ids: id ? [id] : undefined, // id de producto/variante de tu feed
+        content_type: "product",
+        value: Number(priceUsd || 0),
+        currency: "USD",
+        item_name: name,
+        location,
+      };
+      window.fbq("track", "Contact", metaPayload);
+      window.fbq("track", "Lead", metaPayload);
 
       // Dispara también tus nombres heredados (si los usabas)
       PIXEL_ALIASES.forEach((evt) => {
@@ -59,4 +71,20 @@ export function trackWhatsAppClick({ name, priceUsd, category = "iphone", locati
       });
     }
   } catch (_) {}
+
 }
+
+export function trackViewContent({ id, name, priceUsd }) {
+  try {
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "ViewContent", {
+        content_ids: id ? [id] : undefined,
+        content_type: "product",
+        value: Number(priceUsd || 0),
+        currency: "USD",
+        item_name: name,
+      });
+    }
+  } catch (_) {}
+}
+
