@@ -1,135 +1,146 @@
 // src/components/FormasDePago.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
-/** Logos (usá las rutas que ya tengas en /public; podés agregar/quitar sin tocar el layout) */
-const logos = [
-  { src: "logos//visa.jpg", alt: "Visa" },
-  { src: "logos//mastercard.png", alt: "Mastercard" },
-  { src: "logos//mercado.png", alt: "Mercado Pago" },
-  { src: "logos//amex.png", alt: "American Express" },
-  { src: "logos//sucredito.png", alt: "Sucrédito" },
-  { src: "logos//nx.png", alt: "Naranja X" },
+const methods = [
+  {
+    key: "visa",
+    label: "Visa",
+    img: "/img/payments/visa.svg",
+    note: "Crédito y débito",
+  },
+  {
+    key: "mastercard",
+    label: "Mastercard",
+    img: "/img/payments/mastercard.svg",
+    note: "Crédito y débito",
+  },
+  {
+    key: "amex",
+    label: "American Express",
+    img: "/img/payments/amex.svg",
+    note: "Crédito",
+  },
+  {
+    key: "mp",
+    label: "Mercado Pago",
+    img: "/img/payments/mercado-pago.svg",
+    note: "Cuotas y QR",
+  },
+  {
+    key: "transfer",
+    label: "Transferencia",
+    img: "/img/payments/transferencia.svg",
+    note: "Descuento por pago",
+  },
+  {
+    key: "cash",
+    label: "Efectivo",
+    img: "/img/payments/efectivo.svg",
+    note: "En oficina",
+  },
 ];
 
-/** Odómetro liviano para el número de cuotas */
-function useCountUp(finalValue = 12, durationMs = 900) {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    let rafId, start;
-    const step = (ts) => {
-      if (!start) start = ts;
-      const p = Math.min(1, (ts - start) / durationMs);
-      // arranca rápido y suaviza al final
-      setValue(Math.max(1, Math.round(finalValue * (0.4 + 0.6 * p))));
-      if (p < 1) rafId = requestAnimationFrame(step);
-    };
-    rafId = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(rafId);
-  }, [finalValue, durationMs]);
-  return value;
-}
-
-const cardVariants = { hidden: { opacity: 0, scale: 0.98 }, show: { opacity: 1, scale: 1 } };
-const logoVariants = { rest: { y: 0 }, hover: { y: -2 } };
+const cardVariants = {
+  hidden: { opacity: 0, y: 8 },
+  show: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.28, delay: 0.05 + i * 0.05 },
+  }),
+};
 
 export default function FormasDePago() {
-  const cuotas = useCountUp(12, 900);
-
   return (
     <section
-      id="medios-pago"
-      className="relative py-24 px-4 bg-gradient-to-b from-gray-900 via-gray-950 to-black text-white"
-      aria-label="Medios de pago y financiación"
+      aria-labelledby="formas-pago-title"
+      className="mt-10 rounded-2xl border border-white/10 bg-white/[0.04] p-4 md:p-6"
     >
-      <div className="mx-auto max-w-6xl grid gap-10 md:grid-cols-2 items-center">
-        {/* Texto / claim */}
-        <motion.div
-          initial={{ opacity: 0, x: -12 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-4"
-        >
-          <h2 className="text-4xl sm:text-5xl font-carter">
-            QRTech se adapta a tu billetera.
+      <div className="flex items-start justify-between gap-3 flex-wrap">
+        <div>
+          <h2
+            id="formas-pago-title"
+            className="text-xl md:text-2xl font-semibold tracking-tight"
+          >
+            Formas de pago
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg">
-            Elegí el medio que te quede mejor. Aceptamos tarjetas, billeteras y planes de financiación.
+          <p className="text-sm opacity-75 mt-1">
+            Aceptamos tarjetas, QR y transferencias. Consultá cuotas disponibles.
           </p>
-
-          <div className="mt-6">
-            <p className="text-lg sm:text-xl font-medium opacity-90">Podés pagar hasta</p>
-            <p className="text-7xl sm:text-8xl font-black drop-shadow-xl text-indigo-400 tabular-nums">
-              {cuotas}
-            </p>
-            <p className="text-2xl font-semibold tracking-wider">CUOTAS FIJAS</p>
-          </div>
-
-          <ul className="mt-6 space-y-2 text-sm text-gray-300">
-            <li className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400/80" />
-              Garantía QRTech escrita
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400/80" />
-              Retiro en oficina (con cita)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400/80" />
-              Combiná cualquier medio de pago
-            </li>
-          </ul>
-        </motion.div>
-
-        {/* Logos / tarjetas */}
-        <motion.div
-          className="relative bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-8 sm:p-10 shadow-2xl overflow-hidden"
-          variants={cardVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.4 }}
-        >
-          {/* Glow suave */}
-          <div
-            className="pointer-events-none absolute inset-0 rounded-3xl"
-            style={{ boxShadow: "0 0 80px 10px rgba(99,102,241,0.08) inset" }}
-          />
-
-          <h3 className="text-xl font-semibold mb-6 text-center">Elegí tu forma de pago</h3>
-
-          <div className="grid grid-cols-3 gap-4 place-items-center">
-            {logos.map((logo, i) => (
-              <motion.div
-                key={i}
-                variants={logoVariants}
-                initial="rest"
-                whileHover="hover"
-                whileTap={{ scale: 0.98 }}
-                className="w-20 sm:w-24 h-16 sm:h-20 rounded-xl flex items-center justify-center
-                           bg-white/5 border border-white/10 hover:border-indigo-400/40
-                           transition-colors duration-300"
-                role="img"
-                aria-label={logo.alt}
-                title={logo.alt}
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="w-14 sm:w-16 h-auto object-contain transition duration-300 opacity-95 hover:opacity-100 drop-shadow"
-
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="mt-6 text-center text-sm text-gray-300 flex justify-center items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400/70" />
-            <span>QRTech</span>
-          </div>
-        </motion.div>
+        </div>
+        <div className="text-xs opacity-70">
+          <span className="inline-block px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-400/30">
+            Garantía escrita QRTech
+          </span>
+        </div>
       </div>
+
+      {/* Grid responsivo de métodos */}
+      <motion.ul
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className="mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3"
+      >
+        {methods.map((m, i) => (
+          <motion.li
+            key={m.key}
+            custom={i}
+            variants={cardVariants}
+            className="group relative rounded-xl border border-white/10 bg-white/[0.06] hover:bg-white/[0.1] transition-colors"
+          >
+            <button
+              type="button"
+              className="w-full h-full text-left p-3 flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-xl"
+              aria-label={m.label}
+              tabIndex={0}
+            >
+              <div className="h-9 w-12 flex items-center justify-center rounded-lg bg-white">
+                {/* Logo a color. Si no carga, mostramos iniciales */}
+                <img
+                  src={m.img}
+                  alt={m.label}
+                  className="h-6 w-auto"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.replaceWith(
+                      Object.assign(document.createElement("div"), {
+                        className: "h-6 w-10 flex items-center justify-center text-[11px] font-semibold text-slate-700",
+                        innerText: m.label.slice(0, 3).toUpperCase(),
+                      })
+                    );
+                  }}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-sm font-semibold leading-tight">
+                  {m.label}
+                </div>
+                <div className="text-xs opacity-70 truncate">{m.note}</div>
+              </div>
+              {/* micro-animación: “tilt” */}
+              <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                <svg
+                  className="h-4 w-4 rotate-0 group-hover:-rotate-6 transition-transform"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </div>
+            </button>
+          </motion.li>
+        ))}
+      </motion.ul>
+
+      {/* Aviso legal corto */}
+      <p className="mt-4 text-xs opacity-60">
+        Los medios y planes pueden variar según disponibilidad. Las cuotas y costos
+        financieros los define cada entidad/servicio al momento del pago.
+      </p>
     </section>
   );
 }
