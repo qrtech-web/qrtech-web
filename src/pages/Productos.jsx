@@ -39,11 +39,9 @@ const CHIPS = [
   { key: 'all', label: 'Todos' },
   { key: 'iphone', label: 'iPhone' },
   { key: 'android', label: 'Android' },
-  { key: 'ipad', label: 'iPad' },
-  { key: 'mac', label: 'Mac' },
-  { key: 'watch', label: 'Watch' },
-  { key: 'airpods', label: 'AirPods' },
+  
   { key: 'accesorios', label: 'Accesorios' },
+  { key: 'electrodomesticos', label: 'Electrodomesticos' },
 ];
 
 const PAGE_SIZE = 8;
