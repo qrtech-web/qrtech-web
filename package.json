@@ -23,14 +23,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "cross-env CI=false react-scripts build",
-  "build:feed": "node scripts/build-feed.mjs",
-  "postbuild": "npm run build:feed",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "tailwind:init": "tailwindcss init -p"
-},
+    "feed": "cross-env SITE_ORIGIN=https://qrtech.com.ar node scripts/build-feed.mjs",
+    "prebuild": "node scripts/build-feed.mjs",
+    "start": "react-scripts start",
+    "build": "cross-env CI=false react-scripts build",
+    "build:feed": "node scripts/build-feed.mjs",
+    "postbuild": "npm run build:feed",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tailwind:init": "tailwindcss init -p"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

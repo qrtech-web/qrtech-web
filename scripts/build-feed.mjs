@@ -5,114 +5,88 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-/** 1) Config: origen absoluto del sitio para armar links e imágenes */
+/**
+ * Dominio absoluto para construir URLs de imágenes y enlaces del feed.
+ * Cambiá el valor por defecto o pasalo por ENV al ejecutar:
+ *   SITE_ORIGIN=https://tu-dominio.com node scripts/build-feed.mjs
+ */
 const SITE = process.env.SITE_ORIGIN || "https://qrtech.com.ar";
 
-/** 2) Cargar productos fuente */
+// 1) Cargar productos fuente
 const src = resolve(__dirname, "../src/data/productos.json");
 const data = JSON.parse(readFileSync(src, "utf8"));
 
-/** 3) Helpers */
-const isAbs = (p) => typeof p === "string" && /^https?:\/\//i.test(p);
-const abs = (p) => (p ? (isAbs(p) ? p : SITE + p) : "");
-const toUSD = (n) => `${Number(n || 0).toFixed(2)} USD`;
-const condToMeta = (c) => (/sellado/i.test(String(c)) ? "new" : "used");
+// 2) Helpers
+const toAbs = (p) => (p?.startsWith("http") ? p : SITE + (p?.startsWith("/") ? p : "/" + p || ""));
+const encUrl = (u) => toAbs(u).replace(/ /g, "%20"); // espacios -> %20
+const priceOf = (v, p) => Number(v?.precioUsd ?? p?.precioUsd);
+const condToMeta = (c = "") => (/sellado/i.test(c) ? "new" : "used");
 const avail = (v) => (v?.stock === false ? "out of stock" : "in stock");
-const sanitize = (s) =>
-  String(s ?? "")
-    .replace(/\r?\n/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-const csvRow = (cols) =>
-  cols
-    .map((c) => `"${sanitize(c).replace(/"/g, '""')}"`)
-    .join(",");
+const norm = (s) => String(s || "").toLowerCase().replace(/\s+/g, "").replace(/[^a-z0-9]/g, "");
 
-/** 4) Aplanar variantes -> items individuales */
+// ID único si la variante no trae id (incluye color para evitar choques)
+const makeId = (p, v) =>
+  v?.id || `${p.id}-${norm(v?.storage)}-${norm(v?.condicion)}-${norm(v?.bateria)}-${norm(v?.color) || "nocolor"}`;
+
+// 3) Aplanar productos -> items (Meta recomienda 1 item por variante)
 const items = [];
 for (const p of data) {
   const base = {
-    item_group_id: p.id, // agrupa variantes bajo el mismo modelo
+    item_group_id: p.id,
     brand: p.marca || "Apple",
     link: `${SITE}/productos?sku=${encodeURIComponent(p.id)}`,
-    google_product_category: "Móviles y accesorios > Teléfonos móviles", // opcional
+    image_link: encUrl(p.imagen || p.imagenes?.[0] || "/img/placeholder.png"),
+    additional_image_link: (p.imagenes || []).slice(1).map(encUrl).join(","),
+    google_product_category: "Móviles y accesorios > Teléfonos móviles",
   };
-
-  const baseGeneralImg = abs(p.imagen || p.imagenes?.[0] || "/img/placeholder.png");
-  const baseAdditional = (p.imagenes || []).slice(1).map(abs).join(",");
 
   if (Array.isArray(p.variantes) && p.variantes.length) {
     for (const v of p.variantes) {
-      const precio = v.precioUsd ?? p.precioUsd;
-      if (!precio) continue;
-
-      // Imagen principal por color (si existe), si no la general
-      let image_link = baseGeneralImg;
-      let additional_image_link = baseAdditional;
-
-      if (v.color && p.imagenesPorColor && Array.isArray(p.imagenesPorColor[v.color])) {
-        const arr = p.imagenesPorColor[v.color].filter(Boolean);
-        if (arr.length) {
-          image_link = abs(arr[0]);
-          // Si hay más fotos del mismo color, úsalas como adicionales
-          const extras = arr.slice(1).map(abs);
-          // Si no hay extras por color, conserva las generales
-          additional_image_link = extras.length ? extras.join(",") : baseAdditional;
-        }
-      }
+      const px = priceOf(v, p);
+      if (!Number.isFinite(px)) continue; // sin precio => no lo emitas
 
       items.push({
-        id:
-          v.id ||
-          `${p.id}-${(v.storage || "").replace(/\s/g, "")}-${(v.condicion || "").replace(/\s/g, "")}-${(v.bateria || "").replace(/\s/g, "")}`,
+        id: makeId(p, v),
         title: `${p.nombre} ${v.storage || ""} ${v.condicion || ""}`.trim(),
-        description: `${p.nombre} ${v.storage || ""} · ${v.condicion || ""}${
+        description: `${p.nombre}${v.storage ? ` ${v.storage}` : ""}${v.condicion ? ` · ${v.condicion}` : ""}${
           v.bateria ? ` · Batería ${v.bateria}` : ""
         }. Garantía QRTech.`,
         availability: avail(v),
-        condition: condToMeta(v.condicion || p.condicion || ""),
-        price: toUSD(precio),
+        condition: condToMeta(v.condicion || p.condicion),
+        price: `${px.toFixed(2)} USD`,
         color: v.color || "",
-        size: v.storage || "", // usamos storage como “size”
+        size: v.storage || "",
         custom_label_0: v.bateria || "",
-        link: base.link,
-        image_link,
-        additional_image_link,
-        brand: base.brand,
-        item_group_id: base.item_group_id,
-        google_product_category: base.google_product_category,
+        ...base,
       });
     }
   } else {
-    // sin variantes → un único ítem (id debe matchear el content_id del píxel)
-    if (!p.precioUsd) continue;
+    const px = priceOf(null, p);
+    if (!Number.isFinite(px)) continue;
 
     items.push({
-      id: p.id, // coincide con el píxel cuando no hay variantes
+      id: p.catalogId || p.id,
       title: p.nombre,
       description: `${p.nombre} · Garantía QRTech.`,
       availability: "in stock",
-      condition: condToMeta(p.condicion || ""),
-      price: toUSD(p.precioUsd),
+      condition: condToMeta(p.condicion),
+      price: `${px.toFixed(2)} USD`,
       color: "",
       size: "",
       custom_label_0: "",
-      link: base.link,
-      image_link: baseGeneralImg,
-      additional_image_link: baseAdditional,
-      brand: base.brand,
-      item_group_id: base.item_group_id,
-      google_product_category: base.google_product_category,
+      ...base,
     });
   }
 }
 
-/** 5) Salidas (JSON + CSV) */
+// 4) Salidas en /public
 const outDir = resolve(__dirname, "../public");
 mkdirSync(outDir, { recursive: true });
 
+// JSON
 writeFileSync(resolve(outDir, "products-feed.json"), JSON.stringify(items, null, 2), "utf8");
 
+// CSV estándar Meta
 const headers = [
   "id",
   "title",
@@ -128,14 +102,16 @@ const headers = [
   "color",
   "size",
   "custom_label_0",
-  "google_product_category",
 ];
 
 const csv = [
   headers.join(","),
-  ...items.map((it) => csvRow(headers.map((h) => it[h] ?? ""))),
+  ...items.map((it) => headers.map((h) => `"${String(it[h] ?? "").replace(/"/g, '""')}"`).join(",")),
 ].join("\n");
 
-writeFileSync(resolve(outDir, "products-feed.csv"), csv + "\n", "utf8");
+writeFileSync(resolve(outDir, "products-feed.csv"), csv, "utf8");
 
-console.log(`OK -> ${items.length} items`);
+console.log(`Feed OK → ${items.length} items
+JSON: /public/products-feed.json
+CSV : /public/products-feed.csv
+SITE_ORIGIN=${SITE}`);
