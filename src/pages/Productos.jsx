@@ -130,9 +130,16 @@ export default function Productos(){
   }, [search, category, filters, compare, sort]);
 
   // 👉 Track de productos cuando el modal de comparación se abre
+  // Evitar track repetido del mismo set en aperturas consecutivas
+const lastComparedRef = useRef('');
+
 useEffect(() => {
   if (!compareOpen) return;
   const compared = data.filter(p => compare.includes(p.id));
+  const key = compared.map(p => p.id).sort().join(',');
+  if (key && key === lastComparedRef.current) return; // evita duplicados consecutivos
+  lastComparedRef.current = key;
+
   compared.forEach((p) => {
     trackViewContent({
       id: p.id,
@@ -141,6 +148,7 @@ useEffect(() => {
     });
   });
 }, [compareOpen, compare]);
+
 
 
   // Auto-abrir comparador si viene en URL
@@ -711,7 +719,7 @@ useEffect(() => {
       </main>
 
       
-      {/* Modal de comparación (2 equipos) */}
+      
 {/* Modal de comparación (2 equipos) */}
 <CompareModal
   open={compareOpen}
