@@ -12,6 +12,9 @@ import QuickFilters from '../components/QuickFilters';
 import SortSelectCustom from '../components/SortSelect';
 import { trackViewContent, trackWhatsAppClick } from "../lib/track";
 
+
+
+
 function useQuery(){ return new URLSearchParams(useLocation().search); }
 
 // Heurística de categoría (usa primero p.categoria si existe)
@@ -125,6 +128,20 @@ export default function Productos(){
     window.history.replaceState(window.history.state, '', url);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, category, filters, compare, sort]);
+
+  // 👉 Track de productos cuando el modal de comparación se abre
+useEffect(() => {
+  if (!compareOpen) return;
+  const compared = data.filter(p => compare.includes(p.id));
+  compared.forEach((p) => {
+    trackViewContent({
+      id: p.id,
+      name: p.nombre,
+      priceUsd: p.precioUsd,
+    });
+  });
+}, [compareOpen, compare]);
+
 
   // Auto-abrir comparador si viene en URL
   const initOpenChecked = useRef(false);
@@ -484,7 +501,18 @@ export default function Productos(){
 
                 {/* Selector de variantes (si existen) */}
                 {Array.isArray(seleccionado.variantes) && seleccionado.variantes.length > 0 && (
-                  <VariantSelector product={seleccionado} onChange={setVariante} />
+                  <VariantSelector
+                      product={seleccionado}
+                      onChange={(v) => {
+                        setVariante(v);
+                        // 👉 tracking adicional al elegir variante
+                        trackViewContent({
+                          id: v?.id || seleccionado.id,
+                          name: seleccionado.nombre,
+                          priceUsd: v?.precioUsd ?? seleccionado.precioUsd,
+                        });
+                      }}
+                    />
                 )}
 
                 {/* Precio */}
@@ -682,12 +710,17 @@ export default function Productos(){
         )}
       </main>
 
+      
       {/* Modal de comparación (2 equipos) */}
-      <CompareModal
-        open={compareOpen}
-        onClose={() => setCompareOpen(false)}
-        products={data.filter(p => compare.includes(p.id))}
-      />
+{/* Modal de comparación (2 equipos) */}
+<CompareModal
+  open={compareOpen}
+  onClose={() => setCompareOpen(false)}
+  products={data.filter(p => compare.includes(p.id))}
+/>
+
+
+
     </>
   );
 }
