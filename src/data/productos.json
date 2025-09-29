@@ -4,10 +4,24 @@
     "catalogId": "ip11",
     "nombre": "iPhone 11",
     "precioUsd": 260,
-    "imagen": "https://www.qrtech.com.ar/img/productos/11.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/11.png"
-    ],
+    "imagen": "/img/productos/iPhone/11/b11.png",
+    "imagenesPorColor": {
+      "Negro": [
+        "/img/productos/iPhone/11/Negro.png"
+      ],
+      "Blanco": [
+        "/img/productos/iPhone/11/Blanco.png"
+      ],
+      "Verde": [
+        "/img/productos/iPhone/11/Verde.png"
+      ],
+      "Rojo": [
+        "/img/productos/iPhone/11/Rojo.png"
+      ],
+      "Amarillo": [
+        "/img/productos/iPhone/11/Amarillo.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
     "waMsg": "Hola QRTech! Quiero el iPhone 11 (ip11). ¿Está disponible?",
     "marca": "Apple",
@@ -29,52 +43,274 @@
     },
     "variantes": [
       {
-        "id": "ip11-64-a80",
+        "id": "ip11-64gb-usadoa-90-am",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥80%",
-        "precioUsd": 260,
-        "stock": true
-      },
-      {
-        "id": "ip11-64-a90",
-        "storage": "64GB",
-        "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 270,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip11-64-a100",
+        "id": "ip11-64gb-usadoa-100-am",
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 280,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip11-128-a85",
+        "id": "ip11-128gb-usadoa-85-am",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 280,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip11-128-a90",
+        "id": "ip11-64gb-usadoa-80-am",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 260,
+        "stock": true,
+        "color": "Amarillo"
+      },
+      {
+        "id": "ip11-128gb-usadoa-90-am",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 290,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip11-128-a100",
+        "id": "ip11-128gb-usadoa-100-am",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 300,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
+      },
+      {
+        "id": "ip11-64gb-usadoa-90-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 270,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-64gb-usadoa-100-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-128gb-usadoa-85-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-64gb-usadoa-80-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 260,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-128gb-usadoa-90-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-128gb-usadoa-100-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip11-64gb-usadoa-90-bl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 270,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-64gb-usadoa-100-bl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-128gb-usadoa-85-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-64gb-usadoa-80-bl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 260,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-128gb-usadoa-90-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-128gb-usadoa-100-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip11-64gb-usadoa-90-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 270,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-64gb-usadoa-100-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-128gb-usadoa-85-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-64gb-usadoa-80-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 260,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-128gb-usadoa-90-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-128gb-usadoa-100-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip11-64gb-usadoa-90-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 270,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip11-64gb-usadoa-100-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip11-128gb-usadoa-85-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 280,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip11-64gb-usadoa-80-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 260,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip11-128gb-usadoa-90-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip11-128gb-usadoa-100-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Rojo"
       }
     ]
   },
@@ -83,10 +319,21 @@
     "catalogId": "ip11p",
     "nombre": "iPhone 11 Pro",
     "precioUsd": 290,
-    "imagen": "https://www.qrtech.com.ar/img/productos/11p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/11p.png"
-    ],
+    "imagen": "/img/productos/iPhone/11/b11p.png",
+    "imagenesPorColor": {
+      "Gris Espacial": [
+        "/img/productos/iPhone/11/GrisEspacial.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/11/Plata.png"
+      ],
+      "Verde Medianoche": [
+        "/img/productos/iPhone/11/VerdeMedianoche.png"
+      ],
+      "Oro": [
+        "/img/productos/iPhone/11/Oro.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 11 Pro (ip11p). ¿Está disponible?",
     "marca": "Apple",
@@ -108,52 +355,220 @@
     },
     "variantes": [
       {
-        "id": "ip11p-64-a80",
+        "id": "ip11p-64gb-usadoa-90-or",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥80%",
-        "precioUsd": 290,
-        "stock": true
-      },
-      {
-        "id": "ip11p-64-a90",
-        "storage": "64GB",
-        "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 300,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11p-64-a100",
+        "id": "ip11p-64gb-usadoa-80-or",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-100-or",
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11p-128-a80",
+        "id": "ip11p-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 300,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11p-128-a90",
+        "id": "ip11p-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11p-128-a100",
+        "id": "ip11p-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 320,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-90-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-80-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-100-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-80-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-90-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-100-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-85-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-90-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-100-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-80-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 290,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-90-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11p-64gb-usadoa-100-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-85-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-90-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11p-128gb-usadoa-100-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Verde Medianoche"
       }
     ]
   },
@@ -162,10 +577,21 @@
     "catalogId": "ip11pm",
     "nombre": "iPhone 11 Pro Max",
     "precioUsd": 300,
-    "imagen": "https://www.qrtech.com.ar/img/productos/11pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/11pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/11/b11pm.png",
+    "imagenesPorColor": {
+      "Gris Espacial": [
+        "/img/productos/iPhone/11/GrisEspacial.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/11/Plata.png"
+      ],
+      "Verde Medianoche": [
+        "/img/productos/iPhone/11/VerdeMedianoche.png"
+      ],
+      "Oro": [
+        "/img/productos/iPhone/11/Oro.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 11 Pro Max (ip11pm). ¿Está disponible?",
     "marca": "Apple",
@@ -187,52 +613,220 @@
     },
     "variantes": [
       {
-        "id": "ip11pm-64-a80",
+        "id": "ip11pm-64gb-usadoa-80-or",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥80%",
+        "bateria": "+80%",
         "precioUsd": 300,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11pm-64-a90",
+        "id": "ip11pm-64gb-usadoa-90-or",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11pm-64-a100",
+        "id": "ip11pm-64gb-usadoa-100-or",
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 320,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11pm-128-a80",
+        "id": "ip11pm-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11pm-128-a90",
+        "id": "ip11pm-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 320,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip11pm-128-a100",
+        "id": "ip11pm-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 330,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-80-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-90-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-100-pl",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-80-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-90-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-100-gres",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-85-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-90-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-100-gres",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Gris Espacial"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-80-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-90-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11pm-64gb-usadoa-100-veme",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-85-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-90-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Verde Medianoche"
+      },
+      {
+        "id": "ip11pm-128gb-usadoa-100-veme",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Verde Medianoche"
       }
     ]
   },
@@ -241,10 +835,30 @@
     "catalogId": "ip12",
     "nombre": "iPhone 12",
     "precioUsd": 300,
-    "imagen": "https://www.qrtech.com.ar/img/productos/12.png",
+    "imagen": "/img/productos/iPhone/12/b12.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/12.png"
+      "/img/productos/12.png"
     ],
+    "imagenesPorColor": {
+      "Blanco": [
+        "/img/productos/iPhone/12/Blanco.png"
+      ],
+      "Negro": [
+        "/img/productos/iPhone/12/Negro.png"
+      ],
+      "Lila": [
+        "/img/productos/iPhone/12/Lila.png"
+      ],
+      "Azul": [
+        "/img/productos/iPhone/12/Azul.png"
+      ],
+      "Verde": [
+        "/img/productos/iPhone/12/Verde.png"
+      ],
+      "Rojo": [
+        "/img/productos/iPhone/12/Rojo.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
     "waMsg": "Hola QRTech! Quiero el iPhone 12 (ip12). ¿Está disponible?",
     "marca": "Apple",
@@ -266,52 +880,328 @@
     },
     "variantes": [
       {
-        "id": "ip12-64-a80",
+        "id": "ip12-64gb-usadoa-80-bl",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥80%",
+        "bateria": "+80%",
         "precioUsd": 300,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
       },
       {
-        "id": "ip12-64-a90",
+        "id": "ip12-64gb-usadoa-90-bl",
         "storage": "64GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
       },
       {
-        "id": "ip12-64-a100",
+        "id": "ip12-64gb-usadoa-100-bl",
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 320,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
       },
       {
-        "id": "ip12-128-a80",
+        "id": "ip12-128gb-usadoa-85-bl",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 310,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
       },
       {
-        "id": "ip12-128-a90",
+        "id": "ip12-128gb-usadoa-90-bl",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 320,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
       },
       {
-        "id": "ip12-128-a100",
+        "id": "ip12-128gb-usadoa-100-bl",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 330,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip12-64gb-usadoa-80-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-64gb-usadoa-90-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-64gb-usadoa-100-ne",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-128gb-usadoa-85-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-128gb-usadoa-90-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-128gb-usadoa-100-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip12-64gb-usadoa-80-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-64gb-usadoa-90-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-64gb-usadoa-100-ve",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-128gb-usadoa-85-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-128gb-usadoa-90-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-128gb-usadoa-100-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip12-64gb-usadoa-80-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-64gb-usadoa-90-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-64gb-usadoa-100-ro",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-128gb-usadoa-85-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-128gb-usadoa-90-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-128gb-usadoa-100-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip12-64gb-usadoa-80-li",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-64gb-usadoa-90-li",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-64gb-usadoa-100-li",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-128gb-usadoa-85-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-128gb-usadoa-90-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-128gb-usadoa-100-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip12-64gb-usadoa-80-az",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+80%",
+        "precioUsd": 300,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip12-64gb-usadoa-90-az",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip12-64gb-usadoa-100-az",
+        "storage": "64GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip12-128gb-usadoa-85-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 310,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip12-128gb-usadoa-90-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 320,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip12-128gb-usadoa-100-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 330,
+        "stock": true,
+        "color": "Azul"
       }
     ]
   },
@@ -320,10 +1210,21 @@
     "catalogId": "ip12p",
     "nombre": "iPhone 12 Pro",
     "precioUsd": 370,
-    "imagen": "https://www.qrtech.com.ar/img/productos/12p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/12p.png"
-    ],
+    "imagen": "/img/productos/iPhone/12/b12p.png",
+    "imagenesPorColor": {
+      "Grafito": [
+        "/img/productos/iPhone/12/Graffito.png"
+      ],
+      "Oro": [
+        "/img/productos/iPhone/12/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/12/Plata.png"
+      ],
+      "AzulPacifico": [
+        "/img/productos/iPhone/12/AzulPacifico.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 12 Pro (ip12p). ¿Está disponible?",
     "marca": "Apple",
@@ -345,28 +1246,112 @@
     },
     "variantes": [
       {
-        "id": "ip12p-128-a80",
+        "id": "ip12p-128gb-usadoa-85-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 370,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
       },
       {
-        "id": "ip12p-128-a90",
+        "id": "ip12p-128gb-usadoa-90-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 380,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
       },
       {
-        "id": "ip12p-128-a100",
+        "id": "ip12p-128gb-usadoa-100-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 400,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-85-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 370,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-90-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 380,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-100-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 370,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 380,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-85-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 370,
+        "stock": true,
+        "color": "AzulPacifico"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-90-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 380,
+        "stock": true,
+        "color": "AzulPacifico"
+      },
+      {
+        "id": "ip12p-128gb-usadoa-100-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "AzulPacifico"
       }
     ]
   },
@@ -375,10 +1360,21 @@
     "catalogId": "ip12pm",
     "nombre": "iPhone 12 Pro Max",
     "precioUsd": 400,
-    "imagen": "https://www.qrtech.com.ar/img/productos/12pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/12pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/12/b12pm.png",
+    "imagenesPorColor": {
+      "Grafito": [
+        "/img/productos/iPhone/12/Graffito.png"
+      ],
+      "Oro": [
+        "/img/productos/iPhone/12/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/12/Plata.png"
+      ],
+      "AzulPacifico": [
+        "/img/productos/iPhone/12/AzulPacifico.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 12 Pro Max (ip12pm). ¿Está disponible?",
     "marca": "Apple",
@@ -400,28 +1396,112 @@
     },
     "variantes": [
       {
-        "id": "ip12pm-128-a80",
+        "id": "ip12pm-128gb-usadoa-85-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 400,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
       },
       {
-        "id": "ip12pm-128-a90",
+        "id": "ip12pm-128gb-usadoa-90-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 410,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
       },
       {
-        "id": "ip12pm-128-a100",
+        "id": "ip12pm-128gb-usadoa-100-gr",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 430,
-        "stock": true
+        "stock": true,
+        "color": "Grafito"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-85-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-90-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-100-or",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-85-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "AzulPacifico"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-90-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "AzulPacifico"
+      },
+      {
+        "id": "ip12pm-128gb-usadoa-100-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "AzulPacifico"
       }
     ]
   },
@@ -430,10 +1510,27 @@
     "catalogId": "ip13",
     "nombre": "iPhone 13",
     "precioUsd": 400,
-    "imagen": "https://www.qrtech.com.ar/img/productos/13.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/13.png"
-    ],
+    "imagen": "/img/productos/iPhone/13/b13.png",
+    "imagenesPorColor": {
+      "Blanco": [
+        "/img/productos/iPhone/13/Blanco.png"
+      ],
+      "Medianoche": [
+        "/img/productos/iPhone/13/Medianoche.png"
+      ],
+      "Rosa": [
+        "/img/productos/iPhone/13/Rosa.png"
+      ],
+      "Verde": [
+        "/img/productos/iPhone/13/Verde.png"
+      ],
+      "Azul": [
+        "/img/productos/iPhone/13/Azul.png"
+      ],
+      "Rojo": [
+        "/img/productos/iPhone/13/Rojo.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
     "waMsg": "Hola QRTech! Quiero el iPhone 13 (ip13). ¿Está disponible?",
     "marca": "Apple",
@@ -455,36 +1552,166 @@
     },
     "variantes": [
       {
-        "id": "ip13-128-a80",
+        "id": "ip13-128gb-usadoa-85-me",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 400,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
       },
       {
-        "id": "ip13-128-a90",
+        "id": "ip13-128gb-usadoa-90-me",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 410,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
       },
       {
-        "id": "ip13-128-a100",
+        "id": "ip13-128gb-usadoa-100-me",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 430,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
       },
       {
-        "id": "ip13-128-sellado",
+        "id": "ip13-128gb-usadoa-85-bl",
         "storage": "128GB",
-        "condicion": "Sellado",
-        "bateria": "sellado",
-        "precioUsd": 570,
-        "stock": true
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip13-128gb-usadoa-90-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip13-128gb-usadoa-100-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip13-128gb-usadoa-85-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip13-128gb-usadoa-90-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip13-128gb-usadoa-100-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip13-128gb-usadoa-85-ro-2",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip13-128gb-usadoa-90-ro-2",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip13-128gb-usadoa-100-ro-2",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip13-128gb-usadoa-85-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip13-128gb-usadoa-90-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip13-128gb-usadoa-100-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip13-128gb-usadoa-85-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 400,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip13-128gb-usadoa-90-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 410,
+        "stock": true,
+        "color": "Azul"
+      },
+      {
+        "id": "ip13-128gb-usadoa-100-az",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 430,
+        "stock": true,
+        "color": "Azul"
       }
     ]
   },
@@ -493,10 +1720,24 @@
     "catalogId": "ip13p",
     "nombre": "iPhone 13 Pro",
     "precioUsd": 500,
-    "imagen": "https://www.qrtech.com.ar/img/productos/13p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/13p.png"
-    ],
+    "imagen": "/img/productos/iPhone/13/b13p.png",
+    "imagenesPorColor": {
+      "Oro": [
+        "/img/productos/iPhone/13/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/13/Plata.png"
+      ],
+      "Graffito": [
+        "/img/productos/iPhone/13/Graffito.png"
+      ],
+      "Azul Sierra": [
+        "/img/productos/iPhone/13/AzulSierra.png"
+      ],
+      "Verde Alpino": [
+        "/img/productos/iPhone/13/VerdeAlpino.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 13 Pro (ip13p). ¿Está disponible?",
     "marca": "Apple",
@@ -518,28 +1759,139 @@
     },
     "variantes": [
       {
-        "id": "ip13p-128-a80",
+        "id": "ip13p-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 500,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip13p-128-a90",
+        "id": "ip13p-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 510,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip13p-128-a100",
+        "id": "ip13p-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 540,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 500,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 510,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 540,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-85-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 500,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-90-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 510,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-100-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 540,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-85-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 500,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-90-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 510,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-100-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 540,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-85-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 500,
+        "stock": true,
+        "color": "Verde Alpino"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-90-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 510,
+        "stock": true,
+        "color": "Verde Alpino"
+      },
+      {
+        "id": "ip13p-128gb-usadoa-100-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 540,
+        "stock": true,
+        "color": "Verde Alpino"
       }
     ]
   },
@@ -548,10 +1900,24 @@
     "catalogId": "ip13pm",
     "nombre": "iPhone 13 Pro Max",
     "precioUsd": 570,
-    "imagen": "https://www.qrtech.com.ar/img/productos/13pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/13pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/13/b13pm.png",
+    "imagenesPorColor": {
+      "Oro": [
+        "/img/productos/iPhone/13/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/13/Plata.png"
+      ],
+      "Graffito": [
+        "/img/productos/iPhone/13/Graffito.png"
+      ],
+      "Azul Sierra": [
+        "/img/productos/iPhone/13/AzulSierra.png"
+      ],
+      "Verde Alpino": [
+        "/img/productos/iPhone/13/VerdeAlpino.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 13 Pro Max (ip13pm). ¿Está disponible?",
     "marca": "Apple",
@@ -573,28 +1939,139 @@
     },
     "variantes": [
       {
-        "id": "ip13pm-128-a80",
+        "id": "ip13pm-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 560,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip13pm-128-a90",
+        "id": "ip13pm-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 570,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip13pm-128-a100",
+        "id": "ip13pm-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 590,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 560,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 570,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-85-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 560,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-90-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 570,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-100-gr",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Graffito"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-85-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 560,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-90-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 570,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-100-azsi",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Azul Sierra"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-85-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 560,
+        "stock": true,
+        "color": "Verde Alpino"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-90-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 570,
+        "stock": true,
+        "color": "Verde Alpino"
+      },
+      {
+        "id": "ip13pm-128gb-usadoa-100-veal",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Verde Alpino"
       }
     ]
   },
@@ -603,10 +2080,27 @@
     "catalogId": "ip14",
     "nombre": "iPhone 14",
     "precioUsd": 480,
-    "imagen": "https://www.qrtech.com.ar/img/productos/14.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/14.png"
-    ],
+    "imagen": "/img/productos/iPhone/14/b14.png",
+    "imagenesPorColor": {
+      "Medianoche": [
+        "/img/productos/iPhone/14/Medianoche.png"
+      ],
+      "Blanco": [
+        "/img/productos/iPhone/14/Blanco.png"
+      ],
+      "Rojo": [
+        "/img/productos/iPhone/14/Rojo.png"
+      ],
+      "Celeste": [
+        "/img/productos/iPhone/14/Celeste.png"
+      ],
+      "Lila": [
+        "/img/productos/iPhone/14/Lila.png"
+      ],
+      "Amarillo": [
+        "/img/productos/iPhone/14/Amarillo.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
     "waMsg": "Hola QRTech! Quiero el iPhone 14 (ip14). ¿Está disponible?",
     "marca": "Apple",
@@ -628,28 +2122,166 @@
     },
     "variantes": [
       {
-        "id": "ip14-128-a80",
+        "id": "ip14-128gb-usadoa-85-me",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 460,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
       },
       {
-        "id": "ip14-128-a90",
+        "id": "ip14-128gb-usadoa-90-me",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 470,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
       },
       {
-        "id": "ip14-128-a100",
+        "id": "ip14-128gb-usadoa-100-me",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 490,
-        "stock": true
+        "stock": true,
+        "color": "Medianoche"
+      },
+      {
+        "id": "ip14-128gb-usadoa-85-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 460,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip14-128gb-usadoa-90-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 470,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip14-128gb-usadoa-100-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 490,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip14-128gb-usadoa-85-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 460,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip14-128gb-usadoa-90-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 470,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip14-128gb-usadoa-100-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 490,
+        "stock": true,
+        "color": "Rojo"
+      },
+      {
+        "id": "ip14-128gb-usadoa-85-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 460,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip14-128gb-usadoa-90-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 470,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip14-128gb-usadoa-100-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 490,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip14-128gb-usadoa-85-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 460,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip14-128gb-usadoa-90-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 470,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip14-128gb-usadoa-100-li",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 490,
+        "stock": true,
+        "color": "Lila"
+      },
+      {
+        "id": "ip14-128gb-usadoa-85-am",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 460,
+        "stock": true,
+        "color": "Amarillo"
+      },
+      {
+        "id": "ip14-128gb-usadoa-90-am",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 470,
+        "stock": true,
+        "color": "Amarillo"
+      },
+      {
+        "id": "ip14-128gb-usadoa-100-am",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 490,
+        "stock": true,
+        "color": "Amarillo"
       }
     ]
   },
@@ -658,10 +2290,21 @@
     "catalogId": "ip14p",
     "nombre": "iPhone 14 Pro",
     "precioUsd": 610,
-    "imagen": "https://www.qrtech.com.ar/img/productos/14p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/14p.png"
-    ],
+    "imagen": "/img/productos/iPhone/14/b14p.png",
+    "imagenesPorColor": {
+      "Oro": [
+        "/img/productos/iPhone/14/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/14/Plata.png"
+      ],
+      "Negro Espacial": [
+        "/img/productos/iPhone/14/NegroEspacial.png"
+      ],
+      "Morado Oscuro": [
+        "/img/productos/iPhone/14/MoradoOscuro.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 14 Pro (ip14p). ¿Está disponible?",
     "marca": "Apple",
@@ -683,28 +2326,112 @@
     },
     "variantes": [
       {
-        "id": "ip14p-128-a80",
+        "id": "ip14p-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 590,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip14p-128-a90",
+        "id": "ip14p-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 600,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip14p-128-a100",
+        "id": "ip14p-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 630,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-85-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-90-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-100-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-85-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Morado Oscuro"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-90-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Morado Oscuro"
+      },
+      {
+        "id": "ip14p-128gb-usadoa-100-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Morado Oscuro"
       }
     ]
   },
@@ -713,10 +2440,21 @@
     "catalogId": "ip14pm",
     "nombre": "iPhone 14 Pro Max",
     "precioUsd": 710,
-    "imagen": "https://www.qrtech.com.ar/img/productos/14pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/14pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/14/b14pm.png",
+    "imagenesPorColor": {
+      "Oro": [
+        "/img/productos/iPhone/14/Oro.png"
+      ],
+      "Plata": [
+        "/img/productos/iPhone/14/Plata.png"
+      ],
+      "Negro Espacial": [
+        "/img/productos/iPhone/14/NegroEspacial.png"
+      ],
+      "Morado Oscuro": [
+        "/img/productos/iPhone/14/MoradoOscuro.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 14 Pro Max (ip14pm). ¿Está disponible?",
     "marca": "Apple",
@@ -738,28 +2476,112 @@
     },
     "variantes": [
       {
-        "id": "ip14pm-128-a80",
+        "id": "ip14pm-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 670,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip14pm-128-a90",
+        "id": "ip14pm-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 680,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
       },
       {
-        "id": "ip14pm-128-a100",
+        "id": "ip14pm-128gb-usadoa-100-or",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 700,
-        "stock": true
+        "stock": true,
+        "color": "Oro"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-85-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 670,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-90-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 680,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-100-pl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 700,
+        "stock": true,
+        "color": "Plata"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-85-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 670,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-90-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 680,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-100-nees",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 700,
+        "stock": true,
+        "color": "Negro Espacial"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-85-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 670,
+        "stock": true,
+        "color": "Morado Oscuro"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-90-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 680,
+        "stock": true,
+        "color": "Morado Oscuro"
+      },
+      {
+        "id": "ip14pm-128gb-usadoa-100-moos",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 700,
+        "stock": true,
+        "color": "Morado Oscuro"
       }
     ]
   },
@@ -768,10 +2590,24 @@
     "catalogId": "ip15",
     "nombre": "iPhone 15",
     "precioUsd": 610,
-    "imagen": "https://www.qrtech.com.ar/img/productos/15.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/15.png"
-    ],
+    "imagen": "/img/productos/iPhone/15/b15.png",
+    "imagenesPorColor": {
+      "Amarillo": [
+        "/img/productos/iPhone/15/Amarillo.png"
+      ],
+      "Celeste": [
+        "/img/productos/iPhone/15/Celeste.png"
+      ],
+      "Rosa": [
+        "/img/productos/iPhone/15/Rosa.png"
+      ],
+      "Negro": [
+        "/img/productos/iPhone/15/Negro.png"
+      ],
+      "Verde": [
+        "/img/productos/iPhone/15/Verde.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
     "waMsg": "Hola QRTech! Quiero el iPhone 15 (ip15). ¿Está disponible?",
     "marca": "Apple",
@@ -793,28 +2629,139 @@
     },
     "variantes": [
       {
-        "id": "ip15-128-a80",
+        "id": "ip15-128gb-usadoa-85-am",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 590,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip15-128-a90",
+        "id": "ip15-128gb-usadoa-90-am",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 600,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
       },
       {
-        "id": "ip15-128-a100",
+        "id": "ip15-128gb-usadoa-100-am",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 630,
-        "stock": true
+        "stock": true,
+        "color": "Amarillo"
+      },
+      {
+        "id": "ip15-128gb-usadoa-85-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip15-128gb-usadoa-90-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip15-128gb-usadoa-100-ce",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Celeste"
+      },
+      {
+        "id": "ip15-128gb-usadoa-85-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip15-128gb-usadoa-90-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip15-128gb-usadoa-100-ro",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip15-128gb-usadoa-85-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip15-128gb-usadoa-90-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip15-128gb-usadoa-100-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip15-128gb-usadoa-85-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 590,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip15-128gb-usadoa-90-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 600,
+        "stock": true,
+        "color": "Verde"
+      },
+      {
+        "id": "ip15-128gb-usadoa-100-ve",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 630,
+        "stock": true,
+        "color": "Verde"
       }
     ]
   },
@@ -823,10 +2770,21 @@
     "catalogId": "ip15p",
     "nombre": "iPhone 15 Pro",
     "precioUsd": 750,
-    "imagen": "https://www.qrtech.com.ar/img/productos/15p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/15p.png"
-    ],
+    "imagen": "/img/productos/iPhone/15/b15p.png",
+    "imagenesPorColor": {
+      "Titanio Negro": [
+        "/img/productos/iPhone/15/TitanioNegro.png"
+      ],
+      "Titanio Blanco": [
+        "/img/productos/iPhone/15/TitanioBlanco.png"
+      ],
+      "Titanio Azul": [
+        "/img/productos/iPhone/15/TitanioAzul.png"
+      ],
+      "Titanio Natural": [
+        "/img/productos/iPhone/15/TitanioNatural.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 15 Pro (ip15p). ¿Está disponible?",
     "marca": "Apple",
@@ -848,28 +2806,112 @@
     },
     "variantes": [
       {
-        "id": "ip15p-128-a80",
+        "id": "ip15p-128gb-usadoa-85-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 740,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip15p-128-a90",
+        "id": "ip15p-128gb-usadoa-90-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 750,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip15p-128-a100",
+        "id": "ip15p-128gb-usadoa-100-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 780,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-85-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 740,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-90-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-100-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 780,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-85-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 740,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-90-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-100-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 780,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-85-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 740,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-90-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip15p-128gb-usadoa-100-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 780,
+        "stock": true,
+        "color": "Titanio Natural"
       }
     ]
   },
@@ -878,10 +2920,21 @@
     "catalogId": "ip15pm",
     "nombre": "iPhone 15 Pro Max",
     "precioUsd": 900,
-    "imagen": "https://www.qrtech.com.ar/img/productos/15pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/15pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/15/b15pm.png",
+    "imagenesPorColor": {
+      "Titanio Negro": [
+        "/img/productos/iPhone/15/TitanioNegro.png"
+      ],
+      "Titanio Blanco": [
+        "/img/productos/iPhone/15/TitanioBlanco.png"
+      ],
+      "Titanio Azul": [
+        "/img/productos/iPhone/15/TitanioAzul.png"
+      ],
+      "Titanio Natural": [
+        "/img/productos/iPhone/15/TitanioNatural.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 15 Pro Max (ip15pm). ¿Está disponible?",
     "marca": "Apple",
@@ -903,28 +2956,112 @@
     },
     "variantes": [
       {
-        "id": "ip15pm-256-a80",
+        "id": "ip15pm-128gb-usadoa-85-tina",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 800,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Natural"
       },
       {
-        "id": "ip15pm-256-a90",
+        "id": "ip15pm-128gb-usadoa-90-tina",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 810,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Natural"
       },
       {
-        "id": "ip15pm-256-a100",
+        "id": "ip15pm-128gb-usadoa-100-tina",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 830,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-85-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 800,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-90-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 810,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-100-tiaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 830,
+        "stock": true,
+        "color": "Titanio Azul"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-85-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 800,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-90-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 810,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-100-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 830,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-85-tine",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 800,
+        "stock": true,
+        "color": "Titanio Negro"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-90-tine",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 810,
+        "stock": true,
+        "color": "Titanio Negro"
+      },
+      {
+        "id": "ip15pm-128gb-usadoa-100-tine",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 830,
+        "stock": true,
+        "color": "Titanio Negro"
       }
     ]
   },
@@ -933,10 +3070,24 @@
     "catalogId": "ip16",
     "nombre": "iPhone 16",
     "precioUsd": 750,
-    "imagen": "https://www.qrtech.com.ar/img/productos/16.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/16.png"
-    ],
+    "imagen": "/img/productos/iPhone/16/b16.png",
+    "imagenesPorColor": {
+      "Rosa": [
+        "/img/productos/iPhone/16/Rosa.png"
+      ],
+      "Negro": [
+        "/img/productos/iPhone/16/Negro.png"
+      ],
+      "Blanco": [
+        "/img/productos/iPhone/16/Blanco.png"
+      ],
+      "Verde Azulado": [
+        "/img/productos/iPhone/16/VerdeAzulado.png"
+      ],
+      "Ultramarino": [
+        "/img/productos/iPhone/16/Ultramarino.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
     "waMsg": "Hola QRTech! Quiero el iPhone 16 (ip16). ¿Está disponible?",
     "marca": "Apple",
@@ -958,28 +3109,139 @@
     },
     "variantes": [
       {
-        "id": "ip16-128-a80",
+        "id": "ip16-128gb-usadoa-85-ro",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 750,
-        "stock": true
+        "stock": true,
+        "color": "Rosa"
       },
       {
-        "id": "ip16-128-a90",
+        "id": "ip16-128gb-usadoa-90-ro",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 750,
-        "stock": true
+        "stock": true,
+        "color": "Rosa"
       },
       {
-        "id": "ip16-128-a100",
+        "id": "ip16-128gb-usadoa-100-ro",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 750,
-        "stock": true
+        "stock": true,
+        "color": "Rosa"
+      },
+      {
+        "id": "ip16-128gb-usadoa-85-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip16-128gb-usadoa-90-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip16-128gb-usadoa-100-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Negro"
+      },
+      {
+        "id": "ip16-128gb-usadoa-85-ul",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Ultramarino"
+      },
+      {
+        "id": "ip16-128gb-usadoa-90-ul",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Ultramarino"
+      },
+      {
+        "id": "ip16-128gb-usadoa-100-ul",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Ultramarino"
+      },
+      {
+        "id": "ip16-128gb-usadoa-85-veaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Verde Azulado"
+      },
+      {
+        "id": "ip16-128gb-usadoa-90-veaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Verde Azulado"
+      },
+      {
+        "id": "ip16-128gb-usadoa-100-veaz",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Verde Azulado"
+      },
+      {
+        "id": "ip16-128gb-usadoa-85-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip16-128gb-usadoa-90-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip16-128gb-usadoa-100-bl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 750,
+        "stock": true,
+        "color": "Blanco"
       }
     ]
   },
@@ -988,10 +3250,15 @@
     "catalogId": "ip16e",
     "nombre": "iPhone 16e",
     "precioUsd": 650,
-    "imagen": "https://www.qrtech.com.ar/img/productos/16e.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/16e.png"
-    ],
+    "imagen": "/img/productos/iPhone/16/b16e.png",
+    "imagenesPorColor": {
+      "Negro": [
+        "/img/productos/iPhone/16/eNegro.png"
+      ],
+      "Blanco": [
+        "/img/productos/iPhone/16/eBlanco.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
     "waMsg": "Hola QRTech! Quiero el iPhone 16e (ip16e). ¿Está disponible?",
     "marca": "Apple",
@@ -1013,28 +3280,22 @@
     },
     "variantes": [
       {
-        "id": "ip16e-128-a80",
-        "storage": "128GB",
-        "condicion": "Usado A+",
-        "bateria": "≥85%",
-        "precioUsd": 645,
-        "stock": true
-      },
-      {
-        "id": "ip16e-128-a90",
-        "storage": "128GB",
-        "condicion": "Usado A+",
-        "bateria": "≥90%",
-        "precioUsd": 645,
-        "stock": true
-      },
-      {
-        "id": "ip16e-128-a100",
+        "id": "ip16e-128gb-usadoa-100-bl",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 645,
-        "stock": true
+        "stock": true,
+        "color": "Blanco"
+      },
+      {
+        "id": "ip16e-128gb-usadoa-100-ne",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 645,
+        "stock": true,
+        "color": "Negro"
       }
     ]
   },
@@ -1043,10 +3304,21 @@
     "catalogId": "ip16p",
     "nombre": "iPhone 16 Pro",
     "precioUsd": 990,
-    "imagen": "https://www.qrtech.com.ar/img/productos/16p.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/16p.png"
-    ],
+    "imagen": "/img/productos/iPhone/16/b16p.png",
+    "imagenesPorColor": {
+      "Titanio Negro": [
+        "/img/productos/iPhone/16/TitanioNegro.png"
+      ],
+      "Titanio Blanco": [
+        "/img/productos/iPhone/16/TitanioBlanco.png"
+      ],
+      "Titanio Desert": [
+        "/img/productos/iPhone/16/TitanioDesierto.png"
+      ],
+      "Titanio Natural": [
+        "/img/productos/iPhone/16/TitanioNatural.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
     "waMsg": "Hola QRTech! Quiero el iPhone 16 Pro (ip16p). ¿Está disponible?",
     "marca": "Apple",
@@ -1068,28 +3340,112 @@
     },
     "variantes": [
       {
-        "id": "ip16p-128-a80",
+        "id": "ip16p-128gb-usadoa-85-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 920,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip16p-128-a90",
+        "id": "ip16p-128gb-usadoa-90-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 920,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip16p-128-a100",
+        "id": "ip16p-128gb-usadoa-100-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 920,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-85-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-90-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-100-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-85-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-90-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-100-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-85-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-90-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip16p-128gb-usadoa-100-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 920,
+        "stock": true,
+        "color": "Titanio Natural"
       }
     ]
   },
@@ -1098,10 +3454,21 @@
     "catalogId": "ip16pm",
     "nombre": "iPhone 16 Pro Max",
     "precioUsd": 1180,
-    "imagen": "https://www.qrtech.com.ar/img/productos/16pm.png",
-    "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/16pm.png"
-    ],
+    "imagen": "/img/productos/iPhone/16/b16pm.png",
+    "imagenesPorColor": {
+      "Titanio Negro": [
+        "/img/productos/iPhone/16/TitanioNegro.png"
+      ],
+      "Titanio Blanco": [
+        "/img/productos/iPhone/16/TitanioBlanco.png"
+      ],
+      "Titanio Desert": [
+        "/img/productos/iPhone/16/TitanioDesierto.png"
+      ],
+      "Titanio Natural": [
+        "/img/productos/iPhone/16/TitanioNatural.png"
+      ]
+    },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
     "waMsg": "Hola QRTech! Quiero el iPhone 16 Pro Max (ip16pm). ¿Está disponible?",
     "marca": "Apple",
@@ -1123,28 +3490,112 @@
     },
     "variantes": [
       {
-        "id": "ip16pm-256-a80",
+        "id": "ip16pm-128gb-usadoa-85-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥85%",
+        "bateria": "+85%",
         "precioUsd": 1110,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip16pm-256-a90",
+        "id": "ip16pm-128gb-usadoa-90-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "≥90%",
+        "bateria": "+90%",
         "precioUsd": 1110,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
       },
       {
-        "id": "ip16pm-256-a100",
+        "id": "ip16pm-128gb-usadoa-100-tine",
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
         "precioUsd": 1110,
-        "stock": true
+        "stock": true,
+        "color": "Titanio Negro"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-85-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-90-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-100-tibl",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Blanco"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-85-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-90-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-100-tide",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Desert"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-85-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+85%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-90-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "+90%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Natural"
+      },
+      {
+        "id": "ip16pm-128gb-usadoa-100-tina",
+        "storage": "128GB",
+        "condicion": "Usado A+",
+        "bateria": "100%",
+        "precioUsd": 1110,
+        "stock": true,
+        "color": "Titanio Natural"
       }
     ]
   },
@@ -1153,9 +3604,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 4GB / 128GB",
     "precioUsd": 175,
-    "imagen": "https://www.qrtech.com.ar/img/productos/redmi-14c.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-14c.png"
+      "/img/productos/redmi-14c.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%204GB%2F128GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 4/128 (redmi-14c).",
@@ -1178,7 +3629,7 @@
     },
     "variantes": [
       {
-        "id": "redmi-14c-128-nuevo",
+        "id": "redmi14c4128-128gb-nuevo-std-na",
         "storage": "128GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1192,9 +3643,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 8GB / 256GB",
     "precioUsd": 198,
-    "imagen": "https://www.qrtech.com.ar/img/productos/redmi-14c2.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c2.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-14c2.png"
+      "/img/productos/redmi-14c2.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%208GB%2F256GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 8/256 (redmi-14c).",
@@ -1217,7 +3668,7 @@
     },
     "variantes": [
       {
-        "id": "redmi-14c-256-nuevo",
+        "id": "redmi14c8256-256gb-nuevo-std-na",
         "storage": "256GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1231,9 +3682,9 @@
     "catalogId": "redmi-note-14",
     "nombre": "Redmi Note 14 8GB / 256GB",
     "precioUsd": 240,
-    "imagen": "https://www.qrtech.com.ar/img/productos/redmi-note-14.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-note-14.png"
+      "/img/productos/redmi-note-14.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%208GB%2F256GB%20(redmi-note-14)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 8/256 (redmi-note-14).",
@@ -1256,7 +3707,7 @@
     },
     "variantes": [
       {
-        "id": "redmi-note-14-256-nuevo",
+        "id": "redminote148256-256gb-nuevo-std-na",
         "storage": "256GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1270,9 +3721,9 @@
     "catalogId": "redmi-note-14-pro",
     "nombre": "Redmi Note 14 Pro 8GB / 256GB",
     "precioUsd": 283,
-    "imagen": "https://www.qrtech.com.ar/img/productos/redmi-note-14p.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14p.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-note-14o.png"
+      "/img/productos/redmi-note-14o.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%20Pro%208GB%2F256GB%20(redmi-note-14-pro)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 Pro 8/256 (redmi-note-14-pro).",
@@ -1295,7 +3746,7 @@
     },
     "variantes": [
       {
-        "id": "redmi-note-14-pro-256-nuevo",
+        "id": "redminote14pro8256-256gb-nuevo-std-na",
         "storage": "256GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1309,9 +3760,9 @@
     "catalogId": "sm-a06",
     "nombre": "Samsung Galaxy A06 4GB / 64GB",
     "precioUsd": 167,
-    "imagen": "https://www.qrtech.com.ar/img/productos/smg-a06.png",
+    "imagen": "/img/productos/android/Samsung/smg-a06.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a06.png"
+      "/img/productos/smg-a06.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A06%204GB%2F64GB%20(sm-a06)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A06 4/64 (sm-a06).",
@@ -1334,7 +3785,7 @@
     },
     "variantes": [
       {
-        "id": "sm-a06-64-nuevo",
+        "id": "sma06464-64gb-nuevo-std-na",
         "storage": "64GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1345,12 +3796,12 @@
   },
   {
     "id": "sm-a16-6-256",
-    "catalogId": "sm-{{modeloLower}}",
+    "catalogId": "sm-a16",
     "nombre": "Samsung Galaxy A16 6GB / 256GB",
     "precioUsd": 270,
-    "imagen": "https://www.qrtech.com.ar/img/productos/smg-a16.png",
+    "imagen": "/img/productos/android/Samsung/smg-a16.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a16.png"
+      "/img/productos/smg-a16.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20{{MODELO}}%20{{RAM}}GB%2F{{STORAGE}}GB%20(sm-{{modeloLower}})",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy {{MODELO}} {{RAM}}/{{STORAGE}} (sm-{{modeloLower}}).",
@@ -1364,22 +3815,31 @@
       "Plan canje"
     ],
     "destacado": false,
-    "sku": "SM-A19-8-256",
+    "sku": "SM-A16-6-256",
     "specs": {
       "pantalla": "—",
       "camaras": "—",
       "chip": "—"
     },
-    "variantes": []
+    "variantes": [
+      {
+        "id": "sma166256-256gb-nuevo-std-na",
+        "storage": "256GB",
+        "condicion": "Nuevo",
+        "bateria": "—",
+        "precioUsd": 270,
+        "stock": true
+      }
+    ]
   },
   {
     "id": "sm-a36-8-256",
     "catalogId": "sm-a36",
     "nombre": "Samsung Galaxy A36 8GB / 256GB",
     "precioUsd": 365,
-    "imagen": "https://www.qrtech.com.ar/img/productos/smg-a36.png",
+    "imagen": "/img/productos/android/Samsung/smg-a36.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a36.png"
+      "/img/productos/smg-a36.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A36%208GB%2F256GB%20(sm-a36)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A36 8/256 (sm-a36).",
@@ -1402,7 +3862,7 @@
     },
     "variantes": [
       {
-        "id": "sm-a36-256-nuevo",
+        "id": "sma368256-256gb-nuevo-std-na",
         "storage": "256GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1416,9 +3876,9 @@
     "catalogId": "sm-a56",
     "nombre": "Samsung Galaxy A56 8GB / 256GB",
     "precioUsd": 455,
-    "imagen": "https://www.qrtech.com.ar/img/productos/smg-a56.png",
+    "imagen": "/img/productos/android/Samsung/smg-a56.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a56.png"
+      "/img/productos/smg-a56.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A56%208GB%2F256GB%20(sm-a56)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A56 8/256 (sm-a56).",
@@ -1441,7 +3901,7 @@
     },
     "variantes": [
       {
-        "id": "sm-a56-256-nuevo",
+        "id": "sma568256-256gb-nuevo-std-na",
         "storage": "256GB",
         "condicion": "Nuevo",
         "bateria": "—",
@@ -1455,9 +3915,9 @@
     "catalogId": "cbl-usbc-lightning",
     "nombre": "Cable USB-C a Lightning 1m (Alta calidad)",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/cbl-usbc-lightning.png",
+    "imagen": "/img/productos/Accesorios/cbl-usbc-lightning.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usbc-lightning.png"
+      "/img/productos/cbl-usbc-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20Lightning%20de%201%20m%20(cbl-usbc-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a Lightning de 1 metro.",
@@ -1485,9 +3945,9 @@
     "catalogId": "cbl-usbc-usbc",
     "nombre": "Cable USB-C a USB-C 1m (Carga rápida)",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/cbl-usbc-usbc.png",
+    "imagen": "/img/productos/Accesorios/cbl-usbc-usbc.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usbc-usbc.png"
+      "/img/productos/cbl-usbc-usbc.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20USB-C%20de%201%20m%20(cbl-usbc-usbc)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a USB-C de 1 metro.",
@@ -1516,9 +3976,9 @@
     "catalogId": "cbl-usba-lightning",
     "nombre": "Cable USB-A a Lightning 1m",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/cbl-usba-lightning.png",
+    "imagen": "/img/productos/Accesorios/cbl-usba-lightning.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usba-lightning.png"
+      "/img/productos/cbl-usba-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-A%20a%20Lightning%20de%201%20m%20(cbl-usba-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-A a Lightning de 1 metro.",
@@ -1546,9 +4006,9 @@
     "catalogId": "chg-iphone-20w",
     "nombre": "Cargador iPhone 20W USB-C (fuente)",
     "precioUsd": 12,
-    "imagen": "https://www.qrtech.com.ar/img/productos/chg-iphone-20w.png",
+    "imagen": "/img/productos/Accesorios/chg-iphone-20w.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/chg-iphone-20w.png"
+      "/img/productos/chg-iphone-20w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20fuente%20para%20iPhone%20de%2020W%20(chg-iphone-20w)",
     "waMsg": "Hola QRTech! Quiero la fuente/cargador iPhone 20W USB-C.",
@@ -1575,9 +4035,9 @@
     "catalogId": "pbank-magsafe",
     "nombre": "Power Bank MagSafe 10000 mAh",
     "precioUsd": 25,
-    "imagen": "https://www.qrtech.com.ar/img/productos/pbank-magsafe.png",
+    "imagen": "/img/productos/Accesorios/pbank-magsafe.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/pbank-magsafe.png"
+      "/img/productos/pbank-magsafe.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Power%20Bank%20MagSafe%2010000%20mAh%20(pbank-magsafe)",
     "waMsg": "Hola QRTech! Quiero la Power Bank MagSafe de 10000 mAh.",
@@ -1599,7 +4059,7 @@
     },
     "variantes": [
       {
-        "id": "pbank-magsafe-5000",
+        "id": "pbankmagsafe10000-5000mah-std-std-na",
         "capacidad": "5000 mAh",
         "precioUsd": null,
         "stock": true
@@ -1611,9 +4071,9 @@
     "catalogId": "m90pro",
     "nombre": "Auriculares M90 Pro Bluetooth",
     "precioUsd": 10,
-    "imagen": "https://www.qrtech.com.ar/img/productos/m90pro.png",
+    "imagen": "/img/productos/Accesorios/m90pro.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/m90pro.png"
+      "/img/productos/m90pro.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20Auriculares%20M90%20Pro%20Bluetooth",
     "waMsg": "Hola QRTech! Quiero los auriculares M90 Pro Bluetooth.",
@@ -1631,6 +4091,235 @@
     "specs": {
       "color": "Negro"
     },
+    "variantes": []
+  },
+  {
+    "id": "cable-rj45-1m",
+    "catalogId": "cable-rj45",
+    "nombre": "Cable de red RJ45 (1m)",
+    "precioUsd": 4,
+    "imagen": "/img/productos/accesorios/cable-de-red-rj45.png",
+    "imagenes": [
+      "/img/productos/accesorios/cable-de-red-rj45.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20de%20red%20RJ45%20(cable-rj45-1m)",
+    "waMsg": "Hola QRTech! Quiero el Cable de red RJ45 (1m).",
+    "marca": "Genérico",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Listo para usar"
+    ],
+    "destacado": false,
+    "sku": "RJ45-1M",
+    "specs": {
+      "largo": "1m"
+    },
+    "variantes": []
+  },
+  {
+    "id": "cable-usb-c-a-c-samsung",
+    "catalogId": "usb-c-c",
+    "nombre": "Cable USB-C a USB-C Samsung",
+    "precioUsd": 6,
+    "imagen": "/img/productos/accesorios/cable-usb-c-a-c-samsung.png",
+    "imagenes": [
+      "/img/productos/accesorios/cable-usb-c-a-c-samsung.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-C%20a%20USB-C%20Samsung%20(cable-usb-c-a-c-samsung)",
+    "waMsg": "Hola QRTech! Quiero el Cable USB-C a USB-C Samsung.",
+    "marca": "Samsung",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Carga y datos"
+    ],
+    "destacado": false,
+    "sku": "USBC-USBC-SAM",
+    "specs": {
+      "conector": "USB-C a USB-C"
+    },
+    "variantes": []
+  },
+  {
+    "id": "cable-usb-a-micro-v8-motorola",
+    "catalogId": "usb-a-micro",
+    "nombre": "Cable USB-A a Micro-USB (V8) Motorola",
+    "precioUsd": 5,
+    "imagen": "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png",
+    "imagenes": [
+      "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-A%20a%20Micro-USB%20(V8)%20Motorola%20(cable-usb-a-micro-v8-motorola)",
+    "waMsg": "Hola QRTech! Quiero el Cable USB-A a Micro-USB (V8) Motorola.",
+    "marca": "Motorola",
+    "categoria": "accesorios",
+    "tipo": "cable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Carga y datos"
+    ],
+    "destacado": false,
+    "sku": "USBA-MICRO-MOTO",
+    "specs": {
+      "conector": "USB-A a Micro-USB (V8)"
+    },
+    "variantes": []
+  },
+  {
+    "id": "earpods-3-5mm",
+    "catalogId": "earpods",
+    "nombre": "EarPods con jack 3.5mm",
+    "precioUsd": 7,
+    "imagen": "/img/productos/accesorios/Earpods.png",
+    "imagenes": [
+      "/img/productos/accesorios/Earpods.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20EarPods%20(earpods-3-5mm)",
+    "waMsg": "Hola QRTech! Quiero los EarPods con jack 3.5mm.",
+    "marca": "Genérico",
+    "categoria": "accesorios",
+    "tipo": "audio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Micrófono",
+      "Compatibles 3.5mm"
+    ],
+    "destacado": false,
+    "sku": "EARPODS-35",
+    "specs": {
+      "conector": "3.5mm"
+    },
+    "variantes": []
+  },
+  {
+    "id": "cargador-motorola-68w",
+    "catalogId": "chg-moto-68w",
+    "nombre": "Cargador Motorola 68W",
+    "precioUsd": 10,
+    "imagen": "/img/productos/accesorios/fuente-motorola-68w.png",
+    "imagenes": [
+      "/img/productos/accesorios/fuente-motorola-68w.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Motorola%2068W%20(cargador-motorola-68w)",
+    "waMsg": "Hola QRTech! Quiero el Cargador Motorola 68W.",
+    "marca": "Motorola",
+    "categoria": "accesorios",
+    "tipo": "cargador",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Carga rápida"
+    ],
+    "destacado": false,
+    "sku": "MOTO-68W",
+    "specs": {
+      "potencia": "68W"
+    },
+    "variantes": []
+  },
+  {
+    "id": "cargador-samsung-25w",
+    "catalogId": "chg-sam-25w",
+    "nombre": "Cargador Samsung 25W",
+    "precioUsd": 10,
+    "imagen": "/img/productos/accesorios/fuente-samsung-25w.png",
+    "imagenes": [
+      "/img/productos/accesorios/fuente-samsung-25w.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Samsung%2025W%20(cargador-samsung-25w)",
+    "waMsg": "Hola QRTech! Quiero el Cargador Samsung 25W.",
+    "marca": "Samsung",
+    "categoria": "accesorios",
+    "tipo": "cargador",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Carga rápida"
+    ],
+    "destacado": false,
+    "sku": "SAMS-25W",
+    "specs": {
+      "potencia": "25W"
+    },
+    "variantes": []
+  },
+  {
+    "id": "funda-antishock",
+    "catalogId": "case-antishock",
+    "nombre": "Funda Antishock",
+    "precioUsd": 4,
+    "imagen": "/img/productos/accesorios/funda-antishock.png",
+    "imagenes": [
+      "/img/productos/accesorios/funda-antishock.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Funda%20Antishock%20(funda-antishock)",
+    "waMsg": "Hola QRTech! Quiero la Funda Antishock.",
+    "marca": "Genérico",
+    "categoria": "accesorios",
+    "tipo": "case",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Protección reforzada"
+    ],
+    "destacado": false,
+    "sku": "CASE-ANTI",
+    "specs": {},
+    "variantes": []
+  },
+  {
+    "id": "funda-silicone-case",
+    "catalogId": "case-silicone",
+    "nombre": "Funda Silicone Case",
+    "precioUsd": 7,
+    "imagen": "/img/productos/accesorios/funda-silicone-case.png",
+    "imagenes": [
+      "/img/productos/accesorios/funda-silicone-case.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Funda%20Silicone%20Case%20(funda-silicone-case)",
+    "waMsg": "Hola QRTech! Quiero la Funda Silicone Case.",
+    "marca": "Genérico",
+    "categoria": "accesorios",
+    "tipo": "case",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Suave al tacto"
+    ],
+    "destacado": false,
+    "sku": "CASE-SILIC-1",
+    "specs": {},
+    "variantes": []
+  },
+  {
+    "id": "vidrio-templado",
+    "catalogId": "vidrio-templado",
+    "nombre": "Vidrio Templado",
+    "precioUsd": 6,
+    "imagen": "img/productos/Accesorios/vidrio.png",
+    "imagenes": [
+      "/img/productos/Accesorios/vidrio.png"
+    ],
+    "wa": "https://wa.me/5493815677391?text=Hola%20QRTech%21%20Quiero%20un%20vidrio%20templado.",
+    "waMsg": "Hola QRTech! Quiero un vidrio templado.",
+    "marca": "Genérico",
+    "categoria": "accesorios",
+    "tipo": "case",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": [
+      "Proteccion real"
+    ],
+    "destacado": false,
+    "sku": "VID-TEMP",
+    "specs": {},
     "variantes": []
   }
 ]
