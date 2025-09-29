@@ -4,22 +4,22 @@
     "catalogId": "ip11",
     "nombre": "iPhone 11",
     "precioUsd": 260,
-    "imagen": "/img/productos/iPhone/11/b11.png",
+    "imagen": "/img/productos/iphone/11/b11.png", 
     "imagenesPorColor": {
       "Negro": [
-        "/img/productos/iPhone/11/Negro.png"
+        "/img/productos/iphone/11/Negro.png"
       ],
       "Blanco": [
-        "/img/productos/iPhone/11/Blanco.png"
+        "/img/productos/iphone/11/Blanco.png"
       ],
       "Verde": [
-        "/img/productos/iPhone/11/Verde.png"
+        "/img/productos/iphone/11/Verde.png"
       ],
       "Rojo": [
-        "/img/productos/iPhone/11/Rojo.png"
+        "/img/productos/iphone/11/Rojo.png"
       ],
       "Amarillo": [
-        "/img/productos/iPhone/11/Amarillo.png"
+        "/img/productos/iphone/11/Amarillo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
@@ -319,19 +319,19 @@
     "catalogId": "ip11p",
     "nombre": "iPhone 11 Pro",
     "precioUsd": 290,
-    "imagen": "/img/productos/iPhone/11/b11p.png",
+    "imagen": "/img/productos/iphone/11/b11p.png",
     "imagenesPorColor": {
       "Gris Espacial": [
-        "/img/productos/iPhone/11/GrisEspacial.png"
+        "/img/productos/iphone/11/GrisEspacial.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/11/Plata.png"
+        "/img/productos/iphone/11/Plata.png"
       ],
       "Verde Medianoche": [
-        "/img/productos/iPhone/11/VerdeMedianoche.png"
+        "/img/productos/iphone/11/VerdeMedianoche.png"
       ],
       "Oro": [
-        "/img/productos/iPhone/11/Oro.png"
+        "/img/productos/iphone/11/Oro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
@@ -577,19 +577,19 @@
     "catalogId": "ip11pm",
     "nombre": "iPhone 11 Pro Max",
     "precioUsd": 300,
-    "imagen": "/img/productos/iPhone/11/b11pm.png",
+    "imagen": "/img/productos/iphone/11/b11pm.png",
     "imagenesPorColor": {
       "Gris Espacial": [
-        "/img/productos/iPhone/11/GrisEspacial.png"
+        "/img/productos/iphone/11/GrisEspacial.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/11/Plata.png"
+        "/img/productos/iphone/11/Plata.png"
       ],
       "Verde Medianoche": [
-        "/img/productos/iPhone/11/VerdeMedianoche.png"
+        "/img/productos/iphone/11/VerdeMedianoche.png"
       ],
       "Oro": [
-        "/img/productos/iPhone/11/Oro.png"
+        "/img/productos/iphone/11/Oro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
@@ -835,28 +835,28 @@
     "catalogId": "ip12",
     "nombre": "iPhone 12",
     "precioUsd": 300,
-    "imagen": "/img/productos/iPhone/12/b12.png",
+    "imagen": "/img/productos/iphone/12/b12.png",
     "imagenes": [
       "/img/productos/12.png"
     ],
     "imagenesPorColor": {
       "Blanco": [
-        "/img/productos/iPhone/12/Blanco.png"
+        "/img/productos/iphone/12/Blanco.png"
       ],
       "Negro": [
-        "/img/productos/iPhone/12/Negro.png"
+        "/img/productos/iphone/12/Negro.png"
       ],
       "Lila": [
-        "/img/productos/iPhone/12/Lila.png"
+        "/img/productos/iphone/12/Lila.png"
       ],
       "Azul": [
-        "/img/productos/iPhone/12/Azul.png"
+        "/img/productos/iphone/12/Azul.png"
       ],
       "Verde": [
-        "/img/productos/iPhone/12/Verde.png"
+        "/img/productos/iphone/12/Verde.png"
       ],
       "Rojo": [
-        "/img/productos/iPhone/12/Rojo.png"
+        "/img/productos/iphone/12/Rojo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
@@ -1210,19 +1210,19 @@
     "catalogId": "ip12p",
     "nombre": "iPhone 12 Pro",
     "precioUsd": 370,
-    "imagen": "/img/productos/iPhone/12/b12p.png",
+    "imagen": "/img/productos/iphone/12/b12p.png",
     "imagenesPorColor": {
       "Grafito": [
-        "/img/productos/iPhone/12/Graffito.png"
+        "/img/productos/iphone/12/Graffito.png"
       ],
       "Oro": [
-        "/img/productos/iPhone/12/Oro.png"
+        "/img/productos/iphone/12/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/12/Plata.png"
+        "/img/productos/iphone/12/Plata.png"
       ],
       "AzulPacifico": [
-        "/img/productos/iPhone/12/AzulPacifico.png"
+        "/img/productos/iphone/12/AzulPacifico.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
@@ -1360,19 +1360,19 @@
     "catalogId": "ip12pm",
     "nombre": "iPhone 12 Pro Max",
     "precioUsd": 400,
-    "imagen": "/img/productos/iPhone/12/b12pm.png",
+    "imagen": "/img/productos/iphone/12/b12pm.png",
     "imagenesPorColor": {
       "Grafito": [
-        "/img/productos/iPhone/12/Graffito.png"
+        "/img/productos/iphone/12/Graffito.png"
       ],
       "Oro": [
-        "/img/productos/iPhone/12/Oro.png"
+        "/img/productos/iphone/12/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/12/Plata.png"
+        "/img/productos/iphone/12/Plata.png"
       ],
       "AzulPacifico": [
-        "/img/productos/iPhone/12/AzulPacifico.png"
+        "/img/productos/iphone/12/AzulPacifico.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
@@ -1510,25 +1510,25 @@
     "catalogId": "ip13",
     "nombre": "iPhone 13",
     "precioUsd": 400,
-    "imagen": "/img/productos/iPhone/13/b13.png",
+    "imagen": "/img/productos/iphone/13/b13.png",
     "imagenesPorColor": {
       "Blanco": [
-        "/img/productos/iPhone/13/Blanco.png"
+        "/img/productos/iphone/13/Blanco.png"
       ],
       "Medianoche": [
-        "/img/productos/iPhone/13/Medianoche.png"
+        "/img/productos/iphone/13/Medianoche.png"
       ],
       "Rosa": [
-        "/img/productos/iPhone/13/Rosa.png"
+        "/img/productos/iphone/13/Rosa.png"
       ],
       "Verde": [
-        "/img/productos/iPhone/13/Verde.png"
+        "/img/productos/iphone/13/Verde.png"
       ],
       "Azul": [
-        "/img/productos/iPhone/13/Azul.png"
+        "/img/productos/iphone/13/Azul.png"
       ],
       "Rojo": [
-        "/img/productos/iPhone/13/Rojo.png"
+        "/img/productos/iphone/13/Rojo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
@@ -1720,22 +1720,22 @@
     "catalogId": "ip13p",
     "nombre": "iPhone 13 Pro",
     "precioUsd": 500,
-    "imagen": "/img/productos/iPhone/13/b13p.png",
+    "imagen": "/img/productos/iphone/13/b13p.png",
     "imagenesPorColor": {
       "Oro": [
-        "/img/productos/iPhone/13/Oro.png"
+        "/img/productos/iphone/13/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/13/Plata.png"
+        "/img/productos/iphone/13/Plata.png"
       ],
       "Graffito": [
-        "/img/productos/iPhone/13/Graffito.png"
+        "/img/productos/iphone/13/Graffito.png"
       ],
       "Azul Sierra": [
-        "/img/productos/iPhone/13/AzulSierra.png"
+        "/img/productos/iphone/13/AzulSierra.png"
       ],
       "Verde Alpino": [
-        "/img/productos/iPhone/13/VerdeAlpino.png"
+        "/img/productos/iphone/13/VerdeAlpino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
@@ -1900,22 +1900,22 @@
     "catalogId": "ip13pm",
     "nombre": "iPhone 13 Pro Max",
     "precioUsd": 570,
-    "imagen": "/img/productos/iPhone/13/b13pm.png",
+    "imagen": "/img/productos/iphone/13/b13pm.png",
     "imagenesPorColor": {
       "Oro": [
-        "/img/productos/iPhone/13/Oro.png"
+        "/img/productos/iphone/13/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/13/Plata.png"
+        "/img/productos/iphone/13/Plata.png"
       ],
       "Graffito": [
-        "/img/productos/iPhone/13/Graffito.png"
+        "/img/productos/iphone/13/Graffito.png"
       ],
       "Azul Sierra": [
-        "/img/productos/iPhone/13/AzulSierra.png"
+        "/img/productos/iphone/13/AzulSierra.png"
       ],
       "Verde Alpino": [
-        "/img/productos/iPhone/13/VerdeAlpino.png"
+        "/img/productos/iphone/13/VerdeAlpino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
@@ -2080,25 +2080,25 @@
     "catalogId": "ip14",
     "nombre": "iPhone 14",
     "precioUsd": 480,
-    "imagen": "/img/productos/iPhone/14/b14.png",
+    "imagen": "/img/productos/iphone/14/b14.png",
     "imagenesPorColor": {
       "Medianoche": [
-        "/img/productos/iPhone/14/Medianoche.png"
+        "/img/productos/iphone/14/Medianoche.png"
       ],
       "Blanco": [
-        "/img/productos/iPhone/14/Blanco.png"
+        "/img/productos/iphone/14/Blanco.png"
       ],
       "Rojo": [
-        "/img/productos/iPhone/14/Rojo.png"
+        "/img/productos/iphone/14/Rojo.png"
       ],
       "Celeste": [
-        "/img/productos/iPhone/14/Celeste.png"
+        "/img/productos/iphone/14/Celeste.png"
       ],
       "Lila": [
-        "/img/productos/iPhone/14/Lila.png"
+        "/img/productos/iphone/14/Lila.png"
       ],
       "Amarillo": [
-        "/img/productos/iPhone/14/Amarillo.png"
+        "/img/productos/iphone/14/Amarillo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
@@ -2290,19 +2290,19 @@
     "catalogId": "ip14p",
     "nombre": "iPhone 14 Pro",
     "precioUsd": 610,
-    "imagen": "/img/productos/iPhone/14/b14p.png",
+    "imagen": "/img/productos/iphone/14/b14p.png",
     "imagenesPorColor": {
       "Oro": [
-        "/img/productos/iPhone/14/Oro.png"
+        "/img/productos/iphone/14/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/14/Plata.png"
+        "/img/productos/iphone/14/Plata.png"
       ],
       "Negro Espacial": [
-        "/img/productos/iPhone/14/NegroEspacial.png"
+        "/img/productos/iphone/14/NegroEspacial.png"
       ],
       "Morado Oscuro": [
-        "/img/productos/iPhone/14/MoradoOscuro.png"
+        "/img/productos/iphone/14/MoradoOscuro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
@@ -2440,19 +2440,19 @@
     "catalogId": "ip14pm",
     "nombre": "iPhone 14 Pro Max",
     "precioUsd": 710,
-    "imagen": "/img/productos/iPhone/14/b14pm.png",
+    "imagen": "/img/productos/iphone/14/b14pm.png",
     "imagenesPorColor": {
       "Oro": [
-        "/img/productos/iPhone/14/Oro.png"
+        "/img/productos/iphone/14/Oro.png"
       ],
       "Plata": [
-        "/img/productos/iPhone/14/Plata.png"
+        "/img/productos/iphone/14/Plata.png"
       ],
       "Negro Espacial": [
-        "/img/productos/iPhone/14/NegroEspacial.png"
+        "/img/productos/iphone/14/NegroEspacial.png"
       ],
       "Morado Oscuro": [
-        "/img/productos/iPhone/14/MoradoOscuro.png"
+        "/img/productos/iphone/14/MoradoOscuro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
@@ -2590,22 +2590,22 @@
     "catalogId": "ip15",
     "nombre": "iPhone 15",
     "precioUsd": 610,
-    "imagen": "/img/productos/iPhone/15/b15.png",
+    "imagen": "/img/productos/iphone/15/b15.png",
     "imagenesPorColor": {
       "Amarillo": [
-        "/img/productos/iPhone/15/Amarillo.png"
+        "/img/productos/iphone/15/Amarillo.png"
       ],
       "Celeste": [
-        "/img/productos/iPhone/15/Celeste.png"
+        "/img/productos/iphone/15/Celeste.png"
       ],
       "Rosa": [
-        "/img/productos/iPhone/15/Rosa.png"
+        "/img/productos/iphone/15/Rosa.png"
       ],
       "Negro": [
-        "/img/productos/iPhone/15/Negro.png"
+        "/img/productos/iphone/15/Negro.png"
       ],
       "Verde": [
-        "/img/productos/iPhone/15/Verde.png"
+        "/img/productos/iphone/15/Verde.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
@@ -2770,19 +2770,19 @@
     "catalogId": "ip15p",
     "nombre": "iPhone 15 Pro",
     "precioUsd": 750,
-    "imagen": "/img/productos/iPhone/15/b15p.png",
+    "imagen": "/img/productos/iphone/15/b15p.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "/img/productos/iPhone/15/TitanioNegro.png"
+        "/img/productos/iphone/15/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "/img/productos/iPhone/15/TitanioBlanco.png"
+        "/img/productos/iphone/15/TitanioBlanco.png"
       ],
       "Titanio Azul": [
-        "/img/productos/iPhone/15/TitanioAzul.png"
+        "/img/productos/iphone/15/TitanioAzul.png"
       ],
       "Titanio Natural": [
-        "/img/productos/iPhone/15/TitanioNatural.png"
+        "/img/productos/iphone/15/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
@@ -2920,19 +2920,19 @@
     "catalogId": "ip15pm",
     "nombre": "iPhone 15 Pro Max",
     "precioUsd": 900,
-    "imagen": "/img/productos/iPhone/15/b15pm.png",
+    "imagen": "/img/productos/iphone/15/b15pm.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "/img/productos/iPhone/15/TitanioNegro.png"
+        "/img/productos/iphone/15/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "/img/productos/iPhone/15/TitanioBlanco.png"
+        "/img/productos/iphone/15/TitanioBlanco.png"
       ],
       "Titanio Azul": [
-        "/img/productos/iPhone/15/TitanioAzul.png"
+        "/img/productos/iphone/15/TitanioAzul.png"
       ],
       "Titanio Natural": [
-        "/img/productos/iPhone/15/TitanioNatural.png"
+        "/img/productos/iphone/15/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
@@ -3070,22 +3070,22 @@
     "catalogId": "ip16",
     "nombre": "iPhone 16",
     "precioUsd": 750,
-    "imagen": "/img/productos/iPhone/16/b16.png",
+    "imagen": "/img/productos/iphone/16/b16.png",
     "imagenesPorColor": {
       "Rosa": [
-        "/img/productos/iPhone/16/Rosa.png"
+        "/img/productos/iphone/16/Rosa.png"
       ],
       "Negro": [
-        "/img/productos/iPhone/16/Negro.png"
+        "/img/productos/iphone/16/Negro.png"
       ],
       "Blanco": [
-        "/img/productos/iPhone/16/Blanco.png"
+        "/img/productos/iphone/16/Blanco.png"
       ],
       "Verde Azulado": [
-        "/img/productos/iPhone/16/VerdeAzulado.png"
+        "/img/productos/iphone/16/VerdeAzulado.png"
       ],
       "Ultramarino": [
-        "/img/productos/iPhone/16/Ultramarino.png"
+        "/img/productos/iphone/16/Ultramarino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
@@ -3250,13 +3250,13 @@
     "catalogId": "ip16e",
     "nombre": "iPhone 16e",
     "precioUsd": 650,
-    "imagen": "/img/productos/iPhone/16/b16e.png",
+    "imagen": "/img/productos/iphone/16/b16e.png",
     "imagenesPorColor": {
       "Negro": [
-        "/img/productos/iPhone/16/eNegro.png"
+        "/img/productos/iphone/16/eNegro.png"
       ],
       "Blanco": [
-        "/img/productos/iPhone/16/eBlanco.png"
+        "/img/productos/iphone/16/eBlanco.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
@@ -3304,19 +3304,19 @@
     "catalogId": "ip16p",
     "nombre": "iPhone 16 Pro",
     "precioUsd": 990,
-    "imagen": "/img/productos/iPhone/16/b16p.png",
+    "imagen": "/img/productos/iphone/16/b16p.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "/img/productos/iPhone/16/TitanioNegro.png"
+        "/img/productos/iphone/16/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "/img/productos/iPhone/16/TitanioBlanco.png"
+        "/img/productos/iphone/16/TitanioBlanco.png"
       ],
       "Titanio Desert": [
-        "/img/productos/iPhone/16/TitanioDesierto.png"
+        "/img/productos/iphone/16/TitanioDesierto.png"
       ],
       "Titanio Natural": [
-        "/img/productos/iPhone/16/TitanioNatural.png"
+        "/img/productos/iphone/16/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
@@ -3454,19 +3454,19 @@
     "catalogId": "ip16pm",
     "nombre": "iPhone 16 Pro Max",
     "precioUsd": 1180,
-    "imagen": "/img/productos/iPhone/16/b16pm.png",
+    "imagen": "/img/productos/iphone/16/b16pm.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "/img/productos/iPhone/16/TitanioNegro.png"
+        "/img/productos/iphone/16/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "/img/productos/iPhone/16/TitanioBlanco.png"
+        "/img/productos/iphone/16/TitanioBlanco.png"
       ],
       "Titanio Desert": [
-        "/img/productos/iPhone/16/TitanioDesierto.png"
+        "/img/productos/iphone/16/TitanioDesierto.png"
       ],
       "Titanio Natural": [
-        "/img/productos/iPhone/16/TitanioNatural.png"
+        "/img/productos/iphone/16/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
@@ -4299,27 +4299,23 @@
     "variantes": []
   },
   {
-    "id": "vidrio-templado",
-    "catalogId": "vidrio-templado",
-    "nombre": "Vidrio Templado",
-    "precioUsd": 6,
-    "imagen": "img/productos/accesorios/vidrio.png",
-    "imagenes": [
-      "/img/productos/accesorios/vidrio.png"
-    ],
-    "wa": "https://wa.me/5493815677391?text=Hola%20QRTech%21%20Quiero%20un%20vidrio%20templado.",
-    "waMsg": "Hola QRTech! Quiero un vidrio templado.",
-    "marca": "Genérico",
-    "categoria": "accesorios",
-    "tipo": "case",
-    "monedaBase": "USD",
-    "garantiaDias": 30,
-    "badges": [
-      "Proteccion real"
-    ],
-    "destacado": false,
-    "sku": "VID-TEMP",
-    "specs": {},
-    "variantes": []
-  }
+  "id": "vidrio-templado",
+  "catalogId": "vidrio-templado",
+  "nombre": "Vidrio Templado",
+  "precioUsd": 6,
+  "imagen": "/img/productos/accesorios/vidrio.png",
+  "imagenes": ["/img/productos/accesorios/vidrio.png"],
+  "wa": "https://wa.me/5493815677391?text=Hola%20QRTech%21%20Quiero%20un%20vidrio%20templado.",
+  "waMsg": "Hola QRTech! Quiero un vidrio templado.",
+  "marca": "Genérico",
+  "categoria": "accesorios",
+  "tipo": "case",
+  "monedaBase": "USD",
+  "garantiaDias": 30,
+  "badges": ["Proteccion real"],
+  "destacado": false,
+  "sku": "VID-TEMP",
+  "specs": {},
+  "variantes": []
+}
 ]
