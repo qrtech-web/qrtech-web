@@ -4303,9 +4303,9 @@
     "catalogId": "vidrio-templado",
     "nombre": "Vidrio Templado",
     "precioUsd": 6,
-    "imagen": "/img/productos/accesorios/vidrio.png",
+    "imagen": "img/productos/Accesorios/vidrio.png",
     "imagenes": [
-      "/img/productos/accesorios/vidrio.png"
+      "/img/productos/Accesorios/vidrio.png"
     ],
     "wa": "https://wa.me/5493815677391?text=Hola%20QRTech%21%20Quiero%20un%20vidrio%20templado.",
     "waMsg": "Hola QRTech! Quiero un vidrio templado.",

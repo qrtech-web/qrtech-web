@@ -20,6 +20,7 @@ const faqs = [
         Son <b>usados premium</b> verificados. Incluyen <b>garantía escrita</b>, cable compatible y
         prueba en nuestra oficina antes de retirar. Accesorios extra (cargadores, fundas, etc.) se pueden agregar aparte.
       </>
+      
     ),
   },
   {
