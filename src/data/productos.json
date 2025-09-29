@@ -837,7 +837,7 @@
     "precioUsd": 300,
     "imagen": "/img/productos/iPhone/12/b12.png",
     "imagenes": [
-      "/img/productos/iPhone/12/b12.png"
+      "/img/productos/12.png"
     ],
     "imagenesPorColor": {
       "Blanco": [
@@ -1213,7 +1213,7 @@
     "imagen": "/img/productos/iPhone/12/b12p.png",
     "imagenesPorColor": {
       "Grafito": [
-        "/img/productos/iPhone/12/Grafito.png"
+        "/img/productos/iPhone/12/Graffito.png"
       ],
       "Oro": [
         "/img/productos/iPhone/12/Oro.png"
@@ -1363,7 +1363,7 @@
     "imagen": "/img/productos/iPhone/12/b12pm.png",
     "imagenesPorColor": {
       "Grafito": [
-        "/img/productos/iPhone/12/Grafito.png"
+        "/img/productos/iPhone/12/Graffito.png"
       ],
       "Oro": [
         "/img/productos/iPhone/12/Oro.png"
@@ -1729,7 +1729,7 @@
         "/img/productos/iPhone/13/Plata.png"
       ],
       "Graffito": [
-        "/img/productos/iPhone/13/Grafito.png"
+        "/img/productos/iPhone/13/Graffito.png"
       ],
       "Azul Sierra": [
         "/img/productos/iPhone/13/AzulSierra.png"
@@ -1909,7 +1909,7 @@
         "/img/productos/iPhone/13/Plata.png"
       ],
       "Graffito": [
-        "/img/productos/iPhone/13/Grafito.png"
+        "/img/productos/iPhone/13/Graffito.png"
       ],
       "Azul Sierra": [
         "/img/productos/iPhone/13/AzulSierra.png"
@@ -3604,9 +3604,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 4GB / 128GB",
     "precioUsd": 175,
-    "imagen": "/img/productos/Android/Xiaomi/redmi-14c.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c.png",
     "imagenes": [
-      "/img/productos/Android/Xiaomi/redmi-14c.png"
+      "/img/productos/redmi-14c.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%204GB%2F128GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 4/128 (redmi-14c).",
@@ -3643,9 +3643,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 8GB / 256GB",
     "precioUsd": 198,
-    "imagen": "/img/productos/Android/Xiaomi/redmi-14c2.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c2.png",
     "imagenes": [
-      "/img/productos/Android/Xiaomi/redmi-14c2.png"
+      "/img/productos/redmi-14c2.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%208GB%2F256GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 8/256 (redmi-14c).",
@@ -3682,9 +3682,9 @@
     "catalogId": "redmi-note-14",
     "nombre": "Redmi Note 14 8GB / 256GB",
     "precioUsd": 240,
-    "imagen": "/img/productos/Android/Xiaomi/redmi-note-14.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14.png",
     "imagenes": [
-      "/img/productos/Android/Xiaomi/redmi-note-14.png"
+      "/img/productos/redmi-note-14.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%208GB%2F256GB%20(redmi-note-14)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 8/256 (redmi-note-14).",
@@ -3721,9 +3721,9 @@
     "catalogId": "redmi-note-14-pro",
     "nombre": "Redmi Note 14 Pro 8GB / 256GB",
     "precioUsd": 283,
-    "imagen": "/img/productos/Android/Xiaomi/redmi-note-14p.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14p.png",
     "imagenes": [
-      "/img/productos/Android/Xiaomi/redmi-note-14p.png"
+      "/img/productos/redmi-note-14o.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%20Pro%208GB%2F256GB%20(redmi-note-14-pro)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 Pro 8/256 (redmi-note-14-pro).",
@@ -3760,9 +3760,9 @@
     "catalogId": "sm-a06",
     "nombre": "Samsung Galaxy A06 4GB / 64GB",
     "precioUsd": 167,
-    "imagen": "/img/productos/Android/Samsung/smg-a06.png",
+    "imagen": "/img/productos/android/Samsung/smg-a06.png",
     "imagenes": [
-      "/img/productos/Android/Samsung/smg-a06.png"
+      "/img/productos/smg-a06.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A06%204GB%2F64GB%20(sm-a06)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A06 4/64 (sm-a06).",
@@ -3799,9 +3799,9 @@
     "catalogId": "sm-a16",
     "nombre": "Samsung Galaxy A16 6GB / 256GB",
     "precioUsd": 270,
-    "imagen": "/img/productos/Android/Samsung/smg-a16.png",
+    "imagen": "/img/productos/android/Samsung/smg-a16.png",
     "imagenes": [
-      "/img/productos/Android/Samsung/smg-a16.png"
+      "/img/productos/smg-a16.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20{{MODELO}}%20{{RAM}}GB%2F{{STORAGE}}GB%20(sm-{{modeloLower}})",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy {{MODELO}} {{RAM}}/{{STORAGE}} (sm-{{modeloLower}}).",
@@ -3837,9 +3837,9 @@
     "catalogId": "sm-a36",
     "nombre": "Samsung Galaxy A36 8GB / 256GB",
     "precioUsd": 365,
-    "imagen": "/img/productos/Android/Samsung/smg-a36.png",
+    "imagen": "/img/productos/android/Samsung/smg-a36.png",
     "imagenes": [
-      "/img/productos/Android/Samsung/smg-a36.png"
+      "/img/productos/smg-a36.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A36%208GB%2F256GB%20(sm-a36)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A36 8/256 (sm-a36).",
@@ -3876,9 +3876,9 @@
     "catalogId": "sm-a56",
     "nombre": "Samsung Galaxy A56 8GB / 256GB",
     "precioUsd": 455,
-    "imagen": "/img/productos/Android/Samsung/smg-a56.png",
+    "imagen": "/img/productos/android/Samsung/smg-a56.png",
     "imagenes": [
-      "/img/productos/Android/Samsung/smg-a56.png"
+      "/img/productos/smg-a56.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A56%208GB%2F256GB%20(sm-a56)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A56 8/256 (sm-a56).",
@@ -3917,7 +3917,7 @@
     "precioUsd": 5,
     "imagen": "/img/productos/Accesorios/cbl-usbc-lightning.png",
     "imagenes": [
-      "/img/productos/Accesorios/cbl-usbc-lightning.png"
+      "/img/productos/cbl-usbc-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20Lightning%20de%201%20m%20(cbl-usbc-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a Lightning de 1 metro.",
@@ -3947,7 +3947,7 @@
     "precioUsd": 5,
     "imagen": "/img/productos/Accesorios/cbl-usbc-usbc.png",
     "imagenes": [
-      "/img/productos/Accesorios/cbl-usbc-usbc.png"
+      "/img/productos/cbl-usbc-usbc.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20USB-C%20de%201%20m%20(cbl-usbc-usbc)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a USB-C de 1 metro.",
@@ -3978,7 +3978,7 @@
     "precioUsd": 5,
     "imagen": "/img/productos/Accesorios/cbl-usba-lightning.png",
     "imagenes": [
-      "/img/productos/Accesorios/cbl-usba-lightning.png"
+      "/img/productos/cbl-usba-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-A%20a%20Lightning%20de%201%20m%20(cbl-usba-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-A a Lightning de 1 metro.",
@@ -4008,7 +4008,7 @@
     "precioUsd": 12,
     "imagen": "/img/productos/Accesorios/chg-iphone-20w.png",
     "imagenes": [
-      "/img/productos/Accesorios/chg-iphone-20w.png"
+      "/img/productos/chg-iphone-20w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20fuente%20para%20iPhone%20de%2020W%20(chg-iphone-20w)",
     "waMsg": "Hola QRTech! Quiero la fuente/cargador iPhone 20W USB-C.",
@@ -4037,7 +4037,7 @@
     "precioUsd": 25,
     "imagen": "/img/productos/Accesorios/pbank-magsafe.png",
     "imagenes": [
-      "/img/productos/Accesorios/pbank-magsafe.png"
+      "/img/productos/pbank-magsafe.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Power%20Bank%20MagSafe%2010000%20mAh%20(pbank-magsafe)",
     "waMsg": "Hola QRTech! Quiero la Power Bank MagSafe de 10000 mAh.",
@@ -4073,7 +4073,7 @@
     "precioUsd": 10,
     "imagen": "/img/productos/Accesorios/m90pro.png",
     "imagenes": [
-      "/img/productos/Accesorios/m90pro.png"
+      "/img/productos/m90pro.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20Auriculares%20M90%20Pro%20Bluetooth",
     "waMsg": "Hola QRTech! Quiero los auriculares M90 Pro Bluetooth.",
@@ -4098,9 +4098,9 @@
     "catalogId": "cable-rj45",
     "nombre": "Cable de red RJ45 (1m)",
     "precioUsd": 4,
-    "imagen": "/img/productos/Accesorios/cable-de-red-rj45.png",
+    "imagen": "/img/productos/accesorios/cable-de-red-rj45.png",
     "imagenes": [
-      "/img/productos/Accesorios/cable-de-red-rj45.png"
+      "/img/productos/accesorios/cable-de-red-rj45.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20de%20red%20RJ45%20(cable-rj45-1m)",
     "waMsg": "Hola QRTech! Quiero el Cable de red RJ45 (1m).",
@@ -4124,9 +4124,9 @@
     "catalogId": "usb-c-c",
     "nombre": "Cable USB-C a USB-C Samsung",
     "precioUsd": 6,
-    "imagen": "/img/productos/Accesorios/cable-usb-c-a-c-samsung.png",
+    "imagen": "/img/productos/accesorios/cable-usb-c-a-c-samsung.png",
     "imagenes": [
-      "/img/productos/Accesorios/cable-usb-c-a-c-samsung.png"
+      "/img/productos/accesorios/cable-usb-c-a-c-samsung.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-C%20a%20USB-C%20Samsung%20(cable-usb-c-a-c-samsung)",
     "waMsg": "Hola QRTech! Quiero el Cable USB-C a USB-C Samsung.",
@@ -4150,9 +4150,9 @@
     "catalogId": "usb-a-micro",
     "nombre": "Cable USB-A a Micro-USB (V8) Motorola",
     "precioUsd": 5,
-    "imagen": "/img/productos/Accesorios/cable-usb-tipo-a-v8-motorola.png",
+    "imagen": "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png",
     "imagenes": [
-      "/img/productos/Accesorios/cable-usb-tipo-a-v8-motorola.png"
+      "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-A%20a%20Micro-USB%20(V8)%20Motorola%20(cable-usb-a-micro-v8-motorola)",
     "waMsg": "Hola QRTech! Quiero el Cable USB-A a Micro-USB (V8) Motorola.",
@@ -4176,9 +4176,9 @@
     "catalogId": "earpods",
     "nombre": "EarPods con jack 3.5mm",
     "precioUsd": 7,
-    "imagen": "/img/productos/Accesorios/Earpods.png",
+    "imagen": "/img/productos/accesorios/Earpods.png",
     "imagenes": [
-      "/img/productos/Accesorios/Earpods.png"
+      "/img/productos/accesorios/Earpods.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20EarPods%20(earpods-3-5mm)",
     "waMsg": "Hola QRTech! Quiero los EarPods con jack 3.5mm.",
@@ -4203,9 +4203,9 @@
     "catalogId": "chg-moto-68w",
     "nombre": "Cargador Motorola 68W",
     "precioUsd": 10,
-    "imagen": "/img/productos/Accesorios/fuente-motorola-68w.png",
+    "imagen": "/img/productos/accesorios/fuente-motorola-68w.png",
     "imagenes": [
-      "/img/productos/Accesorios/fuente-motorola-68w.png"
+      "/img/productos/accesorios/fuente-motorola-68w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Motorola%2068W%20(cargador-motorola-68w)",
     "waMsg": "Hola QRTech! Quiero el Cargador Motorola 68W.",
@@ -4229,9 +4229,9 @@
     "catalogId": "chg-sam-25w",
     "nombre": "Cargador Samsung 25W",
     "precioUsd": 10,
-    "imagen": "/img/productos/Accesorios/fuente-samsung-25w.png",
+    "imagen": "/img/productos/accesorios/fuente-samsung-25w.png",
     "imagenes": [
-      "/img/productos/Accesorios/fuente-samsung-25w.png"
+      "/img/productos/accesorios/fuente-samsung-25w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Samsung%2025W%20(cargador-samsung-25w)",
     "waMsg": "Hola QRTech! Quiero el Cargador Samsung 25W.",
@@ -4303,7 +4303,7 @@
     "catalogId": "vidrio-templado",
     "nombre": "Vidrio Templado",
     "precioUsd": 6,
-    "imagen": "/img/productos/Accesorios/vidrio.png",
+    "imagen": "img/productos/Accesorios/vidrio.png",
     "imagenes": [
       "/img/productos/Accesorios/vidrio.png"
     ],
