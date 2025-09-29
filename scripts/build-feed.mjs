@@ -1,56 +1,48 @@
 // scripts/build-feed.mjs
-import { readFileSync, writeFileSync, mkdirSync } from "fs";
+// Genera /public/products-feed.csv y /public/products-feed.json desde src/data/productos.json
+// Si existe la carpeta /build (CRA), duplica los archivos allí para que el hosting los sirva tras el build.
+// Uso: cross-env SITE_ORIGIN=https://qrtech.com.ar node scripts/build-feed.mjs
+
+import { readFileSync, writeFileSync, mkdirSync, existsSync, cpSync } from "fs";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-/**
- * Dominio absoluto canónico (con www) para el feed.
- * Podés sobreescribirlo: SITE_ORIGIN=https://www.qrtech.com.ar node scripts/build-feed.mjs
- */
-const SITE = process.env.SITE_ORIGIN || "https://www.qrtech.com.ar";
+// ====== Config ======
+const SITE = process.env.SITE_ORIGIN || "https://qrtech.com.ar";
 const CANON = new URL(SITE);
 
-// 1) Cargar productos fuente (pueden tener rutas relativas /img/... para que funcionen en localhost)
-const src = resolve(__dirname, "../src/data/productos.json");
-const data = JSON.parse(readFileSync(src, "utf8"));
+// ====== Utils ======
+const normalizePathname = (pathname) => {
+  let p = pathname.replace(/%2F/gi, "/").replace(/\/{2,}/g, "/");
+  p = p
+    .replace(/\/img\/productos\/android\//g, "/img/productos/Android/")
+    .replace(/\/img\/productos\/accesorios\//g, "/img/productos/Accesorios/")
+    .replace(/\/img\/productos\/Iphone\//g, "/img/productos/iPhone/")
+    .replace(/\/img\/productos\/Android\/xiaomi\//g, "/img/productos/Android/Xiaomi/")
+    .replace(/\/img\/productos\/Android\/samsung\//g, "/img/productos/Android/Samsung/");
+  if (!p.startsWith("/")) p = "/" + p;
+  return p;
+};
 
-/** Helpers **/
-
-// Normaliza y absolutiza una URL de imagen para el FEED (https, host canónico, conserva mayúsculas/minúsculas)
-const toAbsImg = (p) => {
-  let u = (p || "").trim();
+const toAbsImg = (input) => {
+  let u = String(input || "").trim();
   if (!u) u = "/img/placeholder.png";
-
-  // Si viene http, forzar https
   if (/^http:\/\//i.test(u)) u = u.replace(/^http:\/\//i, "https://");
 
-  // Relativa -> absoluta contra el dominio canónico
   let url;
   if (/^https?:\/\//i.test(u)) {
     url = new URL(u);
+    url.pathname = normalizePathname(url.pathname);
   } else {
-    const path = u.startsWith("/") ? u : `/${u}`;
-    url = new URL(path, CANON);
+    url = new URL(normalizePathname(u), CANON);
   }
-
-  // Normalizar pathname SIN cambiar el casing (evitamos 404)
-  url.pathname = url.pathname
-    .replace(/\/{2,}/g, "/")             // // -> /
-    .replace(/%2F/g, "/")                // por si viniera encodeado
-    .replace(/\/Accesorios\//g, "/accesorios/"); // ajuste puntual si esa carpeta es minúscula en disco
-
-  // Host canónico + https
   url.host = CANON.host;
   url.protocol = "https:";
-
-  // Codificar espacios, etc. (sin duplicar el encode)
   return encodeURI(url.toString());
 };
 
-
-// Absolutiza links a páginas (no forzamos lowercase aquí)
 const toAbsLink = (path) => {
   const p = String(path || "/").startsWith("/") ? path : `/${path || ""}`;
   const u = new URL(p, CANON);
@@ -60,52 +52,85 @@ const toAbsLink = (path) => {
 };
 
 const priceOf = (v, p) => Number(v?.precioUsd ?? p?.precioUsd);
-const condToMeta = (c = "") => (/sellado/i.test(c) ? "new" : "used");
-const avail = (v) => (v?.stock === false ? "out of stock" : "in stock");
+const condToMeta = (c = "") => (/^(nuevo|sellado)/i.test(c) ? "new" : "used");
+const availability = (v) => (v?.stock === false ? "out of stock" : "in stock");
 const norm = (s) => String(s || "").toLowerCase().replace(/\s+/g, "").replace(/[^a-z0-9]/g, "");
-
-// ID único si la variante no trae id (incluye color para evitar choques)
 const makeId = (p, v) =>
-  v?.id || `${p.id}-${norm(v?.storage)}-${norm(v?.condicion)}-${norm(v?.bateria)}-${norm(v?.color) || "nocolor"}`;
+  v?.id ||
+  `${p.id}-${norm(v?.storage) || "nostorage"}-${norm(v?.condicion) || "nocond"}-${norm(v?.bateria) || "nobatt"}-${
+    norm(v?.color) || "nocolor"
+  }`;
 
-// 3) Aplanar productos -> items (Meta recomienda 1 item por variante)
+// ====== Carga ======
+const src = resolve(__dirname, "../src/data/productos.json");
+const data = JSON.parse(readFileSync(src, "utf8"));
+
+// ====== Transform ======
+const resolveImages = (p, v) => {
+  const main = toAbsImg(p.imagen || p.imagenes?.[0] || "/img/placeholder.png");
+
+  let colorImg = null;
+  if (v?.color && p.imagenesPorColor && Array.isArray(p.imagenesPorColor[v.color])) {
+    const arr = p.imagenesPorColor[v.color];
+    if (arr.length) colorImg = toAbsImg(arr[0]);
+  }
+
+  const image_link = colorImg || main;
+
+  const additional = (Array.isArray(p.imagenes) ? p.imagenes.slice(0) : [])
+    .filter(Boolean)
+    .map((x) => toAbsImg(x))
+    .filter((u) => u !== image_link);
+
+  return { image_link, additional_image_link: additional.join(",") };
+};
+
 const items = [];
 for (const p of data) {
   const base = {
     item_group_id: p.id,
-    brand: p.marca || "Apple",
+    brand: p.marca || "QRTech",
     link: toAbsLink(`/productos?sku=${encodeURIComponent(p.id)}`),
-    image_link: toAbsImg(p.imagen || p.imagenes?.[0] || "/img/placeholder.png"),
-    additional_image_link: (p.imagenes || [])
-      .slice(1)
-      .map((x) => toAbsImg(x))
-      .join(","),
     google_product_category: "Móviles y accesorios > Teléfonos móviles",
   };
 
   if (Array.isArray(p.variantes) && p.variantes.length) {
     for (const v of p.variantes) {
       const px = priceOf(v, p);
-      if (!Number.isFinite(px)) continue; // sin precio => no lo emitas
+      if (!Number.isFinite(px)) continue;
+      const { image_link, additional_image_link } = resolveImages(p, v);
+
+      const titleBits = [p.nombre, v.storage, v.condicion].filter(Boolean);
+      const title = titleBits.join(" ").trim();
+
+      const descBits = [
+        p.nombre,
+        v.storage ? `${v.storage}` : "",
+        v.condicion ? `· ${v.condicion}` : "",
+        v.bateria ? `· Batería ${v.bateria}` : "",
+        "· Garantía QRTech.",
+      ].filter(Boolean);
+      const description = descBits.join(" ").replace(/\s{2,}/g, " ").trim();
 
       items.push({
         id: makeId(p, v),
-        title: `${p.nombre} ${v.storage || ""} ${v.condicion || ""}`.trim(),
-        description: `${p.nombre}${v.storage ? ` ${v.storage}` : ""}${v.condicion ? ` · ${v.condicion}` : ""}${
-          v.bateria ? ` · Batería ${v.bateria}` : ""
-        }. Garantía QRTech.`,
-        availability: avail(v),
+        title,
+        description,
+        availability: availability(v),
         condition: condToMeta(v.condicion || p.condicion),
         price: `${px.toFixed(2)} USD`,
         color: v.color || "",
         size: v.storage || "",
         custom_label_0: v.bateria || "",
+        image_link,
+        additional_image_link,
         ...base,
       });
     }
   } else {
     const px = priceOf(null, p);
     if (!Number.isFinite(px)) continue;
+    const { image_link, additional_image_link } = resolveImages(p, null);
 
     items.push({
       id: p.catalogId || p.id,
@@ -117,19 +142,22 @@ for (const p of data) {
       color: "",
       size: "",
       custom_label_0: "",
+      image_link,
+      additional_image_link,
       ...base,
     });
   }
 }
 
-// 4) Salidas en /public
-const outDir = resolve(__dirname, "../public");
-mkdirSync(outDir, { recursive: true });
+// ====== Salidas ======
+const outPublic = resolve(__dirname, "../public");
+mkdirSync(outPublic, { recursive: true });
 
-// JSON (útil para debug)
-writeFileSync(resolve(outDir, "products-feed.json"), JSON.stringify(items, null, 2), "utf8");
+const jsonPath = resolve(outPublic, "products-feed.json");
+const csvPath  = resolve(outPublic, "products-feed.csv");
 
-// CSV estándar Meta
+writeFileSync(jsonPath, JSON.stringify(items, null, 2), "utf8");
+
 const headers = [
   "id",
   "title",
@@ -147,14 +175,25 @@ const headers = [
   "custom_label_0",
 ];
 
-const csv = [
-  headers.join(","),
-  ...items.map((it) => headers.map((h) => `"${String(it[h] ?? "").replace(/"/g, '""')}"`).join(",")),
-].join("\n");
+const escapeCSV = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+const csv = [headers.join(","), ...items.map((it) => headers.map((h) => escapeCSV(it[h])).join(","))].join("\n");
+writeFileSync(csvPath, csv, "utf8");
 
-writeFileSync(resolve(outDir, "products-feed.csv"), csv, "utf8");
+// Copia opcional a /build (si existe) para que el feed quede publicado tras el build de CRA
+const buildDir = resolve(__dirname, "../build");
+if (existsSync(buildDir)) {
+  const buildJson = resolve(buildDir, "products-feed.json");
+  const buildCsv = resolve(buildDir, "products-feed.csv");
+  try {
+    cpSync(jsonPath, buildJson, { force: true });
+    cpSync(csvPath, buildCsv, { force: true });
+    console.log("También copiado a /build (post-build CRA).");
+  } catch (e) {
+    console.warn("No se pudo copiar a /build:", e.message);
+  }
+}
 
 console.log(`Feed OK → ${items.length} items
-JSON: /public/products-feed.json
-CSV : /public/products-feed.csv
+JSON: ${jsonPath}
+CSV : ${csvPath}
 SITE_ORIGIN=${SITE}`);
