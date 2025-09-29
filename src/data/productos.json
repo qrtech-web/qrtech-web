@@ -4,22 +4,22 @@
     "catalogId": "ip11",
     "nombre": "iPhone 11",
     "precioUsd": 260,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/11/b11.png",
+    "imagen": "/img/productos/iPhone/11/b11.png",
     "imagenesPorColor": {
       "Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Negro.png"
+        "/img/productos/iPhone/11/Negro.png"
       ],
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Blanco.png"
+        "/img/productos/iPhone/11/Blanco.png"
       ],
       "Verde": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Verde.png"
+        "/img/productos/iPhone/11/Verde.png"
       ],
       "Rojo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Rojo.png"
+        "/img/productos/iPhone/11/Rojo.png"
       ],
       "Amarillo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Amarillo.png"
+        "/img/productos/iPhone/11/Amarillo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20(ip11)",
@@ -319,19 +319,19 @@
     "catalogId": "ip11p",
     "nombre": "iPhone 11 Pro",
     "precioUsd": 290,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/11/b11p.png",
+    "imagen": "/img/productos/iPhone/11/b11p.png",
     "imagenesPorColor": {
       "Gris Espacial": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/GrisEspacial.png"
+        "/img/productos/iPhone/11/GrisEspacial.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Plata.png"
+        "/img/productos/iPhone/11/Plata.png"
       ],
       "Verde Medianoche": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/VerdeMedianoche.png"
+        "/img/productos/iPhone/11/VerdeMedianoche.png"
       ],
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Oro.png"
+        "/img/productos/iPhone/11/Oro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20(ip11p)",
@@ -577,19 +577,19 @@
     "catalogId": "ip11pm",
     "nombre": "iPhone 11 Pro Max",
     "precioUsd": 300,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/11/b11pm.png",
+    "imagen": "/img/productos/iPhone/11/b11pm.png",
     "imagenesPorColor": {
       "Gris Espacial": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/GrisEspacial.png"
+        "/img/productos/iPhone/11/GrisEspacial.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Plata.png"
+        "/img/productos/iPhone/11/Plata.png"
       ],
       "Verde Medianoche": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/VerdeMedianoche.png"
+        "/img/productos/iPhone/11/VerdeMedianoche.png"
       ],
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/11/Oro.png"
+        "/img/productos/iPhone/11/Oro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2011%20Pro%20Max%20(ip11pm)",
@@ -835,28 +835,28 @@
     "catalogId": "ip12",
     "nombre": "iPhone 12",
     "precioUsd": 300,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/12/b12.png",
+    "imagen": "/img/productos/iPhone/12/b12.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/12.png"
+      "/img/productos/12.png"
     ],
     "imagenesPorColor": {
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Blanco.png"
+        "/img/productos/iPhone/12/Blanco.png"
       ],
       "Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Negro.png"
+        "/img/productos/iPhone/12/Negro.png"
       ],
       "Lila": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Lila.png"
+        "/img/productos/iPhone/12/Lila.png"
       ],
       "Azul": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Azul.png"
+        "/img/productos/iPhone/12/Azul.png"
       ],
       "Verde": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Verde.png"
+        "/img/productos/iPhone/12/Verde.png"
       ],
       "Rojo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Rojo.png"
+        "/img/productos/iPhone/12/Rojo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20(ip12)",
@@ -1210,19 +1210,19 @@
     "catalogId": "ip12p",
     "nombre": "iPhone 12 Pro",
     "precioUsd": 370,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/12/b12p.png",
+    "imagen": "/img/productos/iPhone/12/b12p.png",
     "imagenesPorColor": {
       "Grafito": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Grafito.png"
+        "/img/productos/iPhone/12/Grafito.png"
       ],
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Oro.png"
+        "/img/productos/iPhone/12/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Plata.png"
+        "/img/productos/iPhone/12/Plata.png"
       ],
       "AzulPacifico": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/AzulPacifico.png"
+        "/img/productos/iPhone/12/AzulPacifico.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20(ip12p)",
@@ -1360,19 +1360,19 @@
     "catalogId": "ip12pm",
     "nombre": "iPhone 12 Pro Max",
     "precioUsd": 400,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/12/b12pm.png",
+    "imagen": "/img/productos/iPhone/12/b12pm.png",
     "imagenesPorColor": {
       "Grafito": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Grafito.png"
+        "/img/productos/iPhone/12/Grafito.png"
       ],
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Oro.png"
+        "/img/productos/iPhone/12/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/Plata.png"
+        "/img/productos/iPhone/12/Plata.png"
       ],
       "AzulPacifico": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/12/AzulPacifico.png"
+        "/img/productos/iPhone/12/AzulPacifico.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2012%20Pro%20Max%20(ip12pm)",
@@ -1510,25 +1510,25 @@
     "catalogId": "ip13",
     "nombre": "iPhone 13",
     "precioUsd": 400,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/13/b13.png",
+    "imagen": "/img/productos/iPhone/13/b13.png",
     "imagenesPorColor": {
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Blanco.png"
+        "/img/productos/iPhone/13/Blanco.png"
       ],
       "Medianoche": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Medianoche.png"
+        "/img/productos/iPhone/13/Medianoche.png"
       ],
       "Rosa": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Rosa.png"
+        "/img/productos/iPhone/13/Rosa.png"
       ],
       "Verde": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Verde.png"
+        "/img/productos/iPhone/13/Verde.png"
       ],
       "Azul": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Azul.png"
+        "/img/productos/iPhone/13/Azul.png"
       ],
       "Rojo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Rojo.png"
+        "/img/productos/iPhone/13/Rojo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20(ip13)",
@@ -1720,22 +1720,22 @@
     "catalogId": "ip13p",
     "nombre": "iPhone 13 Pro",
     "precioUsd": 500,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/13/b13p.png",
+    "imagen": "/img/productos/iPhone/13/b13p.png",
     "imagenesPorColor": {
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Oro.png"
+        "/img/productos/iPhone/13/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Plata.png"
+        "/img/productos/iPhone/13/Plata.png"
       ],
       "Graffito": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Grafito.png"
+        "/img/productos/iPhone/13/Grafito.png"
       ],
       "Azul Sierra": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/AzulSierra.png"
+        "/img/productos/iPhone/13/AzulSierra.png"
       ],
       "Verde Alpino": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/VerdeAlpino.png"
+        "/img/productos/iPhone/13/VerdeAlpino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20(ip13p)",
@@ -1900,22 +1900,22 @@
     "catalogId": "ip13pm",
     "nombre": "iPhone 13 Pro Max",
     "precioUsd": 570,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/13/b13pm.png",
+    "imagen": "/img/productos/iPhone/13/b13pm.png",
     "imagenesPorColor": {
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Oro.png"
+        "/img/productos/iPhone/13/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Plata.png"
+        "/img/productos/iPhone/13/Plata.png"
       ],
       "Graffito": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/Grafito.png"
+        "/img/productos/iPhone/13/Grafito.png"
       ],
       "Azul Sierra": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/AzulSierra.png"
+        "/img/productos/iPhone/13/AzulSierra.png"
       ],
       "Verde Alpino": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/13/VerdeAlpino.png"
+        "/img/productos/iPhone/13/VerdeAlpino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2013%20Pro%20Max%20(ip13pm)",
@@ -2080,25 +2080,25 @@
     "catalogId": "ip14",
     "nombre": "iPhone 14",
     "precioUsd": 480,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/14/b14.png",
+    "imagen": "/img/productos/iPhone/14/b14.png",
     "imagenesPorColor": {
       "Medianoche": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Medianoche.png"
+        "/img/productos/iPhone/14/Medianoche.png"
       ],
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Blanco.png"
+        "/img/productos/iPhone/14/Blanco.png"
       ],
       "Rojo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Rojo.png"
+        "/img/productos/iPhone/14/Rojo.png"
       ],
       "Celeste": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Celeste.png"
+        "/img/productos/iPhone/14/Celeste.png"
       ],
       "Lila": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Lila.png"
+        "/img/productos/iPhone/14/Lila.png"
       ],
       "Amarillo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Amarillo.png"
+        "/img/productos/iPhone/14/Amarillo.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20(ip14)",
@@ -2290,19 +2290,19 @@
     "catalogId": "ip14p",
     "nombre": "iPhone 14 Pro",
     "precioUsd": 610,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/14/b14p.png",
+    "imagen": "/img/productos/iPhone/14/b14p.png",
     "imagenesPorColor": {
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Oro.png"
+        "/img/productos/iPhone/14/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Plata.png"
+        "/img/productos/iPhone/14/Plata.png"
       ],
       "Negro Espacial": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/NegroEspacial.png"
+        "/img/productos/iPhone/14/NegroEspacial.png"
       ],
       "Morado Oscuro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/MoradoOscuro.png"
+        "/img/productos/iPhone/14/MoradoOscuro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20(ip14p)",
@@ -2440,19 +2440,19 @@
     "catalogId": "ip14pm",
     "nombre": "iPhone 14 Pro Max",
     "precioUsd": 710,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/14/b14pm.png",
+    "imagen": "/img/productos/iPhone/14/b14pm.png",
     "imagenesPorColor": {
       "Oro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Oro.png"
+        "/img/productos/iPhone/14/Oro.png"
       ],
       "Plata": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/Plata.png"
+        "/img/productos/iPhone/14/Plata.png"
       ],
       "Negro Espacial": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/NegroEspacial.png"
+        "/img/productos/iPhone/14/NegroEspacial.png"
       ],
       "Morado Oscuro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/14/MoradoOscuro.png"
+        "/img/productos/iPhone/14/MoradoOscuro.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2014%20Pro%20Max%20(ip14pm)",
@@ -2590,22 +2590,22 @@
     "catalogId": "ip15",
     "nombre": "iPhone 15",
     "precioUsd": 610,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/15/b15.png",
+    "imagen": "/img/productos/iPhone/15/b15.png",
     "imagenesPorColor": {
       "Amarillo": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/Amarillo.png"
+        "/img/productos/iPhone/15/Amarillo.png"
       ],
       "Celeste": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/Celeste.png"
+        "/img/productos/iPhone/15/Celeste.png"
       ],
       "Rosa": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/Rosa.png"
+        "/img/productos/iPhone/15/Rosa.png"
       ],
       "Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/Negro.png"
+        "/img/productos/iPhone/15/Negro.png"
       ],
       "Verde": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/Verde.png"
+        "/img/productos/iPhone/15/Verde.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20(ip15)",
@@ -2770,19 +2770,19 @@
     "catalogId": "ip15p",
     "nombre": "iPhone 15 Pro",
     "precioUsd": 750,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/15/b15p.png",
+    "imagen": "/img/productos/iPhone/15/b15p.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioNegro.png"
+        "/img/productos/iPhone/15/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioBlanco.png"
+        "/img/productos/iPhone/15/TitanioBlanco.png"
       ],
       "Titanio Azul": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioAzul.png"
+        "/img/productos/iPhone/15/TitanioAzul.png"
       ],
       "Titanio Natural": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioNatural.png"
+        "/img/productos/iPhone/15/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20(ip15p)",
@@ -2920,19 +2920,19 @@
     "catalogId": "ip15pm",
     "nombre": "iPhone 15 Pro Max",
     "precioUsd": 900,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/15/b15pm.png",
+    "imagen": "/img/productos/iPhone/15/b15pm.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioNegro.png"
+        "/img/productos/iPhone/15/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioBlanco.png"
+        "/img/productos/iPhone/15/TitanioBlanco.png"
       ],
       "Titanio Azul": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioAzul.png"
+        "/img/productos/iPhone/15/TitanioAzul.png"
       ],
       "Titanio Natural": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/15/TitanioNatural.png"
+        "/img/productos/iPhone/15/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2015%20Pro%20Max%20(ip15pm)",
@@ -3070,22 +3070,22 @@
     "catalogId": "ip16",
     "nombre": "iPhone 16",
     "precioUsd": 750,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/16/b16.png",
+    "imagen": "/img/productos/iPhone/16/b16.png",
     "imagenesPorColor": {
       "Rosa": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/Rosa.png"
+        "/img/productos/iPhone/16/Rosa.png"
       ],
       "Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/Negro.png"
+        "/img/productos/iPhone/16/Negro.png"
       ],
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/Blanco.png"
+        "/img/productos/iPhone/16/Blanco.png"
       ],
       "Verde Azulado": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/VerdeAzulado.png"
+        "/img/productos/iPhone/16/VerdeAzulado.png"
       ],
       "Ultramarino": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/Ultramarino.png"
+        "/img/productos/iPhone/16/Ultramarino.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20(ip16)",
@@ -3250,13 +3250,13 @@
     "catalogId": "ip16e",
     "nombre": "iPhone 16e",
     "precioUsd": 650,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/16/b16e.png",
+    "imagen": "/img/productos/iPhone/16/b16e.png",
     "imagenesPorColor": {
       "Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/eNegro.png"
+        "/img/productos/iPhone/16/eNegro.png"
       ],
       "Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/eBlanco.png"
+        "/img/productos/iPhone/16/eBlanco.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016e%20(ip16e)",
@@ -3304,19 +3304,19 @@
     "catalogId": "ip16p",
     "nombre": "iPhone 16 Pro",
     "precioUsd": 990,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/16/b16p.png",
+    "imagen": "/img/productos/iPhone/16/b16p.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioNegro.png"
+        "/img/productos/iPhone/16/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioBlanco.png"
+        "/img/productos/iPhone/16/TitanioBlanco.png"
       ],
       "Titanio Desert": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioDesierto.png"
+        "/img/productos/iPhone/16/TitanioDesierto.png"
       ],
       "Titanio Natural": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioNatural.png"
+        "/img/productos/iPhone/16/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20(ip16p)",
@@ -3454,19 +3454,19 @@
     "catalogId": "ip16pm",
     "nombre": "iPhone 16 Pro Max",
     "precioUsd": 1180,
-    "imagen": "https://www.qrtech.com.ar/img/productos/iPhone/16/b16pm.png",
+    "imagen": "/img/productos/iPhone/16/b16pm.png",
     "imagenesPorColor": {
       "Titanio Negro": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioNegro.png"
+        "/img/productos/iPhone/16/TitanioNegro.png"
       ],
       "Titanio Blanco": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioBlanco.png"
+        "/img/productos/iPhone/16/TitanioBlanco.png"
       ],
       "Titanio Desert": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioDesierto.png"
+        "/img/productos/iPhone/16/TitanioDesierto.png"
       ],
       "Titanio Natural": [
-        "https://www.qrtech.com.ar/img/productos/iPhone/16/TitanioNatural.png"
+        "/img/productos/iPhone/16/TitanioNatural.png"
       ]
     },
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20iPhone%2016%20Pro%20Max%20(ip16pm)",
@@ -3604,9 +3604,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 4GB / 128GB",
     "precioUsd": 175,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Xiaomi/redmi-14c.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-14c.png"
+      "/img/productos/redmi-14c.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%204GB%2F128GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 4/128 (redmi-14c).",
@@ -3643,9 +3643,9 @@
     "catalogId": "redmi-14c",
     "nombre": "Redmi 14C 8GB / 256GB",
     "precioUsd": 198,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Xiaomi/redmi-14c2.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-14c2.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-14c2.png"
+      "/img/productos/redmi-14c2.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%2014C%208GB%2F256GB%20(redmi-14c)",
     "waMsg": "Hola QRTech! Quiero el Redmi 14C 8/256 (redmi-14c).",
@@ -3682,9 +3682,9 @@
     "catalogId": "redmi-note-14",
     "nombre": "Redmi Note 14 8GB / 256GB",
     "precioUsd": 240,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Xiaomi/redmi-note-14.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-note-14.png"
+      "/img/productos/android/Xiaomi/redmi-note-14.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%208GB%2F256GB%20(redmi-note-14)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 8/256 (redmi-note-14).",
@@ -3721,9 +3721,9 @@
     "catalogId": "redmi-note-14-pro",
     "nombre": "Redmi Note 14 Pro 8GB / 256GB",
     "precioUsd": 283,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Xiaomi/redmi-note-14p.png",
+    "imagen": "/img/productos/android/Xiaomi/redmi-note-14p.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/redmi-note-14o.png"
+      "/img/productos/redmi-note-14o.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Redmi%20Note%2014%20Pro%208GB%2F256GB%20(redmi-note-14-pro)",
     "waMsg": "Hola QRTech! Quiero el Redmi Note 14 Pro 8/256 (redmi-note-14-pro).",
@@ -3760,9 +3760,9 @@
     "catalogId": "sm-a06",
     "nombre": "Samsung Galaxy A06 4GB / 64GB",
     "precioUsd": 167,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Samsung/smg-a06.png",
+    "imagen": "/img/productos/android/Samsung/smg-a06.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a06.png"
+      "/img/productos/smg-a06.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A06%204GB%2F64GB%20(sm-a06)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A06 4/64 (sm-a06).",
@@ -3799,9 +3799,9 @@
     "catalogId": "sm-a16",
     "nombre": "Samsung Galaxy A16 6GB / 256GB",
     "precioUsd": 270,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Samsung/smg-a16.png",
+    "imagen": "/img/productos/android/Samsung/smg-a16.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a16.png"
+      "/img/productos/smg-a16.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20{{MODELO}}%20{{RAM}}GB%2F{{STORAGE}}GB%20(sm-{{modeloLower}})",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy {{MODELO}} {{RAM}}/{{STORAGE}} (sm-{{modeloLower}}).",
@@ -3837,9 +3837,9 @@
     "catalogId": "sm-a36",
     "nombre": "Samsung Galaxy A36 8GB / 256GB",
     "precioUsd": 365,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Samsung/smg-a36.png",
+    "imagen": "/img/productos/android/Samsung/smg-a36.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a36.png"
+      "/img/productos/smg-a36.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A36%208GB%2F256GB%20(sm-a36)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A36 8/256 (sm-a36).",
@@ -3876,9 +3876,9 @@
     "catalogId": "sm-a56",
     "nombre": "Samsung Galaxy A56 8GB / 256GB",
     "precioUsd": 455,
-    "imagen": "https://www.qrtech.com.ar/img/productos/android/Samsung/smg-a56.png",
+    "imagen": "/img/productos/android/Samsung/smg-a56.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/smg-a56.png"
+      "/img/productos/smg-a56.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Samsung%20Galaxy%20A56%208GB%2F256GB%20(sm-a56)",
     "waMsg": "Hola QRTech! Quiero el Samsung Galaxy A56 8/256 (sm-a56).",
@@ -3915,9 +3915,9 @@
     "catalogId": "cbl-usbc-lightning",
     "nombre": "Cable USB-C a Lightning 1m (Alta calidad)",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cbl-usbc-lightning.png",
+    "imagen": "/img/productos/accesorios/cbl-usbc-lightning.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usbc-lightning.png"
+      "/img/productos/cbl-usbc-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20Lightning%20de%201%20m%20(cbl-usbc-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a Lightning de 1 metro.",
@@ -3945,9 +3945,9 @@
     "catalogId": "cbl-usbc-usbc",
     "nombre": "Cable USB-C a USB-C 1m (Carga rápida)",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cbl-usbc-usbc.png",
+    "imagen": "/img/productos/accesorios/cbl-usbc-usbc.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usbc-usbc.png"
+      "/img/productos/cbl-usbc-usbc.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-C%20a%20USB-C%20de%201%20m%20(cbl-usbc-usbc)",
     "waMsg": "Hola QRTech! Quiero el cable USB-C a USB-C de 1 metro.",
@@ -3976,9 +3976,9 @@
     "catalogId": "cbl-usba-lightning",
     "nombre": "Cable USB-A a Lightning 1m",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cbl-usba-lightning.png",
+    "imagen": "/img/productos/accesorios/cbl-usba-lightning.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/cbl-usba-lightning.png"
+      "/img/productos/cbl-usba-lightning.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20cable%20USB-A%20a%20Lightning%20de%201%20m%20(cbl-usba-lightning)",
     "waMsg": "Hola QRTech! Quiero el cable USB-A a Lightning de 1 metro.",
@@ -4006,9 +4006,9 @@
     "catalogId": "chg-iphone-20w",
     "nombre": "Cargador iPhone 20W USB-C (fuente)",
     "precioUsd": 12,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/chg-iphone-20w.png",
+    "imagen": "/img/productos/accesorios/chg-iphone-20w.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/chg-iphone-20w.png"
+      "/img/productos/chg-iphone-20w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20fuente%20para%20iPhone%20de%2020W%20(chg-iphone-20w)",
     "waMsg": "Hola QRTech! Quiero la fuente/cargador iPhone 20W USB-C.",
@@ -4035,9 +4035,9 @@
     "catalogId": "pbank-magsafe",
     "nombre": "Power Bank MagSafe 10000 mAh",
     "precioUsd": 25,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/pbank-magsafe.png",
+    "imagen": "/img/productos/accesorios/pbank-magsafe.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/pbank-magsafe.png"
+      "/img/productos/pbank-magsafe.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Power%20Bank%20MagSafe%2010000%20mAh%20(pbank-magsafe)",
     "waMsg": "Hola QRTech! Quiero la Power Bank MagSafe de 10000 mAh.",
@@ -4071,9 +4071,9 @@
     "catalogId": "m90pro",
     "nombre": "Auriculares M90 Pro Bluetooth",
     "precioUsd": 10,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/m90pro.png",
+    "imagen": "/img/productos/accesorios/m90pro.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/m90pro.png"
+      "/img/productos/m90pro.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20Auriculares%20M90%20Pro%20Bluetooth",
     "waMsg": "Hola QRTech! Quiero los auriculares M90 Pro Bluetooth.",
@@ -4098,9 +4098,9 @@
     "catalogId": "cable-rj45",
     "nombre": "Cable de red RJ45 (1m)",
     "precioUsd": 4,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cable-de-red-rj45.png",
+    "imagen": "/img/productos/accesorios/cable-de-red-rj45.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/cable-de-red-rj45.png"
+      "/img/productos/accesorios/cable-de-red-rj45.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20de%20red%20RJ45%20(cable-rj45-1m)",
     "waMsg": "Hola QRTech! Quiero el Cable de red RJ45 (1m).",
@@ -4124,9 +4124,9 @@
     "catalogId": "usb-c-c",
     "nombre": "Cable USB-C a USB-C Samsung",
     "precioUsd": 6,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cable-usb-c-a-c-samsung.png",
+    "imagen": "/img/productos/accesorios/cable-usb-c-a-c-samsung.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/cable-usb-c-a-c-samsung.png"
+      "/img/productos/accesorios/cable-usb-c-a-c-samsung.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-C%20a%20USB-C%20Samsung%20(cable-usb-c-a-c-samsung)",
     "waMsg": "Hola QRTech! Quiero el Cable USB-C a USB-C Samsung.",
@@ -4150,9 +4150,9 @@
     "catalogId": "usb-a-micro",
     "nombre": "Cable USB-A a Micro-USB (V8) Motorola",
     "precioUsd": 5,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png",
+    "imagen": "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png"
+      "/img/productos/accesorios/cable-usb-tipo-a-v8-motorola.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cable%20USB-A%20a%20Micro-USB%20(V8)%20Motorola%20(cable-usb-a-micro-v8-motorola)",
     "waMsg": "Hola QRTech! Quiero el Cable USB-A a Micro-USB (V8) Motorola.",
@@ -4176,9 +4176,9 @@
     "catalogId": "earpods",
     "nombre": "EarPods con jack 3.5mm",
     "precioUsd": 7,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/Earpods.png",
+    "imagen": "/img/productos/accesorios/Earpods.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/Earpods.png"
+      "/img/productos/accesorios/Earpods.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20los%20EarPods%20(earpods-3-5mm)",
     "waMsg": "Hola QRTech! Quiero los EarPods con jack 3.5mm.",
@@ -4203,9 +4203,9 @@
     "catalogId": "chg-moto-68w",
     "nombre": "Cargador Motorola 68W",
     "precioUsd": 10,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/fuente-motorola-68w.png",
+    "imagen": "/img/productos/accesorios/fuente-motorola-68w.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/fuente-motorola-68w.png"
+      "/img/productos/accesorios/fuente-motorola-68w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Motorola%2068W%20(cargador-motorola-68w)",
     "waMsg": "Hola QRTech! Quiero el Cargador Motorola 68W.",
@@ -4229,9 +4229,9 @@
     "catalogId": "chg-sam-25w",
     "nombre": "Cargador Samsung 25W",
     "precioUsd": 10,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/fuente-samsung-25w.png",
+    "imagen": "/img/productos/accesorios/fuente-samsung-25w.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/fuente-samsung-25w.png"
+      "/img/productos/accesorios/fuente-samsung-25w.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20el%20Cargador%20Samsung%2025W%20(cargador-samsung-25w)",
     "waMsg": "Hola QRTech! Quiero el Cargador Samsung 25W.",
@@ -4255,9 +4255,9 @@
     "catalogId": "case-antishock",
     "nombre": "Funda Antishock",
     "precioUsd": 4,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/funda-antishock.png",
+    "imagen": "/img/productos/accesorios/funda-antishock.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/funda-antishock.png"
+      "/img/productos/accesorios/funda-antishock.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Funda%20Antishock%20(funda-antishock)",
     "waMsg": "Hola QRTech! Quiero la Funda Antishock.",
@@ -4279,9 +4279,9 @@
     "catalogId": "case-silicone",
     "nombre": "Funda Silicone Case",
     "precioUsd": 7,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/funda-silicone-case.png",
+    "imagen": "/img/productos/accesorios/funda-silicone-case.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/funda-silicone-case.png"
+      "/img/productos/accesorios/funda-silicone-case.png"
     ],
     "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20la%20Funda%20Silicone%20Case%20(funda-silicone-case)",
     "waMsg": "Hola QRTech! Quiero la Funda Silicone Case.",
@@ -4303,9 +4303,9 @@
     "catalogId": "vidrio-templado",
     "nombre": "Vidrio Templado",
     "precioUsd": 6,
-    "imagen": "https://www.qrtech.com.ar/img/productos/accesorios/vidrio.png",
+    "imagen": "/img/productos/accesorios/vidrio.png",
     "imagenes": [
-      "https://www.qrtech.com.ar/img/productos/accesorios/vidrio.png"
+      "/img/productos/accesorios/vidrio.png"
     ],
     "wa": "https://wa.me/5493815677391?text=Hola%20QRTech%21%20Quiero%20un%20vidrio%20templado.",
     "waMsg": "Hola QRTech! Quiero un vidrio templado.",
