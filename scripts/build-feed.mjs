@@ -26,20 +26,33 @@ const normalizePathname = (pathname) => {
   return p;
 };
 
-const toAbsImg = (input) => {
-  let u = String(input || "").trim();
+// Normaliza y absolutiza una URL de imagen para el FEED
+const toAbsImg = (p) => {
+  let u = (p || "").trim();
   if (!u) u = "/img/placeholder.png";
+
+  // Asegurar slash inicial si es relativa
+  if (!/^https?:\/\//i.test(u)) u = u.startsWith("/") ? u : `/${u}`;
+
+  // Forzar https si venía http
   if (/^http:\/\//i.test(u)) u = u.replace(/^http:\/\//i, "https://");
 
-  let url;
-  if (/^https?:\/\//i.test(u)) {
-    url = new URL(u);
-    url.pathname = normalizePathname(url.pathname);
-  } else {
-    url = new URL(normalizePathname(u), CANON);
-  }
+  // Normalizar solo las carpetas (no el filename)
+  // /img/productos/<carpetas...>/<archivo>
+  u = u
+    .replace(/\/{2,}/g, "/")
+    .replace(/%2F/gi, "/")
+    // carpetas a minúscula para que coincidan con el server
+    .replace(/\/Accesorios\//g, "/accesorios/")
+    .replace(/\/iPhone\//g, "/iphone/")
+    .replace(/\/Featured\//g, "/featured/")
+    .replace(/\/Android\//g, "/android/");
+
+  const url = /^https?:\/\//i.test(u) ? new URL(u) : new URL(u, CANON);
   url.host = CANON.host;
   url.protocol = "https:";
+  url.pathname = url.pathname.replace(/\/{2,}/g, "/"); // por si quedó doble slash
+
   return encodeURI(url.toString());
 };
 
