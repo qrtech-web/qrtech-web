@@ -6,19 +6,59 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /**
- * Dominio absoluto para construir URLs de imágenes y enlaces del feed.
- * Cambiá el valor por defecto o pasalo por ENV al ejecutar:
- *   SITE_ORIGIN=https://tu-dominio.com node scripts/build-feed.mjs
+ * Dominio absoluto canónico (con www) para el feed.
+ * Podés sobreescribirlo: SITE_ORIGIN=https://www.qrtech.com.ar node scripts/build-feed.mjs
  */
-const SITE = process.env.SITE_ORIGIN || "https://qrtech.com.ar";
+const SITE = process.env.SITE_ORIGIN || "https://www.qrtech.com.ar";
+const CANON = new URL(SITE);
 
-// 1) Cargar productos fuente
+// 1) Cargar productos fuente (pueden tener rutas relativas /img/... para que funcionen en localhost)
 const src = resolve(__dirname, "../src/data/productos.json");
 const data = JSON.parse(readFileSync(src, "utf8"));
 
-// 2) Helpers
-const toAbs = (p) => (p?.startsWith("http") ? p : SITE + (p?.startsWith("/") ? p : "/" + p || ""));
-const encUrl = (u) => toAbs(u).replace(/ /g, "%20"); // espacios -> %20
+/** Helpers **/
+
+// Normaliza y absolutiza una URL de imagen para el FEED (https, host canónico, conserva mayúsculas/minúsculas)
+const toAbsImg = (p) => {
+  let u = (p || "").trim();
+  if (!u) u = "/img/placeholder.png";
+
+  // Si viene http, forzar https
+  if (/^http:\/\//i.test(u)) u = u.replace(/^http:\/\//i, "https://");
+
+  // Relativa -> absoluta contra el dominio canónico
+  let url;
+  if (/^https?:\/\//i.test(u)) {
+    url = new URL(u);
+  } else {
+    const path = u.startsWith("/") ? u : `/${u}`;
+    url = new URL(path, CANON);
+  }
+
+  // Normalizar pathname SIN cambiar el casing (evitamos 404)
+  url.pathname = url.pathname
+    .replace(/\/{2,}/g, "/")             // // -> /
+    .replace(/%2F/g, "/")                // por si viniera encodeado
+    .replace(/\/Accesorios\//g, "/accesorios/"); // ajuste puntual si esa carpeta es minúscula en disco
+
+  // Host canónico + https
+  url.host = CANON.host;
+  url.protocol = "https:";
+
+  // Codificar espacios, etc. (sin duplicar el encode)
+  return encodeURI(url.toString());
+};
+
+
+// Absolutiza links a páginas (no forzamos lowercase aquí)
+const toAbsLink = (path) => {
+  const p = String(path || "/").startsWith("/") ? path : `/${path || ""}`;
+  const u = new URL(p, CANON);
+  u.host = CANON.host;
+  u.protocol = "https:";
+  return u.toString();
+};
+
 const priceOf = (v, p) => Number(v?.precioUsd ?? p?.precioUsd);
 const condToMeta = (c = "") => (/sellado/i.test(c) ? "new" : "used");
 const avail = (v) => (v?.stock === false ? "out of stock" : "in stock");
@@ -34,9 +74,12 @@ for (const p of data) {
   const base = {
     item_group_id: p.id,
     brand: p.marca || "Apple",
-    link: `${SITE}/productos?sku=${encodeURIComponent(p.id)}`,
-    image_link: encUrl(p.imagen || p.imagenes?.[0] || "/img/placeholder.png"),
-    additional_image_link: (p.imagenes || []).slice(1).map(encUrl).join(","),
+    link: toAbsLink(`/productos?sku=${encodeURIComponent(p.id)}`),
+    image_link: toAbsImg(p.imagen || p.imagenes?.[0] || "/img/placeholder.png"),
+    additional_image_link: (p.imagenes || [])
+      .slice(1)
+      .map((x) => toAbsImg(x))
+      .join(","),
     google_product_category: "Móviles y accesorios > Teléfonos móviles",
   };
 
@@ -83,7 +126,7 @@ for (const p of data) {
 const outDir = resolve(__dirname, "../public");
 mkdirSync(outDir, { recursive: true });
 
-// JSON
+// JSON (útil para debug)
 writeFileSync(resolve(outDir, "products-feed.json"), JSON.stringify(items, null, 2), "utf8");
 
 // CSV estándar Meta
@@ -115,4 +158,3 @@ console.log(`Feed OK → ${items.length} items
 JSON: /public/products-feed.json
 CSV : /public/products-feed.csv
 SITE_ORIGIN=${SITE}`);
- 
