@@ -3,7 +3,7 @@
     "id": "ip11",
     "catalogId": "ip11",
     "nombre": "iPhone 11",
-    "precioUsd": 260,
+    "precioUsd": 250,
     "imagen": "/img/productos/iphone/11/b11.png", 
     "imagenesPorColor": {
       "Negro": [
@@ -74,7 +74,7 @@
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "+80%",
-        "precioUsd": 260,
+        "precioUsd": 250,
         "stock": true,
         "color": "Amarillo"
       },
@@ -128,7 +128,7 @@
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "+80%",
-        "precioUsd": 260,
+        "precioUsd": 250,
         "stock": true,
         "color": "Negro"
       },
@@ -182,7 +182,7 @@
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "+80%",
-        "precioUsd": 260,
+        "precioUsd": 250,
         "stock": true,
         "color": "Blanco"
       },
@@ -236,7 +236,7 @@
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "+80%",
-        "precioUsd": 260,
+        "precioUsd": 250,
         "stock": true,
         "color": "Verde"
       },
@@ -290,7 +290,7 @@
         "storage": "64GB",
         "condicion": "Usado A+",
         "bateria": "+80%",
-        "precioUsd": 260,
+        "precioUsd": 250,
         "stock": true,
         "color": "Rojo"
       },
@@ -3790,7 +3790,7 @@
         "condicion": "Nuevo",
         "bateria": "—",
         "precioUsd": 167,
-        "stock": true
+        "stock": true 
       }
     ]
   },
@@ -4317,5 +4317,868 @@
   "sku": "VID-TEMP",
   "specs": {},
   "variantes": []
-}
+  },
+  
+
+
+
+
+
+  
+  {
+    "id": "adaptador-wifi-doble-banda-dinax",
+    "catalogId": "adaptador-wifi-doble-banda-dinax",
+    "nombre": "Adaptador WIFI Doble Banda DINAX",
+    "precioUsd": 16,
+    "imagen": "/img/productos/otros/adaptador-wifi-doble-banda-dinax.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Adaptador-WIFI-Doble-Banda-DINAX%20(adaptador-wifi-doble-banda-dinax)",
+    "waMsg": "Hola QRTech! Quiero el Adaptador-WIFI-Doble-Banda-DINAX (adaptador-wifi-doble-banda-dinax). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "otros",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "ADAPTADOR-WI",
+    "variantes": [
+      { "id": "adaptador-wifi-doble-banda-dinax-std", "condicion": "Nuevo", "precioUsd": 25, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "alhajero-con-espejo-led-rebatible-con-velcro-bulltec",
+    "catalogId": "alhajero-con-espejo-led-rebatible-con-velcro-bulltec",
+    "nombre": "Alhajero con Espejo LED Rebatible con Velcro BULLTEC",
+    "precioUsd": 25,
+    "imagen": "/img/productos/otros/alhajero-con-espejo-led-rebatible-con-velcro-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Alhajero-con-Espejo-LED-Rebatible-con-Velcro-BULLTEC%20(alhajero-con-espejo-led-rebatible-con-velcro-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Alhajero-con-Espejo-LED-Rebatible-con-Velcro-BULLTEC (alhajero-con-espejo-led-rebatible-con-velcro-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "otros",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "ALHAJERO-CO",
+    "variantes": [
+      { "id": "alhajero-con-espejo-led-rebatible-con-velcro-bulltec-std", "condicion": "Nuevo", "precioUsd": 20, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "auricular-inalambrico-bt-air8pro-bulltec",
+    "catalogId": "auricular-inalambrico-bt-air8pro-bulltec",
+    "nombre": "Auricular Inalámbrico BT AIR8PRO BULLTEC",
+    "precioUsd": 11,
+    "imagen": "/img/productos/otros/auricular-inalambrico-bt-air8pro-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Auricular-Inalámbrico-BT-AIR8PRO-BULLTEC%20(auricular-inalambrico-bt-air8pro-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Auricular-Inalámbrico-BT-AIR8PRO-BULLTEC (auricular-inalambrico-bt-air8pro-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "audio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "AURICULAR-I",
+    "variantes": [
+      { "id": "auricular-inalambrico-bt-air8pro-bulltec-std", "condicion": "Nuevo", "precioUsd": 35, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "cabina-de-unas-uv-led-waags",
+    "catalogId": "cabina-de-unas-uv-led-waags",
+    "nombre": "Cabina de Uñas UV LED WAAGS + Set de herramientas", 
+    "precioUsd": 32,
+    "imagen": "/img/productos/otros/cabina-de-unas-uv-led-waags.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Cabina-de-Uñas-UV-LED-WAAGS%20(cabina-de-unas-uv-led-waags)",
+    "waMsg": "Hola QRTech! Quiero el Cabina-de-Uñas-UV-LED-WAAGS (cabina-de-unas-uv-led-waags). ¿Está disponible?",
+    "marca": "WAAGS",
+    "categoria": "otros",
+    "tipo": "otros",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "CABINA-DE-U",
+    "variantes": [
+      { "id": "cabina-de-unas-uv-led-waags-std", "condicion": "Nuevo", "precioUsd": 30, "stock": true, "color": "Blanco" }
+    ]
+  },
+  {
+    "id": "cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo",
+    "catalogId": "cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo",
+    "nombre": "Cargador de Notebook Bulltec 9 fichas intercambiables Con ficha Lenovo",
+    "precioUsd": 10,
+    "imagen": "/img/productos/otros/cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Cargador-de-Notebook-Bulltec-9-fichas-intercambiables-ConfichaLenovo%20(cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo)",
+    "waMsg": "Hola QRTech! Quiero el Cargador-de-Notebook-Bulltec-9-fichas-intercambiables-ConfichaLenovo (cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "CARGADOR-DE",
+    "variantes": [
+      { "id": "cargador-de-notebook-bulltec-9-fichas-intercambiables-confichalenovo-std", "condicion": "Nuevo", "precioUsd": 45, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "cinta-metrica-giant-5-metros",
+    "catalogId": "cinta-metrica-giant-5-metros",
+    "nombre": "Cinta Metrica Giant 5 Metros",
+    "precioUsd": 3,
+    "imagen": "/img/productos/otros/cinta-metrica-giant-5-metros.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Cinta-Metrica-Giant-5-Metros%20(cinta-metrica-giant-5-metros)",
+    "waMsg": "Hola QRTech! Quiero el Cinta-Metrica-Giant-5-Metros (cinta-metrica-giant-5-metros). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "herramienta",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "CINTA-METRI",
+    "variantes": [
+      { "id": "cinta-metrica-giant-5-metros-std", "condicion": "Nuevo", "precioUsd": 10, "stock": true, "color": "Amarillo" }
+    ]
+  },
+  {
+    "id": "corta-pelo-patillera-vintage-t9-metal",
+    "catalogId": "corta-pelo-patillera-vintage-t9-metal",
+    "nombre": "Corta Pelo Patillera Vintage T9 Metal",
+    "precioUsd": 5,
+    "imagen": "/img/productos/otros/corta-pelo-patillera-vintage-t9-metal.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Corta-Pelo-Patillera-Vintage-T9-Metal%20(corta-pelo-patillera-vintage-t9-metal)",
+    "waMsg": "Hola QRTech! Quiero el Corta-Pelo-Patillera-Vintage-T9-Metal (corta-pelo-patillera-vintage-t9-metal). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "belleza",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "CORTA-PELO-",
+    "variantes": [
+      { "id": "corta-pelo-patillera-vintage-t9-metal-std", "condicion": "Nuevo", "precioUsd": 18, "stock": true, "color": "Dorado" }
+    ]
+  },
+  {
+    "id": "espejo-para-maquillaje-mirror-con-4-leds",
+    "catalogId": "espejo-para-maquillaje-mirror-con-4-leds",
+    "nombre": "Espejo para Maquillaje MIRROR con 4 Leds",
+    "precioUsd": 24,
+    "imagen": "/img/productos/otros/espejo-para-maquillaje-mirror-con-4-leds.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Espejo-para-Maquillaje-MIRROR-con-4-Leds%20(espejo-para-maquillaje-mirror-con-4-leds)",
+    "waMsg": "Hola QRTech! Quiero el Espejo-para-Maquillaje-MIRROR-con-4-Leds (espejo-para-maquillaje-mirror-con-4-leds). ¿Está disponible?",
+    "marca": "MIRROR",
+    "categoria": "otros",
+    "tipo": "belleza",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "ESPEJO-PARA",
+    "variantes": [
+      { "id": "espejo-para-maquillaje-mirror-con-4-leds-std", "condicion": "Nuevo", "precioUsd": 22, "stock": true, "color": "Blanco" }
+    ]
+  },
+  {
+    "id": "exprimidor-electrico-aiwa",
+    "catalogId": "exprimidor-electrico-aiwa",
+    "nombre": "Exprimidor Eléctrico AIWA",
+    "precioUsd": 40,
+    "imagen": "/img/productos/otros/exprimidor-electrico-aiwa.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Exprimidor-Eléctrico-AIWA%20(exprimidor-electrico-aiwa)",
+    "waMsg": "Hola QRTech! Quiero el Exprimidor-Eléctrico-AIWA (exprimidor-electrico-aiwa). ¿Está disponible?",
+    "marca": "AIWA",
+    "categoria": "otros",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "EXPRIMIDOR-",
+    "variantes": [
+      { "id": "exprimidor-electrico-aiwa-std", "condicion": "Nuevo", "precioUsd": 40, "stock": true, "color": "Blanco" }
+    ]
+  },
+  {
+    "id": "maletin-de-notebook-wl-04b-14-5-pulgadas",
+    "catalogId": "maletin-de-notebook-wl-04b-14-5-pulgadas",
+    "nombre": "Maletín de Notebook WL 04B 14.5 Pulgadas",
+    "precioUsd": 12,
+    "imagen": "/img/productos/otros/maletin-de-notebook-wl-04b-14-5-pulgadas.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Maletín-de-Notebook-WL-04B-14.5-Pulgadas%20(maletin-de-notebook-wl-04b-14-5-pulgadas)",
+    "waMsg": "Hola QRTech! Quiero el Maletín-de-Notebook-WL-04B-14.5-Pulgadas (maletin-de-notebook-wl-04b-14-5-pulgadas). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MALETIN-DE-",
+    "variantes": [
+      { "id": "maletin-de-notebook-wl-04b-14-5-pulgadas-std", "condicion": "Nuevo", "precioUsd": 25, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mochila-urbana-con-bolsillo-frontal-jingpin",
+    "catalogId": "mochila-urbana-con-bolsillo-frontal-jingpin",
+    "nombre": "Mochila Urbana Con Bolsillo Frontal JINGPIN",
+    "precioUsd": 10,
+    "imagen": "/img/productos/otros/mochila-urbana-con-bolsillo-frontal-jingpin.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mochila%20Urbana%20Con%20Bolsillo%20Frontal%20JINGPIN%20(mochila-urbana-con-bolsillo-frontal-jingpin)",
+    "waMsg": "Hola QRTech! Quiero el Mochila Urbana Con Bolsillo Frontal JINGPIN (mochila-urbana-con-bolsillo-frontal-jingpin). ¿Está disponible?",
+    "marca": "JINGPIN",
+    "categoria": "otros",
+    "tipo": "mochila",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOCHILA-URB",
+    "variantes": [
+      { "id": "mochila-urbana-con-bolsillo-frontal-jingpin-std", "condicion": "Nuevo", "precioUsd": 22, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mochila-grande-colores-lisos-jingpin",
+    "catalogId": "mochila-grande-colores-lisos-jingpin",
+    "nombre": "Mochila Grande Colores Lisos Jingpin",
+    "precioUsd": 18,
+    "imagen": "/img/productos/otros/mochila-grande-colores-lisos-jingpin.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mochila-Grande-Colores-Lisos-Jingpin%20(mochila-grande-colores-lisos-jingpin)",
+    "waMsg": "Hola QRTech! Quiero el Mochila-Grande-Colores-Lisos-Jingpin (mochila-grande-colores-lisos-jingpin). ¿Está disponible?",
+    "marca": "JINGPIN",
+    "categoria": "otros",
+    "tipo": "mochila",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOCHILA-GRA",
+    "variantes": [
+      { "id": "mochila-grande-colores-lisos-jingpin-std", "condicion": "Nuevo", "precioUsd": 25, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mochila-jlm-power",
+    "catalogId": "mochila-jlm-power",
+    "nombre": "Mochila JLM POWER",
+    "precioUsd": 17,
+    "imagen": "/img/productos/otros/mochila-jlm-power.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mochila-JLM-POWER%20(mochila-jlm-power)",
+    "waMsg": "Hola QRTech! Quiero el Mochila-JLM-POWER (mochila-jlm-power). ¿Está disponible?",
+    "marca": "JLM",
+    "categoria": "otros",
+    "tipo": "mochila",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOCHILA-JLM",
+    "variantes": [
+      { "id": "mochila-jlm-power-std", "condicion": "Nuevo", "precioUsd": 28, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mochila-urbana-bolsillo-principal-doble-bolsillo-frontal",
+    "catalogId": "mochila-urbana-bolsillo-principal-doble-bolsillo-frontal",
+    "nombre": "Mochila Urbana Bolsillo principal Doble Bolsillo Frontal",
+    "precioUsd": 13,
+    "imagen": "/img/productos/otros/mochila-urbana-bolsillo-principal-doble-bolsillo-frontal.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mochila-Urbana-Bolsillo-principal-Doble-Bolsillo-Frontal%20(mochila-urbana-bolsillo-principal-doble-bolsillo-frontal)",
+    "waMsg": "Hola QRTech! Quiero el Mochila-Urbana-Bolsillo-principal-Doble-Bolsillo-Frontal (mochila-urbana-bolsillo-principal-doble-bolsillo-frontal). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "mochila",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOCHILA-URB",
+    "variantes": [
+      { "id": "mochila-urbana-bolsillo-principal-doble-bolsillo-frontal-std", "condicion": "Nuevo", "precioUsd": 24, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec",
+    "catalogId": "mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec",
+    "nombre": "Mouse Inalambrico Recargable USB C 2.4Ghz Bluetooth BULLTEC",
+    "precioUsd": 8,
+    "imagen": "/img/productos/otros/mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mouse-Inalambrico-Recargable-USB-C-2.4Ghz-Bluetooth-BULLTEC%20(mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Mouse-Inalambrico-Recargable-USB-C-2.4Ghz-Bluetooth-BULLTEC (mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOUSE-INALA",
+    "variantes": [
+      { "id": "mouse-inalambrico-recargable-usb-c-2-4ghz-bluetooth-bulltec-std", "condicion": "Nuevo", "precioUsd": 18, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "mouse-inalambrico-transparente-rgb-dinax",
+    "catalogId": "mouse-inalambrico-transparente-rgb-dinax",
+    "nombre": "Mouse Inalámbrico Transparente RGB Dinax",
+    "precioUsd": 8,
+    "imagen": "/img/productos/otros/mouse-inalambrico-transparente-rgb-dinax.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Mouse-Inalámbrico-Transparente-RGB-Dinax%20(mouse-inalambrico-transparente-rgb-dinax)",
+    "waMsg": "Hola QRTech! Quiero el Mouse-Inalámbrico-Transparente-RGB-Dinax (mouse-inalambrico-transparente-rgb-dinax). ¿Está disponible?",
+    "marca": "DINAX",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "MOUSE-INALA",
+    "variantes": [
+      { "id": "mouse-inalambrico-transparente-rgb-dinax-std", "condicion": "Nuevo", "precioUsd": 20, "stock": true, "color": "Transparente" }
+    ]
+  },
+  {
+    "id": "palo-selfie-stick-r1s-con-control",
+    "catalogId": "palo-selfie-stick-r1s-con-control",
+    "nombre": "Palo Selfie Stick R1S con Control",
+    "precioUsd": 5,
+    "imagen": "/img/productos/otros/palo-selfie-stick-r1s-con-control.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Palo-Selfie-Stick-R1S-con-Control%20(palo-selfie-stick-r1s-con-control)",
+    "waMsg": "Hola QRTech! Quiero el Palo-Selfie-Stick-R1S-con-Control (palo-selfie-stick-r1s-con-control). ¿Está disponible?",
+    "marca": "RIS",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "PALO-SELFIE",
+    "variantes": [
+      { "id": "palo-selfie-stick-r1s-con-control-std", "condicion": "Nuevo", "precioUsd": 12, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "perchero-doble-soporta-hasta-48kg-multipurpose-hanger",
+    "catalogId": "perchero-doble-soporta-hasta-48kg-multipurpose-hanger",
+    "nombre": "Perchero Doble Soporta Hasta 48kg HANGER",
+    "precioUsd": 40,
+    "imagen": "/img/productos/otros/perchero-doble-soporta-hasta-48kg-multipurpose-hanger.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Perchero-Doble-Soporta-Hasta-48kg-MULTIPURPOSE-HANGER%20(perchero-doble-soporta-hasta-48kg-multipurpose-hanger)",
+    "waMsg": "Hola QRTech! Quiero el Perchero-Doble-Soporta-Hasta-48kg-MULTIPURPOSE-HANGER (perchero-doble-soporta-hasta-48kg-multipurpose-hanger). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "hogar",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "PERCHERO-DO",
+    "variantes": [
+      { "id": "perchero-doble-soporta-hasta-48kg-multipurpose-hanger-std", "condicion": "Nuevo", "precioUsd": 30, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs",
+    "catalogId": "rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs",
+    "nombre": "Rack Escurridor Secaplatos Negro Grande Sobre Bacha Waggs",
+    "precioUsd": 36,
+    "imagen": "/img/productos/otros/rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Rack-Escurridor-Secaplatos-Negro-Grande-Sobre-Bacha-Waggs%20(rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs)",
+    "waMsg": "Hola QRTech! Quiero el Rack-Escurridor-Secaplatos-Negro-Grande-Sobre-Bacha-Waggs (rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs). ¿Está disponible?",
+    "marca": "Waggs",
+    "categoria": "otros",
+    "tipo": "hogar",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "RACK-ESCURR",
+    "variantes": [
+      { "id": "rack-escurridor-secaplatos-negro-grande-sobre-bacha-waggs-std", "condicion": "Nuevo", "precioUsd": 28, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "rack-esquinero-corner-storage",
+    "catalogId": "rack-esquinero-corner-storage",
+    "nombre": "Rack Esquinero CORNER STORAGE",
+    "precioUsd": 15,
+    "imagen": "/img/productos/otros/rack-esquinero-corner-storage.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Rack-Esquinero-CORNER-STORAGE%20(rack-esquinero-corner-storage)",
+    "waMsg": "Hola QRTech! Quiero el Rack-Esquinero-CORNER-STORAGE (rack-esquinero-corner-storage). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "hogar",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "RACK-ESQUI",
+    "variantes": [
+      { "id": "rack-esquinero-corner-storage-std", "condicion": "Nuevo", "precioUsd": 22, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "rack-organizador-4-estantes-multiuso",
+    "catalogId": "rack-organizador-4-estantes-multiuso",
+    "nombre": "Rack Organizador 4 Estantes multiuso",
+    "precioUsd": 15,
+    "imagen": "/img/productos/otros/rack-organizador-4-estantes-multiuso.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Rack-Organizador-4-Estantes-multiuso%20(rack-organizador-4-estantes-multiuso)",
+    "waMsg": "Hola QRTech! Quiero el Rack-Organizador-4-Estantes-multiuso (rack-organizador-4-estantes-multiuso). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "hogar",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "RACK-ORGANI",
+    "variantes": [
+      { "id": "rack-organizador-4-estantes-multiuso-std", "condicion": "Nuevo", "precioUsd": 35, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "reloj-smartwatch-z9-max-bulltec",
+    "catalogId": "reloj-smartwatch-z9-max-bulltec",
+    "nombre": "Reloj Smartwatch Z9 MAX BULLTEC",
+    "precioUsd": 28,
+    "imagen": "/img/productos/otros/reloj-smartwatch-z9-max-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Reloj-Smartwatch-Z9-MAX-BULLTEC%20(reloj-smartwatch-z9-max-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Reloj-Smartwatch-Z9-MAX-BULLTEC (reloj-smartwatch-z9-max-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "wearable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "RELOJ-SMART",
+    "variantes": [
+      { "id": "reloj-smartwatch-z9-max-bulltec-std", "condicion": "Nuevo", "precioUsd": 45, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "secador-de-pelo-ultra-rapido-bulltec",
+    "catalogId": "secador-de-pelo-ultra-rapido-bulltec",
+    "nombre": "Secador de Pelo Ultra Rápido Bulltec",
+    "precioUsd": 31,
+    "imagen": "/img/productos/otros/secador-de-pelo-ultra-rapido-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Secador-de-Pelo-Ultra-Rápido-Bulltec%20(secador-de-pelo-ultra-rapido-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Secador-de-Pelo-Ultra-Rápido-Bulltec (secador-de-pelo-ultra-rapido-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "belleza",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SECADOR-DE-",
+    "variantes": [
+      { "id": "secador-de-pelo-ultra-rapido-bulltec-std", "condicion": "Nuevo", "precioUsd": 32, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec",
+    "catalogId": "set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec",
+    "nombre": "Set de Rizador y Cepillo One Step SHINE THERAPY BULLTEC",
+    "precioUsd": 32,
+    "imagen": "/img/productos/otros/set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Set-de-Rizador-y-Cepillo-One-Step-SHINE-THERAPY-BULLTEC%20(set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Set-de-Rizador-y-Cepillo-One-Step-SHINE-THERAPY-BULLTEC (set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "belleza",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SET-DE-RIZA",
+    "variantes": [
+      { "id": "set-de-rizador-y-cepillo-one-step-shine-therapy-bulltec-std", "condicion": "Nuevo", "precioUsd": 38, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec",
+    "catalogId": "set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec",
+    "nombre": "Set de Secador Ultra Rapido y Plancha de Pelo SHINE BULLTEC",
+    "precioUsd": 40,
+    "imagen": "/img/productos/otros/set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Set-de-Secador-Ultra-Rapido-y-Plancha-de-Pelo-SHINE-BULLTEC%20(set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec)",
+    "waMsg": "Hola QRTech! Quiero el Set-de-Secador-Ultra-Rapido-y-Plancha-de-Pelo-SHINE-BULLTEC (set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "belleza",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SET-DE-SECA",
+    "variantes": [
+      { "id": "set-de-secador-ultra-rapido-y-plancha-de-pelo-shine-bulltec-std", "condicion": "Nuevo", "precioUsd": 55, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "set-para-armado-de-cables-de-red",
+    "catalogId": "set-para-armado-de-cables-de-red",
+    "nombre": "Set Para Armado de Cables de Red",
+    "precioUsd": 6,
+    "imagen": "/img/productos/otros/set-para-armado-de-cables-de-red.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Set-Para-Armado-de-Cables-de-Red%20(set-para-armado-de-cables-de-red)",
+    "waMsg": "Hola QRTech! Quiero el Set-Para-Armado-de-Cables-de-Red (set-para-armado-de-cables-de-red). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "herramienta",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SET-PARA-AR",
+    "variantes": [
+      { "id": "set-para-armado-de-cables-de-red-std", "condicion": "Nuevo", "precioUsd": 15, "stock": true, "color": "Multicolor" }
+    ]
+  },
+  {
+    "id": "sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca",
+    "catalogId": "sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca",
+    "nombre": "Sillon Silla Gamer Oficina Bulltec Roja Negro Verde Azul Blanca",
+    "precioUsd": 120,
+    "imagen": "/img/productos/otros/sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Sillon-Silla-Gamer-Oficina-Bulltec-Roja-Negro-Verde-Azul-Blanca%20(sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca)",
+    "waMsg": "Hola QRTech! Quiero el Sillon-Silla-Gamer-Oficina-Bulltec-Roja-Negro-Verde-Azul-Blanca (sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca). ¿Está disponible?",
+    "marca": "BULLTEC",
+    "categoria": "otros",
+    "tipo": "mueble",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SILLON-SILL",
+    "variantes": [
+      { "id": "sillon-silla-gamer-oficina-bulltec-roja-negro-verde-azul-blanca-std", "condicion": "Nuevo", "precioUsd": 180, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "smartwatch-redondo-8-en-1-watch-4-pro-suit",
+    "catalogId": "smartwatch-redondo-8-en-1-watch-4-pro-suit",
+    "nombre": "Smartwatch Redondo 8 en 1 WATCH 4 PRO SUIT",
+    "precioUsd": 27,
+    "imagen": "/img/productos/otros/smartwatch-redondo-8-en-1-watch-4-pro-suit.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Smartwatch-Redondo-8-en-1-WATCH-4-PRO-SUIT%20(smartwatch-redondo-8-en-1-watch-4-pro-suit)",
+    "waMsg": "Hola QRTech! Quiero el Smartwatch-Redondo-8-en-1-WATCH-4-PRO-SUIT (smartwatch-redondo-8-en-1-watch-4-pro-suit). ¿Está disponible?",
+    "marca": "SUIT",
+    "categoria": "otros",
+    "tipo": "wearable",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SMARTWATCH-",
+    "variantes": [
+      { "id": "smartwatch-redondo-8-en-1-watch-4-pro-suit-std", "condicion": "Nuevo", "precioUsd": 50, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "sofa-inflable-con-apoya-pie-senyoubao",
+    "catalogId": "sofa-inflable-con-apoya-pie-senyoubao",
+    "nombre": "Sofa Inflable con Apoya Pie ",
+    "precioUsd": 30,
+    "imagen": "/img/productos/otros/sofa-inflable-con-apoya-pie-senyoubao.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Sofa-Inflable-con-Apoya-Pie-SENYOUBAO%20(sofa-inflable-con-apoya-pie-senyoubao)",
+    "waMsg": "Hola QRTech! Quiero el Sofa-Inflable-con-Apoya-Pie-SENYOUBAO (sofa-inflable-con-apoya-pie-senyoubao). ¿Está disponible?",
+    "marca": "SENYOUBAO",
+    "categoria": "otros",
+    "tipo": "hogar",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOFA-INFLAB",
+    "variantes": [
+      { "id": "sofa-inflable-con-apoya-pie-senyoubao-std", "condicion": "Nuevo", "precioUsd": 55, "stock": true, "color": "Gris" }
+    ]
+  },
+  {
+    "id": "soporte-17-a-42-con-brazo-x200",
+    "catalogId": "soporte-17-a-42-con-brazo-x200",
+    "nombre": "Soporte 17\" a 42\" con Brazo",
+    "precioUsd": 10,
+    "imagen": "/img/productos/otros/soporte-17-a-42-con-brazo-x200.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Soporte-17%22-a-42%22-con-Brazo-X200%20(soporte-17-a-42-con-brazo-x200)",
+    "waMsg": "Hola QRTech! Quiero el Soporte-17\"-a-42\"-con-Brazo-X200 (soporte-17-a-42-con-brazo-x200). ¿Está disponible?",
+    "marca": "X200",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOPORTE-17-",
+    "variantes": [
+      { "id": "soporte-17-a-42-con-brazo-x200-std", "condicion": "Nuevo", "precioUsd": 35, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "soporte-de-celular-para-bici-y-moto-outdoor-lx-02",
+    "catalogId": "soporte-de-celular-para-bici-y-moto-outdoor-lx-02",
+    "nombre": "Soporte de Celular para Bici y Moto",
+    "precioUsd": 9,
+    "imagen": "/img/productos/otros/soporte-de-celular-para-bici-y-moto-outdoor-lx-02.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Soporte-de-Celular-para-Bici-y-Moto-OUTDOOR-LX-02%20(soporte-de-celular-para-bici-y-moto-outdoor-lx-02)",
+    "waMsg": "Hola QRTech! Quiero el Soporte-de-Celular-para-Bici-y-Moto-OUTDOOR-LX-02 (soporte-de-celular-para-bici-y-moto-outdoor-lx-02). ¿Está disponible?",
+    "marca": "OUTDOOR",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOPORTE-DE-",
+    "variantes": [
+      { "id": "soporte-de-celular-para-bici-y-moto-outdoor-lx-02-std", "condicion": "Nuevo", "precioUsd": 18, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "soporte-de-moto-para-celulares-safe-and-estable",
+    "catalogId": "soporte-de-moto-para-celulares-safe-and-estable",
+    "nombre": "Soporte de Moto para celulares seguridad Y estabilidad",
+    "precioUsd": 8,
+    "imagen": "/img/productos/otros/soporte-de-moto-para-celulares-safe-and-estable.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Soporte-de-Moto-para-celulares-Safe-and-Estable%20(soporte-de-moto-para-celulares-safe-and-estable)",
+    "waMsg": "Hola QRTech! Quiero el Soporte-de-Moto-para-celulares-Safe-and-Estable (soporte-de-moto-para-celulares-safe-and-estable). ¿Está disponible?",
+    "marca": "",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOPORTE-DE-",
+    "variantes": [
+      { "id": "soporte-de-moto-para-celulares-safe-and-estable-std", "condicion": "Nuevo", "precioUsd": 20, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "soporte-para-bici-y-moto-m3-waterproof-case",
+    "catalogId": "soporte-para-bici-y-moto-m3-waterproof-case",
+    "nombre": "Soporte para Bici y Moto M3 Waterproof Case",
+    "precioUsd": 7,
+    "imagen": "/img/productos/otros/soporte-para-bici-y-moto-m3-waterproof-case.png",
+    "wa": "https://wa.me/5493815677391?text=¡Hola%20QRTech!%20Quiero%20consultar%20por%3A%20Soporte-para-Bici-y-Moto-M3-Waterproof-Case%20(soporte-para-bici-y-moto-m3-waterproof-case)",
+    "waMsg": "Hola QRTech! Quiero el Soporte-para-Bici-y-Moto-M3-Waterproof-Case (soporte-para-bici-y-moto-m3-waterproof-case). ¿Está disponible?",
+    "marca": "M3",
+    "categoria": "otros",
+    "tipo": "accesorio",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOPORTE-PARA",
+    "variantes": [
+      { "id": "soporte-para-bici-y-moto-m3-waterproof-case-std", "condicion": "Nuevo", "precioUsd": 22, "stock": true, "color": "Negro" }
+    ]
+  },
+
+
+
+
+
+
+
+  
+  {
+    "id": "aspiradora-de-hogar-1400w-1-2l-dinax-aspvc30l",
+    "catalogId": "aspiradora-de-hogar-1400w-1-2l-dinax-aspvc30l",
+    "nombre": "Aspiradora de Hogar 1400W 1.2L DINAX ASPVC30L",
+    "precioUsd": 120,
+    "imagen": "/img/productos/electrodomesticos/aspiradora-de-hogar-1400w-1-2l-dinax-aspvc30l.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Aspiradora%20de%20Hogar%201400W%201.2L%20DINAX%20ASPVC30L%20(aspiradora-de-hogar-1400w-1-2l-dinax-aspvc30l)",
+    "waMsg": "Hola QRTech! Quiero la Aspiradora de Hogar 1400W 1.2L DINAX ASPVC30L.",
+    "marca": "DINAX",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "ASPVC30L",
+    "variantes": [
+      { "id": "aspiradora-de-hogar-1400w-1-2l-dinax-aspvc30l-negra", "condicion": "Nuevo", "precioUsd": 120, "stock": true, "color": "Blanco" }
+    ]
+  },
+  {
+    "id": "aspiradora-inalambrica-dinax-2-en-1-2600w-aspvac01",
+    "catalogId": "aspiradora-inalambrica-dinax-2-en-1-2600w-aspvac01",
+    "nombre": "Aspiradora Inalámbrica Dinax 2 en 1 2600W aspvac01",
+    "precioUsd": 95,
+    "imagen": "/img/productos/electrodomesticos/aspiradora-inalambrica-dinax-2-en-1-2600w-aspvac01.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Aspiradora%20Inal%C3%A1mbrica%20Dinax%202%20en%201%202600W%20aspvac01%20(aspiradora-inalambrica-dinax-2-en-1-2600w-aspvac01)",
+    "waMsg": "Hola QRTech! Quiero la Aspiradora Inalámbrica Dinax 2 en 1 2600W aspvac01.",
+    "marca": "DINAX",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "ASP-VAC01",
+    "variantes": [
+      { "id": "aspiradora-inalambrica-dinax-2-en-1-2600w-aspvac01-negra", "condicion": "Nuevo", "precioUsd": 95, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "cafetera-espresso-1-2l-aiwa-awk-ce100n",
+    "catalogId": "cafetera-espresso-1-2l-aiwa-awk-ce100n",
+    "nombre": "Cafetera Espresso 1.2L AIWA AWK CE100N",
+    "precioUsd": 110,
+    "imagen": "/img/productos/electrodomesticos/cafetera-espresso-1-2l-aiwa-awk-ce100n.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Cafetera%20Espresso%201.2L%20AIWA%20AWK%20CE100N%20(cafetera-espresso-1-2l-aiwa-awk-ce100n)",
+    "waMsg": "Hola QRTech! Quiero la Cafetera Espresso 1.2L AIWA AWK CE100N.",
+    "marca": "AIWA",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "AWK-CE100N",
+    "variantes": [
+      { "id": "cafetera-espresso-1-2l-aiwa-awk-ce100n-negra", "condicion": "Nuevo", "precioUsd": 110, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "pava-electrica-om-oa-ed015",
+    "catalogId": "pava-electrica-om-oa-ed015",
+    "nombre": "Pava Eléctrica OM OA ED015",
+    "precioUsd": 28,
+    "imagen": "/img/productos/electrodomesticos/pava-electrica-om-oa-ed015.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Pava%20El%C3%A9ctrica%20OM%20OA%20ED015%20(pava-electrica-om-oa-ed015)",
+    "waMsg": "Hola QRTech! Quiero la Pava Eléctrica OM OA ED015.",
+    "marca": "OM",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "OA-ED015",
+    "variantes": [
+      { "id": "pava-electrica-om-oa-ed015-acero", "condicion": "Nuevo", "precioUsd": 28, "stock": true, "color": "Acero" }
+    ]
+  },
+  {
+    "id": "tv-box-4k-ultra-hd-8gb-x-128gb-bulltec-2-0",
+    "catalogId": "tv-box-4k-ultra-hd-8gb-x-128gb-bulltec-2-0",
+    "nombre": "TV Box 4K Ultra HD 8GB x 128GB BULLTEC 2.0",
+    "precioUsd": 60,
+    "imagen": "/img/productos/electrodomesticos/tv-box-4k-ultra-hd-8gb-x-128gb-bulltec-2-0.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20TV%20Box%204K%20Ultra%20HD%208GB%20x%20128GB%20BULLTEC%202.0%20(tv-box-4k-ultra-hd-8gb-x-128gb-bulltec-2-0)",
+    "waMsg": "Hola QRTech! Quiero el TV Box 4K Ultra HD 8GB x 128GB BULLTEC 2.0.",
+    "marca": "BULLTEC",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "BOX4K-128-20",
+    "variantes": [
+      { "id": "tv-box-4k-ultra-hd-8gb-x-128gb-bulltec-2-0-negro", "condicion": "Nuevo", "precioUsd": 60, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "tv-box-stream-4k-om-dg96",
+    "catalogId": "tv-box-stream-4k-om-dg96",
+    "nombre": "TV Box Stream 4K OM DG96",
+    "precioUsd": 50,
+    "imagen": "/img/productos/electrodomesticos/tv-box-stream-4k-om-dg96.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20TV%20Box%20Stream%204K%20OM%20DG96%20(tv-box-stream-4k-om-dg96)",
+    "waMsg": "Hola QRTech! Quiero el TV Box Stream 4K OM DG96.",
+    "marca": "OM",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "OM-DG96",
+    "variantes": [
+      { "id": "tv-box-stream-4k-om-dg96-negro", "condicion": "Nuevo", "precioUsd": 50, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "vaporea-electrica-8-5lts-dinax",
+    "catalogId": "vaporea-electrica-8-5lts-dinax",
+    "nombre": "Vaporea Eléctrica 8.5Lts DINAX",
+    "precioUsd": 70,
+    "imagen": "/img/productos/electrodomesticos/vaporea-electrica-8-5lts-dinax.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Vaporea%20El%C3%A9ctrica%208.5Lts%20DINAX%20(vaporea-electrica-8-5lts-dinax)",
+    "waMsg": "Hola QRTech! Quiero la Vaporea Eléctrica 8.5Lts DINAX.",
+    "marca": "DINAX",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "VAP-8L-DNX",
+    "variantes": [
+      { "id": "vaporea-electrica-8-5lts-dinax-negra", "condicion": "Nuevo", "precioUsd": 70, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "zapatilla-cargador-de-6-puertos-usb-stand-charger",
+    "catalogId": "zapatilla-cargador-de-6-puertos-usb-stand-charger",
+    "nombre": "Zapatilla Cargador de 6 Puertos USB STAND CHARGER",
+    "precioUsd": 22,
+    "imagen": "/img/productos/electrodomesticos/zapatilla-cargador-de-6-puertos-usb-stand-charger.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Zapatilla%20Cargador%20de%206%20Puertos%20USB%20STAND%20CHARGER%20(zapatilla-cargador-de-6-puertos-usb-stand-charger)",
+    "waMsg": "Hola QRTech! Quiero la Zapatilla Cargador de 6 Puertos USB STAND CHARGER.",
+    "marca": "",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "USB-6PORT",
+    "variantes": [
+      { "id": "zapatilla-cargador-de-6-puertos-usb-stand-charger-negra", "condicion": "Nuevo", "precioUsd": 22, "stock": true, "color": "Negro" }
+    ]
+  },
+  {
+    "id": "zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19",
+    "catalogId": "zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19",
+    "nombre": "Zapatilla Turbo Power 3 Enchufes 3 USB 1 USB C SOCKET T19",
+    "precioUsd": 30,
+    "imagen": "/img/productos/electrodomesticos/zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19.png",
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20consultar%20por:%20Zapatilla%20Turbo%20Power%203%20Enchufes%203%20USB%201%20USB%20C%20SOCKET%20T19%20(zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19)",
+    "waMsg": "Hola QRTech! Quiero la Zapatilla Turbo Power 3 Enchufes 3 USB 1 USB C SOCKET T19.",
+    "marca": "",
+    "categoria": "electrodomesticos",
+    "tipo": "electrodomestico",
+    "monedaBase": "USD",
+    "garantiaDias": 30,
+    "badges": ["Garantía 30 días", "Entrega inmediata"],
+    "destacado": false,
+    "sku": "SOCKET-T19",
+    "variantes": [
+      { "id": "zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19-negra", "condicion": "Nuevo", "precioUsd": 30, "stock": true, "color": "Negro" }
+    ]
+  }
+
+
+
+
+
+
+
+
 ]

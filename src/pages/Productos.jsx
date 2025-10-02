@@ -45,6 +45,7 @@ const CHIPS = [
   
   { key: 'accesorios', label: 'Accesorios' },
   { key: 'electrodomesticos', label: 'Electrodomesticos' },
+  { key: 'otros', label: 'Otros' }
 ];
 
 const PAGE_SIZE = 8;
@@ -360,7 +361,7 @@ useEffect(() => {
           <h1 className="text-[28px] sm:text-4xl md:text-5xl font-bold leading-tight">
             Encontrá tu próximo equipo
           </h1>
-          <p className="mt-2 opacity-80 text-[15px] sm:text-base">Usados premium con garantía · Tucumán</p>
+          <p className="mt-2 opacity-80 text-[15px] sm:text-base"><b>Coordina</b> tu cita por <b>Whatsapp</b> · Tucumán</p>
 
           <div className="mt-6 max-w-xl mx-auto">
             <input

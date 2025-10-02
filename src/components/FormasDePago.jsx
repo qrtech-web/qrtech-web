@@ -70,7 +70,7 @@ export default function FormasDePago() {
         </div>
         <div className="text-xs opacity-70">
           <span className="inline-block px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-400/30">
-            Garantía escrita QRTech
+            Garantía de 90 días.
           </span>
         </div>
       </div>

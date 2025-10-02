@@ -54,7 +54,7 @@ export default function ComoComprar() {
           ¿Cómo comprar en QRTech?
         </h2>
         <p className="mt-3 text-gray-300">
-          Simple y rápido: elegís tu iPhone, simulás cuotas y coordinás retiro en nuestra oficina.
+          Simple y rápido: elegís tu articulo, simulás cuotas y coordinás retiro en nuestra oficina.
         </p>
       </motion.div>
 

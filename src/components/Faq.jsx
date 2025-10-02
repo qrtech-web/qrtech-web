@@ -132,7 +132,7 @@ export default function Faq() {
         <div className="mt-8 flex flex-col items-center gap-3 text-center">
           <div className="inline-flex items-center gap-2 text-sm text-gray-300">
             <ShieldCheckIcon className="w-5 h-5 text-emerald-300" />
-            <span>Garantía escrita y revisión al retirar</span>
+            <span>Garantía de 90 días y oficina en Barrio Sur</span>
           </div>
           <WhatsAppCTA />
         </div>

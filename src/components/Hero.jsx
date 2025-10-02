@@ -42,7 +42,7 @@ export default function Hero() {
           transition={{ duration: 0.55, delay: 0.05 }}
           className="mt-3 text-center text-gray-300 text-base sm:text-lg"
         >
-          Stock inmediato · Soporte certificado en Tucumán
+          Stock inmediato · San Miguel de Tucumán.
         </motion.p>
 
         <div className="flex justify-center">

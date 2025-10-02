@@ -4,10 +4,10 @@ import { Sparkles, Truck, ShieldCheck, Headphones } from "lucide-react";
 
 export default function MVSection() {
   const items = [
-    { icon: <Sparkles className="w-4 h-4" />, text: "Expertos en\nSmartphones" },
-    { icon: <Truck className="w-4 h-4" />, text: "Envíos a\ntodo el PAÍS" },
-    { icon: <ShieldCheck className="w-4 h-4" />, text: "Garantía\nreal" },
-    { icon: <Headphones className="w-4 h-4" />, text: "Soporte\n24h" },
+    { icon: <Sparkles className="w-4 h-4" />, text: "Expertos en Smartphones" },
+    { icon: <Truck className="w-4 h-4" />, text: "Envíos a todo el PAÍS" },
+    { icon: <ShieldCheck className="w-4 h-4" />, text: "Garantía 90 días" },
+    { icon: <Headphones className="w-4 h-4" />, text: "Soporte 24h" },
   ];
 
   return (
