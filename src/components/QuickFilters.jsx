@@ -6,11 +6,11 @@
  *  - onChange: (next: string[]) => void
  */
 const OPTIONS = [
-  { key: "disp",    label: "Disponibles" },   // al menos 1 variante con stock !== false
-  { key: "sellado", label: "Sellado" },       // alguna variante con condicion "sellado"
-  { key: "b90",     label: "Batería ≥90%" },  // alguna variante con batería >= 90
-  { key: "128",     label: "128GB o más" },   // alguna variante con storage >= 128
-  { key: "aplus",   label: "Usado A+" },      // alguna variante con condicion "usado a+"
+  //{ key: "disp",    label: "Disponibles" },   // al menos 1 variante con stock !== false
+  //{ key: "sellado", label: "Sellado" },       // alguna variante con condicion "sellado"
+  //{ key: "b90",     label: "Batería ≥90%" },  // alguna variante con batería >= 90
+  //{ key: "128",     label: "128GB o más" },   // alguna variante con storage >= 128
+  //{ key: "aplus",   label: "Usado A+" },      // alguna variante con condicion "usado a+"
 ];
 
 export default function QuickFilters({ value = [], onChange }) {

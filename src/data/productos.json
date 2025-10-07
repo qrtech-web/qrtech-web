@@ -3599,6 +3599,201 @@
       }
     ]
   },
+
+
+
+  {
+    "id": "ip17",
+    "catalogId": "ip17",
+    "nombre": "iPhone 17",
+    "precioUsd": 1200,
+    "imagen": "/img/productos/iphone/17/b17.png",
+    "imagenes": [
+      "/img/productos/iphone/17/b17.png"
+    ],
+    "imagenesPorColor": {
+      "Verde Salvia": ["/img/productos/iphone/17/verdesalvia.png"],
+      "Blanco": ["/img/productos/iphone/17/blanco.png"],
+      "Negro": ["/img/productos/iphone/17/negro.png"],
+      "Lavanda": ["/img/productos/iphone/17/lavanda.png"],
+      "Azul Neblina": ["/img/productos/iphone/17/azulneblina.png"]
+    },
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20el%20iPhone%2017%20(ip17)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 17 (ip17). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Sellado - Stock limitado", "Plan canje"],
+    "destacado": false,
+    "sku": "IP17",
+    "specs": {
+      "pantalla": "6.1\" OLED",
+      "camaras": "48 MP (dual/avanzada)",
+      "chip": "A17"
+    },
+    "variantes": [
+      { "id": "ip17-128gb-sellado-100-verdesalvia", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Verde Salvia" },
+      { "id": "ip17-256gb-sellado-100-verdesalvia", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1350, "stock": true, "color": "Verde Salvia" },
+      { "id": "ip17-512gb-sellado-100-verdesalvia", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Verde Salvia" },
+
+      { "id": "ip17-128gb-sellado-100-blanco", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Blanco" },
+      { "id": "ip17-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1350, "stock": true, "color": "Blanco" },
+      { "id": "ip17-512gb-sellado-100-blanco", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Blanco" },
+
+      { "id": "ip17-128gb-sellado-100-negro", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Negro" },
+      { "id": "ip17-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1350, "stock": true, "color": "Negro" },
+      { "id": "ip17-512gb-sellado-100-negro", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Negro" },
+
+      { "id": "ip17-128gb-sellado-100-lavanda", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Lavanda" },
+      { "id": "ip17-256gb-sellado-100-lavanda", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1350, "stock": true, "color": "Lavanda" },
+      { "id": "ip17-512gb-sellado-100-lavanda", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Lavanda" },
+
+      { "id": "ip17-128gb-sellado-100-azulneblina", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Azul Neblina" },
+      { "id": "ip17-256gb-sellado-100-azulneblina", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1350, "stock": true, "color": "Azul Neblina" },
+      { "id": "ip17-512gb-sellado-100-azulneblina", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Azul Neblina" }
+    ]
+  },
+
+  {
+    "id": "ip17air",
+    "catalogId": "ip17air",
+    "nombre": "iPhone 17 Air",
+    "precioUsd": 1400,
+    "imagen": "/img/productos/iphone/17/bair.png",
+    "imagenes": [
+      "/img/productos/iphone/17/bair.png"
+    ],
+    "imagenesPorColor": {
+      "Blanco": ["/img/productos/iphone/17/airblanco.png"],
+      "Negro": ["/img/productos/iphone/17/airnegro.png"],
+      "Oro Claro": ["/img/productos/iphone/17/oroclaro.png"],
+      "Azul Cielo": ["/img/productos/iphone/17/azulcielo.png"]
+    },
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20el%20iPhone%2017%20Air%20(ip17air)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 17 Air (ip17air). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Sellado - Stock limitado", "Plan canje"],
+    "destacado": false,
+    "sku": "IP17AIR",
+    "specs": {
+      "pantalla": "6.1\" OLED",
+      "camaras": "48 MP (dual/avanzada)",
+      "chip": "A17"
+    },
+    "variantes": [
+      { "id": "ip17air-128gb-sellado-100-azulcielo", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Azul Cielo" },
+      { "id": "ip17air-256gb-sellado-100-azulcielo", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1550, "stock": true, "color": "Azul Cielo" },
+      { "id": "ip17air-512gb-sellado-100-azulcielo", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Azul Cielo" },
+
+      { "id": "ip17air-128gb-sellado-100-oroclaro", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Oro Claro" },
+      { "id": "ip17air-256gb-sellado-100-oroclaro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1550, "stock": true, "color": "Oro Claro" },
+      { "id": "ip17air-512gb-sellado-100-oroclaro", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Oro Claro" },
+
+      { "id": "ip17air-128gb-sellado-100-blanco", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Blanco" },
+      { "id": "ip17air-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1550, "stock": true, "color": "Blanco" },
+      { "id": "ip17air-512gb-sellado-100-blanco", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Blanco" },
+
+      { "id": "ip17air-128gb-sellado-100-negro", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Negro" },
+      { "id": "ip17air-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1550, "stock": true, "color": "Negro" },
+      { "id": "ip17air-512gb-sellado-100-negro", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Negro" }
+    ]
+  },
+
+  {
+    "id": "ip17pro",
+    "catalogId": "ip17pro",
+    "nombre": "iPhone 17 Pro",
+    "precioUsd": 1500,
+    "imagen": "/img/productos/iphone/17/b17pro.png",
+    "imagenes": [
+      "/img/productos/iphone/17/b17pro.png"
+    ],
+    "imagenesPorColor": {
+      "Naranja": ["/img/productos/iphone/17/naranja.png"],
+      "Plata": ["/img/productos/iphone/17/plata.png"],
+      "Azul": ["/img/productos/iphone/17/azul.png"]
+    },
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20el%20iPhone%2017%20Pro%20(ip17pro)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 17 Pro (ip17pro). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Sellado - Stock limitado", "Plan canje"],
+    "destacado": false,
+    "sku": "IP17PRO",
+    "specs": {
+      "pantalla": "6.1\" OLED Pro",
+      "camaras": "48 MP (triple/avanzada)",
+      "chip": "A17 Pro"
+    },
+    "variantes": [
+      { "id": "ip17pro-128gb-sellado-100-naranja", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Naranja" },
+      { "id": "ip17pro-256gb-sellado-100-naranja", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1650, "stock": true, "color": "Naranja" },
+      { "id": "ip17pro-512gb-sellado-100-naranja", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Naranja" },
+
+      { "id": "ip17pro-128gb-sellado-100-plata", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Plata" },
+      { "id": "ip17pro-256gb-sellado-100-plata", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1650, "stock": true, "color": "Plata" },
+      { "id": "ip17pro-512gb-sellado-100-plata", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Plata" },
+
+      { "id": "ip17pro-128gb-sellado-100-azul", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Azul" },
+      { "id": "ip17pro-256gb-sellado-100-azul", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1650, "stock": true, "color": "Azul" },
+      { "id": "ip17pro-512gb-sellado-100-azul", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Azul" }
+    ]
+  },
+
+  {
+    "id": "ip17promax",
+    "catalogId": "ip17promax",
+    "nombre": "iPhone 17 Pro Max",
+    "precioUsd": 1700,
+    "imagen": "/img/productos/iphone/17/b17pm.png",
+    "imagenes": [
+      "/img/productos/iphone/17/b17pm.png"
+    ],
+    "imagenesPorColor": {
+      "Naranja": ["/img/productos/iphone/17/naranja.png"],
+      "Plata": ["/img/productos/iphone/17/plata.png"],
+      "Azul": ["/img/productos/iphone/17/azul.png"]
+    },
+    "wa": "https://wa.me/5493815677391?text=%C2%A1Hola%20QRTech!%20Quiero%20el%20iPhone%2017%20Pro%20Max%20(ip17promax)",
+    "waMsg": "Hola QRTech! Quiero el iPhone 17 Pro Max (ip17promax). ¿Está disponible?",
+    "marca": "Apple",
+    "categoria": "iphone",
+    "tipo": "smartphone",
+    "monedaBase": "USD",
+    "garantiaDias": 60,
+    "badges": ["Garantía 60 días", "Sellado - Stock limitado", "Plan canje"],
+    "destacado": false,
+    "sku": "IP17PROMAX",
+    "specs": {
+      "pantalla": "6.7\" OLED Pro Max",
+      "camaras": "48 MP (triple/avanzada)",
+      "chip": "A17 Pro"
+    },
+    "variantes": [
+      { "id": "ip17promax-128gb-sellado-100-naranja", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Naranja" },
+      { "id": "ip17promax-256gb-sellado-100-naranja", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Naranja" },
+      { "id": "ip17promax-512gb-sellado-100-naranja", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 2050, "stock": true, "color": "Naranja" },
+
+      { "id": "ip17promax-128gb-sellado-100-plata", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Plata" },
+      { "id": "ip17promax-256gb-sellado-100-plata", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Plata" },
+      { "id": "ip17promax-512gb-sellado-100-plata", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 2050, "stock": true, "color": "Plata" },
+
+      { "id": "ip17promax-128gb-sellado-100-azul", "storage": "128GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1700, "stock": true, "color": "Azul" },
+      { "id": "ip17promax-256gb-sellado-100-azul", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1850, "stock": true, "color": "Azul" },
+      { "id": "ip17promax-512gb-sellado-100-azul", "storage": "512GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 2050, "stock": true, "color": "Azul" }
+    ]
+  },
+
+
   {
     "id": "redmi-14c-4-128",
     "catalogId": "redmi-14c",
@@ -5173,6 +5368,12 @@
       { "id": "zapatilla-turbo-power-3-enchufes-3-usb-1-usb-c-socket-t19-negra", "condicion": "Nuevo", "precioUsd": 30, "stock": true, "color": "Negro" }
     ]
   }
+
+
+
+
+
+
 
 
 

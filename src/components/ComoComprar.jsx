@@ -23,6 +23,7 @@ export default function ComoComprar() {
   const [modelo, setModelo] = useState("");
   const [estado, setEstado] = useState("Excelente");
   const [observ, setObserv] = useState("");
+  const [interes, setInteres] = useState("");
 
   const waCanjeHref = useMemo(() => {
     const msg =
@@ -123,80 +124,101 @@ export default function ComoComprar() {
       </div>
 
       {/* PLAN CANJE */}
-      <div
-        id="plan-canje"
-        className="max-w-6xl mx-auto px-6 scroll-mt-24 md:scroll-mt-32"
-        aria-labelledby="title-plan-canje"
+<div
+  id="plan-canje"
+  className="max-w-6xl mx-auto px-6 scroll-mt-24 md:scroll-mt-32"
+  aria-labelledby="title-plan-canje"
+>
+  <motion.div {...fade} className="flex items-start gap-3 mb-4">
+    <div className="h-11 w-11 rounded-xl bg-white/5 flex items-center justify-center">
+      <ArrowPathRoundedSquareIcon className="h-6 w-6" />
+    </div>
+    <div>
+      <h3 id="title-plan-canje" className="text-xl font-semibold">Plan Canje</h3>
+      <p className="text-gray-300 text-sm">
+        Traé tu equipo usado y pagá menos. Estimamos el valor en minutos.
+      </p>
+    </div>
+  </motion.div>
+
+  <motion.form
+    {...fade}
+    onSubmit={onCanjeSubmit}
+    className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-2xl border border-white/10 bg-gray-900/40 p-6"
+  >
+    {/* Modelo actual */}
+    <label className="text-sm">
+      <span className="block text-gray-300 mb-1">Modelo actual</span>
+      <input
+        value={modelo}
+        onChange={(e) => setModelo(e.target.value)}
+        placeholder="iPhone 12, 128 GB"
+        className="w-full rounded-lg bg-gray-800/70 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
+      />
+    </label>
+
+    {/* Estado */}
+    <label className="text-sm">
+      <span className="block text-gray-300 mb-1">Estado</span>
+      <select
+        value={estado}
+        onChange={(e) => setEstado(e.target.value)}
+        className="w-full rounded-lg bg-gray-800/70 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
       >
-        <motion.div {...fade} className="flex items-start gap-3 mb-4">
-          <div className="h-11 w-11 rounded-xl bg-white/5 flex items-center justify-center">
-            <ArrowPathRoundedSquareIcon className="h-6 w-6" />
-          </div>
-          <div>
-            <h3 id="title-plan-canje" className="text-xl font-semibold">Plan Canje</h3>
-            <p className="text-gray-300 text-sm">Traé tu equipo usado y pagá menos. Estimamos el valor en minutos.</p>
-          </div>
-        </motion.div>
+        <option>Excelente</option>
+        <option>Muy bueno</option>
+        <option>Bueno</option>
+        <option>Con detalles</option>
+        <option>No prende</option>
+      </select>
+    </label>
 
-        <motion.form {...fade} onSubmit={onCanjeSubmit} className="grid grid-cols-1 md:grid-cols-3 gap-4 rounded-2xl border border-white/10 bg-gray-900/40 p-6">
-          <label className="text-sm">
-            <span className="block text-gray-300 mb-1">Modelo actual</span>
-            <input
-              value={modelo}
-              onChange={(e) => setModelo(e.target.value)}
-              placeholder="iPhone 12, 128 GB"
-              className="w-full rounded-lg bg-gray-800/70 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
-            />
-          </label>
+    {/* Celular de interés */}
+    <label className="md:col-span-3 text-sm">
+      <span className="block text-gray-300 mb-1">Celular de interés</span>
+      <input
+        value={interes}
+        onChange={(e) => setInteres(e.target.value)}
+        placeholder="Ej: iPhone 15 Pro, 256 GB"
+        className="w-full rounded-lg bg-gray-800/70 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
+      />
+    </label>
 
-          <label className="text-sm">
-            <span className="block text-gray-300 mb-1">Estado</span>
-            <select
-              value={estado}
-              onChange={(e) => setEstado(e.target.value)}
-              className="w-full rounded-lg bg-gray-800/70 border border-white/10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
-            >
-              <option>Excelente</option>
-              <option>Muy bueno</option>
-              <option>Bueno</option>
-              <option>Con detalles</option>
-              <option>No prende</option>
-            </select>
-          </label>
-
-          <label className="md:col-span-3 text-sm">
-            <span className="block text-gray-300 mb-1">Comentarios (opcional)</span>
-            <div className="relative">
-              <ClipboardDocumentListIcon className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
-              <input
-                value={observ}
-                onChange={(e) => setObserv(e.target.value)}
-                placeholder="Incluí detalles o accesorios..."
-                className="w-full rounded-lg bg-gray-800/70 border border-white/10 pl-10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
-              />
-            </div>
-            <p className="mt-2 text-xs text-gray-400">
-              Tip: cuando se abra WhatsApp podés adjuntar fotos del equipo para una mejor estimación.
-            </p>
-          </label>
-
-          <div className="md:col-span-3 flex items-center gap-3 pt-2">
-            <button
-              type="submit"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-600/90 hover:bg-green-600 transition"
-              aria-label="Enviar Plan Canje por WhatsApp"
-            >
-              Enviar por WhatsApp
-            </button>
-            <a
-              href="/productos"
-              className="text-sm underline underline-offset-2 hover:text-white"
-            >
-              Ver catálogo
-            </a>
-          </div>
-        </motion.form>
+    {/* Comentarios */}
+    <label className="md:col-span-3 text-sm">
+      <span className="block text-gray-300 mb-1">Comentarios (opcional)</span>
+      <div className="relative">
+        <ClipboardDocumentListIcon className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+        <input
+          value={observ}
+          onChange={(e) => setObserv(e.target.value)}
+          placeholder="Incluí detalles o accesorios..."
+          className="w-full rounded-lg bg-gray-800/70 border border-white/10 pl-10 px-3 py-2 outline-none focus:ring-2 focus:ring-white/20"
+        />
       </div>
+      <p className="mt-2 text-xs text-gray-400">
+        Tip: cuando se abra WhatsApp podés adjuntar fotos del equipo para una mejor estimación.
+      </p>
+    </label>
+
+    {/* Botones */}
+    <div className="md:col-span-3 flex items-center gap-3 pt-2">
+      <button
+        type="submit"
+        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-green-600/90 hover:bg-green-600 transition"
+        aria-label="Enviar Plan Canje por WhatsApp"
+      >
+        Enviar por WhatsApp
+      </button>
+      <a
+        href="/productos"
+        className="text-sm underline underline-offset-2 hover:text-white"
+      >
+        Ver catálogo
+      </a>
+    </div>
+  </motion.form>
+</div>
     </section>
   );
 }

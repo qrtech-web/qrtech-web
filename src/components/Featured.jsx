@@ -6,7 +6,7 @@ import { WHATSAPP_PHONE } from '../config/whatsapp';
 import { trackWhatsAppClick } from '../lib/track';
 
 // Elegí qué 3 productos destacar
-const FEATURED_IDS = ['ip16', 'ip13', 'ip12'];
+const FEATURED_IDS = ['ip17', 'ip17air', 'ip17pro'];
 
 // Precio "desde": mínimo entre variantes o base
 function priceFrom(p) {
@@ -30,7 +30,7 @@ export default function Featured() {
       aria-label="Top 3 productos destacados"
     >
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-carter text-center mb-12">
-        Top <span className="text-indigo-400 font-bold">3 DESTACADOS </span> 2025
+        Estilo que <span className="text-indigo-400 font-bold">destaca</span> 
       </h2>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto max-w-6xl">
@@ -46,7 +46,7 @@ export default function Featured() {
                   v?.bateria && `• Batería ${v.bateria}`,
                 ].filter(Boolean).join(' ');
               })()
-            : '';
+            : 'ip12p';
 
           const pdpHref  = `/productos?sku=${encodeURIComponent(p.id)}`;
           const calcHref = `/calculadora?sku=${encodeURIComponent(p.id)}&price=${encodeURIComponent(desde)}&v=${encodeURIComponent(vDesc)}`;
@@ -68,12 +68,12 @@ export default function Featured() {
             >
               {/* Imagen: ratio 4:5 + gradiente + overlay marca */}
               <div className="relative aspect-[4/5] w-full bg-gradient-to-b from-slate-900 to-slate-950">
-                {/* Marca (fuera de la imagen, overlay sutil) */}
+                {/* Marca (fuera de la imagen, overlay sutil) 
                 <div className="absolute top-3 left-3 z-10 text-xs tracking-wide text-white/80">
                   <span className="font-medium">Apple</span>
                   <span className="mx-2 text-white/50">|</span>
                   <span className="font-carter">QRTech</span>
-                </div>
+                </div>*/}
 
                 <Link to={pdpHref} className="block h-full w-full">
                   <img
