@@ -17,8 +17,9 @@ const faqs = [
     q: "¿Los iPhone son usados? ¿Qué incluyen?",
     a: (
       <>
-        Son <b>usados premium</b> verificados. Incluyen <b>garantía escrita</b>, cable compatible y
-        prueba en nuestra oficina antes de retirar. Accesorios extra (cargadores, fundas, etc.) se pueden agregar aparte.
+        Son <b>usados premium</b> verificados y seleccionados por nuestro equipo técnico.  
+      Incluyen <b>todos los accesorios</b>: funda protectora, vidrio templado, cable y fuente de carga.  
+      Además, podés probar el equipo en nuestra oficina antes de retirarlo.
       </>
       
     ),
@@ -27,10 +28,14 @@ const faqs = [
     q: "¿Cómo funciona la garantía?",
     a: (
       <>
-        Entregamos <b>garantía QRTech</b> por escrito al retirar (cubre funcionamiento general del equipo, no daños por uso).
-        Ante cualquier duda, nos contactás y coordinamos revisión. Más info en{" "}
-        <a className="underline" href="/inicio#como-comprar">Cómo comprar</a>.
-      </>
+      Todos los equipos incluyen la <b>Garantía QRTech</b> por 60 días.  
+      <br />
+      • Durante los primeros <b>30 días</b>, cubre el <b>cambio directo</b> del equipo ante cualquier fallo general de funcionamiento.  
+      <br />
+      • Los siguientes <b>30 días</b>, obtenés un <b>50% off en servicio técnico</b> en caso de ser necesario.  
+      <br />
+      La garantía se entrega <b>por escrito al retirar</b> el equipo.
+    </>
     ),
   },
   {
@@ -132,7 +137,7 @@ export default function Faq() {
         <div className="mt-8 flex flex-col items-center gap-3 text-center">
           <div className="inline-flex items-center gap-2 text-sm text-gray-300">
             <ShieldCheckIcon className="w-5 h-5 text-emerald-300" />
-            <span>Garantía de 90 días y oficina en Barrio Sur</span>
+            <span>Garantía de 60 días y oficina en Barrio Sur</span>
           </div>
           <WhatsAppCTA />
         </div>

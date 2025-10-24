@@ -385,7 +385,7 @@
         "id": "ip11p-128gb-usadoa-85-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "+85%",
+        "bateria": "+90%",
         "precioUsd": 300,
         "stock": true,
         "color": "Oro"
@@ -394,7 +394,7 @@
         "id": "ip11p-128gb-usadoa-90-or",
         "storage": "128GB",
         "condicion": "Usado A+",
-        "bateria": "+90%",
+        "bateria": "+80%",
         "precioUsd": 310,
         "stock": true,
         "color": "Oro"
@@ -3418,7 +3418,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "+90%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Negro"
       },
@@ -3427,7 +3427,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Negro"
       },
@@ -3454,7 +3454,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "+90%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Blanco"
       },
@@ -3463,7 +3463,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Blanco"
       },
@@ -3499,7 +3499,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "+90%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Desert"
       },
@@ -3508,7 +3508,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Desert"
       },
@@ -3526,7 +3526,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "+90%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Natural"
       },
@@ -3535,7 +3535,7 @@
         "storage": "128GB",
         "condicion": "Usado A+",
         "bateria": "100%",
-        "precioUsd": 920,
+        "precioUsd": 890,
         "stock": true,
         "color": "Titanio Natural"
       }
@@ -3699,7 +3699,7 @@
     "id": "ip17",
     "catalogId": "ip17",
     "nombre": "iPhone 17",
-    "precioUsd": 1200,
+    "precioUsd": 1180,
     "imagen": "/img/productos/iphone/17/b17.png",
     "imagenes": [
       "/img/productos/iphone/17/b17.png"
@@ -3727,15 +3727,15 @@
       "chip": "A17"
     },
     "variantes": [
-      { "id": "ip17-256gb-sellado-100-verdesalvia", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Verde Salvia" },
+      { "id": "ip17-256gb-sellado-100-verdesalvia", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1180, "stock": true, "color": "Verde Salvia" },
 
-      { "id": "ip17-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Blanco" },
+      { "id": "ip17-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1180, "stock": true, "color": "Blanco" },
 
-      { "id": "ip17-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Negro" },
+      { "id": "ip17-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1180, "stock": true, "color": "Negro" },
 
-      { "id": "ip17-256gb-sellado-100-lavanda", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Lavanda" },
+      { "id": "ip17-256gb-sellado-100-lavanda", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1180, "stock": true, "color": "Lavanda" },
 
-      { "id": "ip17-256gb-sellado-100-azulneblina", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1200, "stock": true, "color": "Azul Neblina" }
+      { "id": "ip17-256gb-sellado-100-azulneblina", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1180, "stock": true, "color": "Azul Neblina" }
     ]
   },
 
@@ -3743,7 +3743,7 @@
     "id": "ip17air",
     "catalogId": "ip17air",
     "nombre": "iPhone 17 Air",
-    "precioUsd": 1400,
+    "precioUsd": 1150,
     "imagen": "/img/productos/iphone/17/bair.png",
     "imagenes": [
       "/img/productos/iphone/17/bair.png"
@@ -3770,13 +3770,13 @@
       "chip": "A17"
     },
     "variantes": [
-      { "id": "ip17air-256gb-sellado-100-azulcielo", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Azul Cielo" },
+      { "id": "ip17air-256gb-sellado-100-azulcielo", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1150, "stock": true, "color": "Azul Cielo" },
 
-      { "id": "ip17air-256gb-sellado-100-oroclaro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Oro Claro" },
+      { "id": "ip17air-256gb-sellado-100-oroclaro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1150, "stock": true, "color": "Oro Claro" },
 
-      { "id": "ip17air-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Blanco" },
+      { "id": "ip17air-256gb-sellado-100-blanco", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1150, "stock": true, "color": "Blanco" },
 
-      { "id": "ip17air-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Negro" }
+      { "id": "ip17air-256gb-sellado-100-negro", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1150, "stock": true, "color": "Negro" }
     ]
   },
 
@@ -3784,7 +3784,7 @@
     "id": "ip17pro",
     "catalogId": "ip17pro",
     "nombre": "iPhone 17 Pro",
-    "precioUsd": 1500,
+    "precioUsd": 1400,
     "imagen": "/img/productos/iphone/17/b17pro.png",
     "imagenes": [
       "/img/productos/iphone/17/b17pro.png"
@@ -3810,11 +3810,11 @@
       "chip": "A17 Pro"
     },
     "variantes": [
-      { "id": "ip17pro-256gb-sellado-100-naranja", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Naranja" },
+      { "id": "ip17pro-256gb-sellado-100-naranja", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Naranja" },
 
-      { "id": "ip17pro-256gb-sellado-100-plata", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Plata" },
+      { "id": "ip17pro-256gb-sellado-100-plata", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Plata" },
 
-      { "id": "ip17pro-256gb-sellado-100-azul", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1500, "stock": true, "color": "Azul" }
+      { "id": "ip17pro-256gb-sellado-100-azul", "storage": "256GB", "condicion": "Sellado", "bateria": "100%", "precioUsd": 1400, "stock": true, "color": "Azul" }
     ]
   },
 
