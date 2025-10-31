@@ -11,7 +11,7 @@ function useQuery() {
 }
 
 /** 2) Coeficientes por cantidad de cuotas (ajustá si cambia tu financ.) */
-const COEF = { 1: 1.1, 2: 1.2341, 3: 1.2919, 6: 1.4819, 9: 1.7337, 12: 1.9984 };
+const COEF = { 1: 1.15, 2: 1.2841, 3: 1.3419, 6: 1.5319, 9: 1.7837, 12: 2.0484 };
 
 /** 3) Números de cuotas mostradas en tarjetas */
 const CUOTAS = [1, 2, 3, 6, 9, 12];
